@@ -1,0 +1,11 @@
+{
+  "projectFileVersion": 2,
+  "sourceFiles": [
+    "1_customer.yarn",
+    "2_customer.yarn"
+  ],
+  "excludeFiles": [],
+  "localisation": {},
+  "baseLanguage": "en",
+  "compilerOptions": {}
+}
