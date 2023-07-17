@@ -5,15 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    [SerializeField]
-    private string nextSceneName;
-
-    void OnTriggerEnter()
+    public void LoadScene(string sceneName)
     {
-
-
-        SceneManager.LoadScene(nextSceneName);
-        Debug.Log("work");
-
+        SceneManager.LoadScene(sceneName);
     }
 }
