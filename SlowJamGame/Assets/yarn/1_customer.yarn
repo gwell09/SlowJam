@@ -1,12 +1,31 @@
 ﻿title: 1_customer
+position: -28, -290
 tags:
 ---
 customer: Ugh so the stories are true; the last human is as stinky as they say!
 
 -> I'm a stinky little boy and I'm proud!
-    You shouldn't be.
--> No!! What is this propoganda! I shower at least once every two weeks!
-    Typical human behavior.
+    <<jump response1>>
+-> No!! What is this propaganda! I shower at least once every two weeks!
+    <<jump response2>>
 -> *Waft stink towards customer*
-    AHHHh I am sh-short circuiting-ing!
+    <<jump response3>>
+===
+
+title: response1
+tags:
+---
+You shouldn't be.
+===
+
+title: response2
+tags:
+---
+Typical human behavior.
+===
+
+title: response3
+tags:
+---
+AHHHh I am sh-short circuiting-ing
 ===
