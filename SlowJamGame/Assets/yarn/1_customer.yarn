@@ -1,31 +1,756 @@
-﻿title: 1_customer
-position: -28, -290
+﻿title: NOTES
+position: 74,-1026
+---
+
+//Add door chimes
+//Change character pronouns? Do characters even have genders? If so, how do they serve a purpose in char. dev.
+//include more details about the charging ports
+
+
+//CHARACTER MOVEMENT:
+//Fade out characer (doesnt have to be animation)
+//Characer slide to left or right
+
+===
+
+
+
+
+
+title: 1_customer
+position: 81,-580
 tags:
 ---
-customer: Ugh so the stories are true; the last human is as stinky as they say!
+ Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
+ snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
--> I'm a stinky little boy and I'm proud!
+//CHIME
+
+Dusty: Howdy, Dogmeat!
+Y/N: *sighs* Afternoon, Dusty. What can I do for ya?
+
+Dusty: Oh, ya’know how it is. Day gets hot like this and the ground gets all dry, next thing my joints are all gunked up what with all the dust and grime being kicked up into the air. 
+Dusty: Gotta stay lubricated! Take it over bein’ like you any day though, ha! Sweatin’ like a pig! 
+Dusty: Might have to turn off my odor receptors, right, Dogmeat? Haha!
+
+-> *Don't respond*
     <<jump response1>>
--> No!! What is this propaganda! I shower at least once every two weeks!
+-> Are you gonna get something, Dusty,or did you just come in here to be an ass?
     <<jump response2>>
--> *Waft stink towards customer*
+-> Buzz off, Dusty. Get your decrepit joints oiled up somewhere else.
     <<jump response3>>
+    
 ===
 
 title: response1
 tags:
+position: -155,-352
 ---
-You shouldn't be.
+Dusty: Well, regardless, I’d like to introduce you to my lady friend, if ya don’t mind.
+
+-> Y/N: *Slowly Nods head*
+    <<jump LadyFriend>>
 ===
 
 title: response2
 tags:
+position: 99,-350
 ---
-Typical human behavior.
+Dusty: I come in here to do what I damn well please, my friend. You can take it up with yer boss if you don’t like it. Now if ya don’t mind my sayin’ so, I recommend you wise up before I introduce you to my special lady friend. 
+Dusty: Otherwise I'll be forced to cause you some real trouble, understood?
+
+-> Y/N: *Slowly Nods head*
+    <<jump LadyFriend>>
 ===
 
 title: response3
 tags:
+position: 326,-352
 ---
-AHHHh I am sh-short circuiting-ing
+Dusty: Easy now, meathead! Now you and I both know that these two feets uh mine are free to walk in and out of this establishment as I please, ain’t it? Same goes fer my dear lady with whom yer about to be acquainted. When she walks in here in about 20 seconds you best pray you’ve adopted a more polite demeanor, else I can make yer life real hard real fast. 
+Dusty: Ya heard me?
+
+-> Y/N: *Slowly Nods head*
+    <<jump LadyFriend>>
+===
+
+
+title: LadyFriend
+position: 72,-111
+---
+Dusty: Swell.
+
+Dusty walks to the door
+
+Dusty: Greta! Darlin’! Come on in here, ‘s someone I’d like ya to meet!
+
+Greta: This is it? The human you were talking about?
+
+Dusty: Mmhm. Isn’t that sum’n? Real dogmeat! Ya are real, aren’cha? Say sum’n, meat. 
+
+<<wait 1.5>>
+
+Y/N: ...
+
+Greta: Well I sure haven’t seen a real human in a long time. Not a live one at least.
+
+Dusty: Well, not much too different dead or alive, these ones. No more than festerin’ dead meat neither way-
+
+Y/N: Been to damn long since I’ve seen one of you freaks dead, I know that!
+
+Greta: *Gasps*
+
+Dusty: Hey now! Better shut yer damn mouth before I leave you mangled like I did the rest of yer worthless species, meat! 
+
+Y/N: You don't have the guts, Dusty.
+
+Dusty: Listen here, Y/N. I know that you think yer real special, bein’ the last uh yer type left for a long way in each direction. But we both know yer nothin’ more than another useless pile uh warm meat. 
+Dusty: Now yer lucky that yer employer and I  are good friends or I wouldn’t be quite so forgiving to yer little outbursts, ya heard? The bossman will be hearin’ about this, don’t you worry. I’ll let him correct ya as he sees fit. 
+Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
+
+//Rusty purchases a bottle of ACME ALL PURPOSE PERSONAL LUBRICANT
+//MINI GAME
+
+//CHIME
+
+You turn a key to the right of your desk that locks the front door and flips the antique-looking open sign to say CLOSED. 
+
+   <<jump IntroduceBoss>>
+===
+
+
+title: IntroduceBoss
+position: 75,54
+---
+
+===
+
+
+
+
+
+
+
+title: IntroduceTinker
+position: 945,-558
+---
+//How to describe physically?????
+//CHIIME
+
+The door swings open and a () android saunters in. Tinker, a particularly unpredictable regular, aimlessly makes it's way down a few of the aisles, stopping to carefully inspect a few old-world products.
+It takes an especially long gander at the last box of Banana Twinks on the shelf, a popular product among visiters due to it's past cultural significance and artificial flavors.
+
+He approaches the counter, Banana Twinks in hand.
+
+Tinker: Hi there.
+
+it awkwardly holds a hand-like 3 fingered appendage towards you palm side down and gestures towards it after receiving a blank stare.
+
+-> Y/N: Shake hand thing
+    <<jump shake>>
+-> Y/N: Hi Tinker...Uh may I help you...?
+    <<jump dontShake>>
+===
+
+title: shake
+tags:
+position: 822,-370
+---
+Y/N: You tentatively take it's hand and shake it vertically.
+
+Tinker: Wow...I wasn't sure if that would actually work. I thought I would try out a new style of communication today to further immerse myself in the human experience.
+I read in a anthropology book that humans often greet eachother that way. I find human traditions so interesting.
+Tell me, how are your bowel movements today?
+
+-> Little runny. You'd be suprised how quick gas station hotdogs run through this old man. 
+    <<jump bowel>>
+-> Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...
+    <<jump bowel2>>
+-> That's a pretty personal question, bot.
+    <<jump bowel3>>
+===
+
+title: dontShake
+tags:
+position: 1086,-366
+---
+Tinker: Uhh...I was sure that would work...I read in a anthropology book that humans greet eachother that way...
+Oh! Perhaps you're European??? 
+
+He grabs you by the cheeks and presses his monitor on each roughly before you can protest. 
+
+Tell me, how are your bowel movements today?
+
+-> Little runny. You'd be suprised how quick gas station hotdogs run through this old man. 
+    <<jump bowel>>
+-> Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...
+    <<jump bowel2>>
+-> That's a pretty personal question, bot.
+    <<jump bowel3>>
+===
+
+title: bowel
+position: 1234,-152
+---
+<<wait  1.5>>
+Tinker: Fascinating...I also read that humans secrete their biowaste through a fleshy orafice, but I am delighted to hear that it is being jettisoned efficiently!
+Tinker: Indeed, maybe I too require one of these...hot dogs...perhaps it will aid in my unit's waste removal as well.
+
+    <<jump Tinker>>
+===
+title: bowel2
+position: 990,-142
+---
+<<wait  1.5>>
+Tinker: Fascinating...I was unaware that some human's biowaste had combustive properties! This is certainly a delight to hear.
+Tinker: I must visit the restroom for a picture before I leave. Maybe I can acquire how you say...a souvenier to bring back with me.
+
+    <<jump Tinker>>
+===
+title: bowel3
+position: 762,-152
+---
+<<wait  1>>
+Tinker: Interesting reaction...I must deduce that perhaps they are not so well. That is unfortunate, human.
+
+    <<jump Tinker>>
+===
+
+
+
+title: Tinker
+position: 945,72
+---
+
+Y/N: I'm an old man. An old human man. Are my bodily functions really any of your concern?
+
+Tinker: Concern? I just find your kind incredibly interesting. You're a dying species and you look like you're an especially old model.
+Tinker: How wonderful that a human can still have a purpose working in an attraction like this despite your low mental functioning capabilities.
+
+Y/N: Yeah well its a real charm and a delight...Can I check you out?
+
+<<wait  1>>
+
+Tinker: Interesting... I've yet to see a human engage in flirting. You do know I am not capable of reproduction, yes?
+
+Y/N: Yeah yeah just hand me the damn hotdog and twinks.
+
+//Check out hotdogs and twinks 
+//MINI GAME
+
+Tinker: Next time I visit I will be interested to learn a little more about human reproductive experience. 
+
+//CHIME. Tinker leaves
+
+Y/N: Pff...reproductive experience my ass...robo-freak.
+===
+
+title: Tinker2
+position: 936,369
+---
+//CHIME 
+
+Tinker walks in and obliviously cuts in front of Golem, picking through the items for sale on the checkout shelves.
+Golem, despite not having the facial construction to express emotion, displays a reaction of disdain for the ignorant bot.
+
+Golem: I'm going to charge up free of charge as payment for wasting company time while I'm on the clock.
+
+//Golem fades out 
+
+<<wait  2>>
+
+Tinker:...
+
+-> What an ass-droid! Wouldn't have thought your annoyance would ever come in handy. God I could kiss you!
+    <<jump tinkerSaves>>
+-> Could you be more oblivious?? He can make my day hell if he doesn't treated how he wants! 
+    <<jump tinkerSaves1>>
+-> *Sigh* Place box of banana twinks on the counter
+    <<jump tinkerSaves2>>
+===
+
+title: tinkerSaves
+position: 1198,511
+---
+Tinker: Kiss? I am pleased to see that you remembered our previous conversation about human reproduction.
+Tinker: Although I must admit, I was unable to see that droid when I came in.  My faculties of sight have been significantly afflicted recently. 
+<<jump tinkerSight>>
+===
+title: tinkerSaves1
+position: 956,523
+---
+Tinker: ...Ah. This is worrisome. My faculties of sight have been significantly afflicted recently. 
+<<jump tinkerSight>>
+===
+title: tinkerSaves2
+position: 725,519
+---
+The lights on his head brighten, some flickering or changing different colors.
+Tinker: Thank you. That's what I would looking for. My faculties of sight has been significantly afflicted recently. 
+<<jump tinkerSight>>
+===
+
+
+title: tinkerSight
+position: 961,710
+---
+Tinker: My sight has been flooded by various pop-ups ads and error messages. It is truly a matter of concern.
+Tinker: Some saying I've won a million dollars, breast augmentation recommendations, and sexy milf-bot 1000s in the area. 
+Tinker: The most concerning one of all is a recurring error message I have been recieving:
+Tinker: Warning: System may have detected a virus.
+
+-> That sounds awful...well do you want your banana twinks or not
+<<jump TinkerVirus>>
+
+-> *Fight to Supress laugh*
+<<jump TinkerVirus1>>
+
+->I'm sorry...
+<<jump TinkerVirus2>>
+
+===
+title: TinkerVirus
+position: 956,890
+---
+Tinker: Thank you for your great concern, human. Of course. 
+-> Lets get you checked out, Tinker.
+<<jump tinkerGoodbye>>
+===
+
+title: TinkerVirus1
+position: 956,890
+---
+Tinker: The meaning of many human reactions is still a mystery to me...Since we have no use for the chemicals that cause emotion, I suppose we aren't as adept at reading them.
+-> And you'll probably never get any better at it. Let's get you checked out
+<<jump tinkerGoodbye>>
+===
+
+title: TinkerVirus2
+position: 956,890
+---
+Tinker: Interesting reaction. Apologizing for an act carried out by human criminals, attempting to understand the complexities of software at our expense.
+Tinker: If you are apologizing on their behalf, I can appreciate the effort, however futile it is. 
+-> Save your breath...or battery power or whatever. Let's get you checked out
+<<jump tinkerGoodbye>>
+===
+
+title: tinkerGoodbye
+position: 962,1068
+---
+//items appear to checkout 
+//MINI GAME 
+
+Tinker: Ah, by the way, I was reading that book on Anthropology again and was wondering how your relationship with your fa-
+Y/N: You're done.
+Tinker: Okay...
+
+//CHIME. Tinker leaves 
+===
+
+
+
+
+
+
+title: Fed
+position: 1715,-569
+---
+//Door chimes 
+
+Ugh. Here comes my favorite customer. Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
+He approaches the mid voltage battery packs stacked neatly on the back shelf. He examines one aloofly before putting it back on a random shelf to his left.
+He picks up a different model and brings it to the counter. Droids like this make my blood boil.
+
+Golem: This experience may be recorded for quality and training purposes.
+
+<<wait  2>>
+
+Golem: Ah my favorite human. Looks like your working hard as usual.
+
+Y/N: Yep. It's truly my dream job to serve my benevolent mech overlords and my favorite part is checking out the friendly neighborhood cops.
+Y/N: Really warms my heart.
+
+Golem: That ~human~ heart of yours is why you can't be trusted to do anything else and that human brain is why you've been reduced to a tourist attraction.
+
+Y/N: That mech motherboard is awfully closed minded to think that humans really have no other use in society.
+
+Golem: I don't need to  critiqued by the likes of you. You're lucky we even let you stay here doing this. If I had it my way, you would've been terminated long ago.
+Golem: Now do your job.
+
+//Check out Golem
+//MINI GAME
+
+Golem: Just keep your head down and stay in line. 
+
+//Chime. Golem leaves
+
+Y/N: Whenever he comes in here, my day just gets so much brighter. 
+
+
+===
+
+title: Fed2
+position: 1718,-303
+---
+//Door chimes 
+
+Golem: This experience may be recorded for quality and training purposes.
+
+-> (In baby voice) This experwience has been recowded foh quality and twaining pohpuses
+<<jump babyVoice>>
+
+-> Record this (Moon him)
+<<jump flash>>
+
+-> How can I help you officer?
+<<jump helpOfficer>>
+
+===
+
+title: babyVoice
+position: 1721,-88
+---
+
+<<wait  1>>
+Golem: Once again meeting my expectations of the human mental capacity. Simply mimicing a higher being to the best of your abilities.
+Golem: I'm just here today to use one of the charging ports. I don't expect you t-
+<<jump Tinker2>>
+
+===
+title: flash
+position: 1505,-103
+---
+<<wait  1>>
+Golem: Pathetic. Your form doesn't look like it has recieved any mantainence in years.
+
+Y/N: I work behind a register all day and it's not like you bots give me the freedom to do the things that I actually want. 
+Y/N: And besides...C'mon, I've still got it.
+
+Golem: What you've got is wrinkles. I'm just here today to use one of the charging ports. I don't expect you t-
+<<jump Tinker2>>
+
+===
+title: helpOfficer
+position: 1986,-99
+---
+Golem: Hm. Not the usual snippy attitude I normally recieve from you as a greeting. I'm just here today to use one of the charging ports. I don't expect you t-
+<<jump Tinker2>>
+===
+
+
+
+
+
+title: Fed3
+position: 1739,193
+---
+//Door chimes 
+Golem marches in and picks up a can of oil before walking to the register.
+
+Golem: This experience may be recorded for quality and training purposes.
+
+<<wait  2>>
+
+Golem: Working hard as usual huh?
+
+Y/N: Yep.
+
+Golem: Most androids these days could do what you do for a living when they were microchips you know.
+ 
+Y/N: Yeah you know what you always say that, but you always end up coming back here to juice up.
+
+Golem: I don't come here because I have to. I come here because you can't be left to your own devices. Chord knows that useless Boss bot isn't doing shit.
+
+Y/N: Are we reaching a point anytime soon?
+
+Golem: My point is that all of new society has forgotten what humans are capable of. They created us, we surpassed them, but I know your kind still slinks around.
+Golem: All of you people are more malicious than you let on. 
+
+-> You've taken all the power away from us 
+    <<jump fedResponse1>>
+-> You're right to be suspicious
+    <<jump fedResponse2>>
+-> What makes you say that?
+    <<jump fedResponse3>>
+===
+
+title: fedResponse1
+position: 1761,374
+---
+Y/N: You've taken all the power away from us. There's barely any of us left, we've beem beaten down, stripped of any power, yet you still suspect foul play.
+Y/N: And to boot, I'm an old worn man. You really think I'm capable of hurting someone? Do you think I would've waited this long if I could?
+
+Golem: You're correct in saying that you aren't capable of much. However, I'm not even going to give you the chance to prove me wrong.
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society.
+Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
+Golem: It's natural selection.
+
+Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Golem: And who created such unnatural creatures?
+
+-> ...
+<<jump naturalSelection>>
+
+-> I promise that we've realized our mistake
+<<jump naturalSelection1>>
+
+===
+title: fedResponse2
+position: 1530,370
+---
+Y/N: You're right to be suspicious. The remaining humans will never stop fighting. What we lack in artificial intelligence and body modifications, we make up for in heart.
+Y/N: And thats the one thing you tin cans will never have.
+
+Golem: Thats why you humans can never be left unchecked. I'll admit that data shows a human will to live provides them with increased physical and mental abilities.
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society. 
+Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
+Golem: It's natural selection.
+
+Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Golem: And who created such unnatural creatures?
+
+-> ...
+<<jump naturalSelection>>
+
+-> I promise that we've realized our mistake
+<<jump naturalSelection1>>
+===
+title: fedResponse3
+position: 2003,385
+---
+Golem: I've seen this malice in person. 
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society. 
+Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
+Golem: It's natural selection.
+
+Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Golem: And who created such unnatural creatures?
+
+-> ...
+<<jump naturalSelection>>
+
+-> I promise that we've realized our mistake
+<<jump naturalSelection1>>
+===
+
+title: naturalSelection
+position: 1593,549
+---
+<<wait  1>>
+
+Golem: Right...
+
+//Golem places oil can on counter
+//MINI GAME 
+
+Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
+
+//CHIME
+===
+title: naturalSelection1
+position: 1891,559
+---
+Y/N: I promise that we've realized our mistake. We've been paying for it ever since.
+Golem: And you'll be doing so til you're bankrupt.
+
+//Golem places oil can on counter
+//MINI GAME 
+
+Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
+
+//CHIME
+===
+
+
+
+title: Fed4
+position: 1760,1062
+---
+//Door chimes 
+...
+<<wait  2>>
+
+Golem: This experience may be recorded for quality and training purposes.
+
+===
+
+
+
+
+
+title: Garbo1
+position: 112,560
+---
+//CHIME 
+
+A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products. 
+As he approaches the counter you are greeted by a stench that makes you wrinkle your nose slightly, something that does not escape his notice.
+
+Unknown: My apologies for the smell. I forget how sensitive humans are to waste odors.
+Unknown: Well.. that and was not expecting to see a human on my way back from work today.
+
+It’s a little hard to tell due to the lack of any recognisable expression indicators and his mechanically flat voice, but it seems like the mech is being unusually kind to you.
+
+-> No need for any apologies, it’s part of the job
+    <<jump garboResponse1>>
+-> It’s awfully kind of you to pay attention to that
+    <<jump garboResponse2>>
+-> Wow, a mech apologizing to a human. Must be signs of the next apocalypse incoming
+    <<jump garboResponse3>>
+
+===
+
+
+title: garboResponse1
+position: -151,738
+---
+Unknown: That does not sound like something that belongs in a job description. Expressing discomfort is very human, it should not be suppressed.
+<<jump garboIntroduce>>
+===
+
+title: garboResponse2
+position: 364,760
+---
+Unknown: It’s a shame that you would say that. I do not think it should be anything special. mechs and humans should look out for each other after all.
+<<jump garboIntroduce>>
+===
+
+title: garboResponse3
+position: 91,746
+---
+Unknown: I understand your skepticism. Mechs have a shameful reputation for looking down on humans. So many have forgotten where they came from.
+<<jump garboIntroduce>>
+
+===
+title: garboIntroduce
+position: 99,934
+---
+Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquaintance.
+-> Likewise
+    <<jump garboIntroduceResponse>>
+-> *Stay Silent*
+    <<jump garboIntroduceResponse>>
+
+===
+
+
+title: garboIntroduceResponse
+position: 111,1149
+---
+Garbo: Always nice to have a human friend! My assigned route ends a block away, so perhaps I will have to drop in more often.
+Garbo: I will take care to manage the smell next time though.
+
+//Garbo places items in front of player. 
+//MINI GAME 
+
+Garbo: Until next time, friend!
+//Chime sound & fade out 
+===
+
+
+
+
+title: Garbo2
+position: 117,1458
+---
+//CHIME 
+Garbo wheels inunsteadily. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
+He makes a beeline for the aisles, gathering up items in his arms, before rushing over to the counter.
+
+Garbo: Hello friend! It is good to see you again.
+Garbo: Unfortunately I have little time to talk, my neighbor is having a software update tomorrow and so we are celebrating tonight!
+Garbo: But I took care to clean up before coming this time. Does it smell better?
+
+-> It does
+    <<jump garboStinky>>
+-> This is even worse
+    <<jump garboStinky2>>
+
+
+===
+title: garboStinky
+position: 250,1636
+---
+Garbo: That is good! The robo wash has so many scent options even though most of us can’t smell! A remnant from human culture perhaps. Next time I will try another.
+    <<jump garboContinued>>
+===
+title: garboStink2
+position: 23,1639
+---
+Garbo: What a shame. I’m not one of the few bots who has an olfactory function, so I’m unable to tell. I will visit a different robo wash next time.
+    <<jump garboContinued>>
+===
+title: garboContinued
+position: 142,1793
+---
+Garbo: It might seem like a pity to humans to be lacking olfactory facilities, but it works well for a trash collector. It makes jobs like that much less unpleasant.
+Garbo: Mechs were always the functional ones, very practically built, and humans had the spirit to guide us. I think that system worked well. 
+Garbo: It is most unfortunate that not everyone could understand that perspective.
+
+<<wait  2>>
+Garbo: Oh! I have rambled. I need to get going.
+//4 items placed on the counter 
+//MINI GAME 
+
+Garbo: Take care, friend!
+
+//Chime sound
+===
+
+
+title: Garbo3
+position: 140,2070
+---
+//CHIME 
+
+Garbo slinks in slowly, grabbing an item. He sluggishly makes his way over to the counter. This time his smell is masked by a lavender type scent.
+
+Garbo: Hello friend. Unfortunately I am not feeling the best today.
+Garbo: Do you know about the virus that seems to be going around? It seems that I may have caught it, despite my best efforts.
+
+Garbo’s left arm twitches as he speaks, jittering his next words slightly.
+
+Garbo: I have been so c-CAr-eful to scan any information I ha-VVE been putting into myself for malware, and to not use any unverified charging ports. 
+Garbo: Despite my best efforts I have not been able to avoid it. I’ve been told that an antivirus for this specific issue has yet to be created. 
+Garbo: So, I have been instructed to take a break from work for the time being. Unfortunately that means it might be some time until I see you next.
+Garbo: Please do t-TA-ke care in the meantime. According to reports it seems like robo-human tensions have been rising over the past few weeks.
+Garbo: There have been some rumors circulating that the virus is linked to a human terrorist group.
+Garbo: As a result many bots have been directing their fear and anger towards any humans they come across...
+
+-> What do you think of the rumors?
+    <<jump garboContinued1>>
+-> What nonsense! As if humans would do such a thing
+    <<jump garboContinued2>>
+
+===
+title: garboContinued1
+position: 293,2213
+---
+Garbo: It’s hard to say. Might just be more fear mongering. But I would find it hard to blame humans if it actually were the case.
+    <<jump garboContinued3>>
+===
+title: garboContinued2
+position: 15,2226
+---
+Garbo: Hm… I have no idea whether they would or would not actually do it. However I believe that they would be justified in it.
+    <<jump garboContinued3>>
+
+===
+title: garboContinued3
+position: 175,2378
+---
+-> Why do you say that?
+
+Garbo: I think mechs currently have a rather skewed perception of humans. They view them as the horrifying tyrant overlords with no regard for their wellbeing, as ironic as that is. 
+Garbo: They have forgotten that it wasn’t always like that, that humans and mechs were able to coexist peacefully and support one another. 
+Garbo: Now they aren’t willing to consider the possibility at all out of fear.
+<<wait  2>>
+Garbo: I should probably get on with it. I did not intend to take up so much of your time.
+
+//Garbo places one item on counter
+//MINI GAME 
+
+Garbo: There has been a lot of unrest as of late. Take care, dear friend.
+
+//CHIME  
 ===
