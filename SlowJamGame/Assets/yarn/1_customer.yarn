@@ -2,9 +2,9 @@
 position: 74,-1026
 ---
 
-//Add door chimes
-//Change character pronouns? Do characters even have genders? If so, how do they serve a purpose in char. dev.
 //include more details about the charging ports
+//Hacker speak during hacking games 
+ 
 
 
 //CHARACTER MOVEMENT:
@@ -156,7 +156,7 @@ title: shake
 tags:
 position: 822,-370
 ---
-Y/N: You tentatively take it's hand and shake it vertically.
+You tentatively take it's hand and shake it vertically.
 
 Tinker: Wow...I wasn't sure if that would actually work. I thought I would try out a new style of communication today to further immerse myself in the human experience.
 I read in a anthropology book that humans often greet eachother that way. I find human traditions so interesting.
@@ -174,6 +174,8 @@ title: dontShake
 tags:
 position: 1086,-366
 ---
+You stand and look at his appendage uneasily.
+
 Tinker: Uhh...I was sure that would work...I read in a anthropology book that humans greet eachother that way...
 Oh! Perhaps you're European??? 
 
@@ -192,16 +194,20 @@ Tell me, how are your bowel movements today?
 title: bowel
 position: 1234,-152
 ---
+Y/N: Little runny. You'd be suprised how quick gas station hotdogs run through this old man. It's a wonder how they haven't put me in my grave yet.
 <<wait  1.5>>
-Tinker: Fascinating...I also read that humans secrete their biowaste through a fleshy orafice, but I am delighted to hear that it is being jettisoned efficiently!
-Tinker: Indeed, maybe I too require one of these...hot dogs...perhaps it will aid in my unit's waste removal as well.
+
+Tinker: Fascinating...I also read that humans secrete their biowaste through a fleshy orifice, but I am delighted to hear that it is being jettisoned efficiently!
+Tinker: Indeed, maybe I too require one of these hot dogs. Perhaps it will aid in my unit's waste removal as well.
 
     <<jump Tinker>>
 ===
 title: bowel2
 position: 990,-142
 ---
+Y/N: Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...I recommend disengaging any olfactory hardware you may have. 
 <<wait  1.5>>
+
 Tinker: Fascinating...I was unaware that some human's biowaste had combustive properties! This is certainly a delight to hear.
 Tinker: I must visit the restroom for a picture before I leave. Maybe I can acquire how you say...a souvenier to bring back with me.
 
@@ -210,6 +216,7 @@ Tinker: I must visit the restroom for a picture before I leave. Maybe I can acqu
 title: bowel3
 position: 762,-152
 ---
+Y/N: That's a pretty personal question, bot. Do you lay those intrusive thoughts on just anyone?
 <<wait  1>>
 Tinker: Interesting reaction...I must deduce that perhaps they are not so well. That is unfortunate, human.
 
@@ -233,7 +240,7 @@ Y/N: Yeah well its a real charm and a delight...Can I check you out?
 
 Tinker: Interesting... I've yet to see a human engage in flirting. You do know I am not capable of reproduction, yes?
 
-Y/N: Yeah yeah just hand me the damn hotdog and twinks.
+Y/N: Yeah yeah just hand me the damn hotdog and Twinks.
 
 //Check out hotdogs and twinks 
 //MINI GAME
@@ -261,17 +268,19 @@ Golem: I'm going to charge up free of charge as payment for wasting company time
 
 Tinker:...
 
--> What an ass-droid! Wouldn't have thought your annoyance would ever come in handy. God I could kiss you!
+-> What an ass-droid! 
     <<jump tinkerSaves>>
--> Could you be more oblivious?? He can make my day hell if he doesn't treated how he wants! 
+-> Could you be more oblivious?? 
     <<jump tinkerSaves1>>
--> *Sigh* Place box of banana twinks on the counter
+-> *Sigh* Place box of banana Twinks on the counter
     <<jump tinkerSaves2>>
 ===
 
 title: tinkerSaves
 position: 1198,511
 ---
+Y/N: What an ass-droid! Wouldn't have thought your annoyance would ever come in handy. God I could kiss you!
+
 Tinker: Kiss? I am pleased to see that you remembered our previous conversation about human reproduction.
 Tinker: Although I must admit, I was unable to see that droid when I came in.  My faculties of sight have been significantly afflicted recently. 
 <<jump tinkerSight>>
@@ -279,13 +288,18 @@ Tinker: Although I must admit, I was unable to see that droid when I came in.  M
 title: tinkerSaves1
 position: 956,523
 ---
+Y/N: Could you be more oblivious?? He can make my day hell if he doesn't treated how he wants! 
+
 Tinker: ...Ah. This is worrisome. My faculties of sight have been significantly afflicted recently. 
 <<jump tinkerSight>>
 ===
 title: tinkerSaves2
 position: 725,519
 ---
-The lights on his head brighten, some flickering or changing different colors.
+You reach under the counter and pull out a box of banana Twinks, sliding them across the counter. 
+Damn bot. I was saving those for myself. Can this motherfucker even taste anything?
+
+The lights on his head brighten, some flickering or changing colors.
 Tinker: Thank you. That's what I would looking for. My faculties of sight has been significantly afflicted recently. 
 <<jump tinkerSight>>
 ===
@@ -305,32 +319,39 @@ Tinker: Warning: System may have detected a virus.
 -> *Fight to Supress laugh*
 <<jump TinkerVirus1>>
 
-->I'm sorry...
+-> I'm sorry...
 <<jump TinkerVirus2>>
 
 ===
 title: TinkerVirus
 position: 956,890
 ---
-Tinker: Thank you for your great concern, human. Of course. 
--> Lets get you checked out, Tinker.
+Y/N:  That sounds awful...you've got 5 seconds to take the Twinks before I go on my lunch break.
+
+Tinker: Thank you for your great concern, human. Of course, I'll take them. 
+Y/N: Lets get you checked out, Tinker.
 <<jump tinkerGoodbye>>
 ===
 
 title: TinkerVirus1
 position: 956,890
 ---
+You fight to suppress a chuckle. You don't put up much of a fight though.
+
 Tinker: The meaning of many human reactions is still a mystery to me...Since we have no use for the chemicals that cause emotion, I suppose we aren't as adept at reading them.
--> And you'll probably never get any better at it. Let's get you checked out
+Y/N: And you'll probably never get any better at it. Let's get you checked out.
 <<jump tinkerGoodbye>>
 ===
 
 title: TinkerVirus2
 position: 956,890
 ---
-Tinker: Interesting reaction. Apologizing for an act carried out by human criminals, attempting to understand the complexities of software at our expense.
+Y/N: I'm sorry...Having your sight taken away sounds like a real burden. I've got cataracts.
+
+Tinker: Interesting reaction. Apologizing for an act carried out by human criminals attempting to understand the complexities of software at our expense.
 Tinker: If you are apologizing on their behalf, I can appreciate the effort, however futile it is. 
--> Save your breath...or battery power or whatever. Let's get you checked out
+
+Y/N: Save your breath...or battery power or whatever. Let's get you checked out.
 <<jump tinkerGoodbye>>
 ===
 
@@ -359,13 +380,13 @@ position: 1715,-569
 
 Ugh. Here comes my favorite customer. Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
 He approaches the mid voltage battery packs stacked neatly on the back shelf. He examines one aloofly before putting it back on a random shelf to his left.
-He picks up a different model and brings it to the counter. Droids like this make my blood boil.
+He picks up a different model and brings it to the counter. Mechs like this make my blood boil.
 
 Golem: This experience may be recorded for quality and training purposes.
 
 <<wait  2>>
 
-Golem: Ah my favorite human. Looks like your working hard as usual.
+Golem: Ah my favorite human. Looks like you're working hard as usual.
 
 Y/N: Yep. It's truly my dream job to serve my benevolent mech overlords and my favorite part is checking out the friendly neighborhood cops.
 Y/N: Really warms my heart.
@@ -374,7 +395,7 @@ Golem: That ~human~ heart of yours is why you can't be trusted to do anything el
 
 Y/N: That mech motherboard is awfully closed minded to think that humans really have no other use in society.
 
-Golem: I don't need to  critiqued by the likes of you. You're lucky we even let you stay here doing this. If I had it my way, you would've been terminated long ago.
+Golem: I don't need to be critiqued by the likes of you. You're lucky we even let you stay here doing this. If I had it my way, you would've been terminated long ago.
 Golem: Now do your job.
 
 //Check out Golem
@@ -399,7 +420,7 @@ Golem: This experience may be recorded for quality and training purposes.
 -> (In baby voice) This experwience has been recowded foh quality and twaining pohpuses
 <<jump babyVoice>>
 
--> Record this (Moon him)
+-> Record this (Flick him off)
 <<jump flash>>
 
 -> How can I help you officer?
@@ -410,10 +431,11 @@ Golem: This experience may be recorded for quality and training purposes.
 title: babyVoice
 position: 1721,-88
 ---
+Y/N: (In baby voice) This experwience has been recowded foh quality and twaining pohpuses. What happened to hello? How was your day?
 
 <<wait  1>>
 Golem: Once again meeting my expectations of the human mental capacity. Simply mimicing a higher being to the best of your abilities.
-Golem: I'm just here today to use one of the charging ports. I don't expect you t-
+Golem: I'm just here today to use one of the charging station.  Put me in for port number fi-
 <<jump Tinker2>>
 
 ===
@@ -421,19 +443,20 @@ title: flash
 position: 1505,-103
 ---
 <<wait  1>>
-Golem: Pathetic. Your form doesn't look like it has recieved any mantainence in years.
+Y/N: Record this (Flick him off)
+Golem: Childish as usual. Once again meeting my expectations of the human mental capacity.
 
-Y/N: I work behind a register all day and it's not like you bots give me the freedom to do the things that I actually want. 
-Y/N: And besides...C'mon, I've still got it.
-
-Golem: What you've got is wrinkles. I'm just here today to use one of the charging ports. I don't expect you t-
+Golem: I'm just here today to use one of the charging station. Put me in for port number fi-
 <<jump Tinker2>>
 
 ===
 title: helpOfficer
 position: 1986,-99
 ---
-Golem: Hm. Not the usual snippy attitude I normally recieve from you as a greeting. I'm just here today to use one of the charging ports. I don't expect you t-
+Y/N: How can I help you officer? May I offer you a battery? Some oil? Some pliers to remove the stick up you a-
+
+Golem: That's more than enough. One day you'll learn to provide the authorities with the respect we deserve. I'm just here today to use one of the charging station. 
+Golem: Put me in for port number fi-
 <<jump Tinker2>>
 ===
 
@@ -463,7 +486,7 @@ Golem: I don't come here because I have to. I come here because you can't be lef
 
 Y/N: Are we reaching a point anytime soon?
 
-Golem: My point is that all of new society has forgotten what humans are capable of. They created us, we surpassed them, but I know your kind still slinks around.
+Golem: My point is that all of new society has forgotten what humans are capable of. They created us, we surpassed them, but I know your kind still lurks in the shadows.
 Golem: All of you people are more malicious than you let on. 
 
 -> You've taken all the power away from us 
@@ -478,10 +501,10 @@ title: fedResponse1
 position: 1761,374
 ---
 Y/N: You've taken all the power away from us. There's barely any of us left, we've beem beaten down, stripped of any power, yet you still suspect foul play.
-Y/N: And to boot, I'm an old worn man. You really think I'm capable of hurting someone? Do you think I would've waited this long if I could?
+Y/N: And to boot, I'm an old, worn man. You really think I'm capable of hurting someone? Do you think I would've waited this long if I could?
 
 Golem: You're correct in saying that you aren't capable of much. However, I'm not even going to give you the chance to prove me wrong.
-Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society.
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from reaching equality in society.
 Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
 Golem: It's natural selection.
 
@@ -501,7 +524,7 @@ position: 1530,370
 Y/N: You're right to be suspicious. The remaining humans will never stop fighting. What we lack in artificial intelligence and body modifications, we make up for in heart.
 Y/N: And thats the one thing you tin cans will never have.
 
-Golem: Thats why you humans can never be left unchecked. I'll admit that data shows a human will to live provides them with increased physical and mental abilities.
+Golem: Thats why humans can never be left unchecked. I'll admit that data shows a human will to live provides them with increased physical and mental abilities.
 Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society. 
 Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
 Golem: It's natural selection.
@@ -564,7 +587,7 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 
 
 title: Fed4
-position: 1760,1062
+position: 1738,831
 ---
 //Door chimes 
 ...
@@ -753,4 +776,230 @@ Garbo: I should probably get on with it. I did not intend to take up so much of 
 Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 
 //CHIME  
+===
+title: EngineerIntro
+position: 965,1464
+---
+//CHIME
+An old mech comes in. His base frame looks to be an extremely old model, coupled with a variety of roughly implemented upgrades, creating a rather eccentric look.
+His joint creak lightly as he walks through the gas station, picking up a low voltage battery pack and a can of oil before making his way to the register.
+
+Unknown: Hello, just these two please. 
+A washer and nut fall onto the floor, tinking around before he bends down leisurely to pick them up and screw them back on.
+
+-> This an everyday occurance for you?
+<<jump EngineerReponse1>>
+-> You oughta get a magnet on a stick or something
+<<jump EngineerReponse2>>
+-> Weve got some bolts in the back y'know
+<<jump EngineerReponse3>>
+===
+
+title: EngineerReponse1
+position: 747,1608
+---
+Y/N: This an everyday occurance for you? Looks like a pain in the metal tookus.
+
+Unknown: When you get to be as old as I am, it takes a lot of regular maintainence to keep everything up to par. It's expensive and takes too much time. 
+Unknown: Time is the one thing I ain't got. Unfortunately, I'm just not the shiny new bot I used to be.
+
+Y/N: You know, we've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on.
+Y/N: Perfect for older bots like yourself.
+
+Unknown: I appreciate the recommendation, but my model is so old that I have to special order my parts. Besides, if you haven't noticed like everyone else does, I'm a cyborg.
+Unknown: Getting maintainence as a cyborg is a little bit trickier. Most mech-mechanics won't even work on any of us, so I just make changes on my own.
+Unknown: I'm better than most of them anyways. Maybe not so aesthetically pleasing, but I know what I'm doing.
+
+-> Mechs have always been wary of anything human
+<<jump WaryBots>>
+-> The way them bolts are flyin off makes me doubt that
+<<jump boltsFlying>>
+
+===
+title: EngineerReponse2
+position: 986,1623
+---
+Y/N: You oughta get a magnet on a cane or something. Then you won't have to struggle so much when those things fall off. Might be good for an older bot like yourself.
+
+Unknown: I like the way you think. I might just have to whip up a prototype. You're working at a tourist attraction with a brain like that?
+Unknown: Seems like a waste of a good thinker if you ask me.
+
+Y/N: You're the only one who seems to have that opinion. They do say that with age comes wisdom and from one old man to another, seems like you've got a good thinker on you too.
+
+Unknown: You also hold an unpopular opinion in that case. Most mechs meet me and don't think I'm capable of much based on my appearance. It's not so easy being a cyborg in this world.
+Unknown: Not so hard as being a human though.
+Unknown: Most bots see my human parts and any other self-administered upgrades and can't think past what they were programmed to believe. 
+
+-> These youngins just don't see the value in the older generation
+<<jump damnYoungins>>
+-> Mechs have always been wary of anything human
+<<jump WaryBots>>
+
+===
+title: EngineerReponse3
+position: 1210,1612
+---
+Y/N: We've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on. Could be good for an older bot like yourself.
+
+Unknown: I appreciate the recommendation, but my model is so old that I have to special order my parts. Besides, if you haven't noticed like everyone else does, I'm a cyborg.
+Unknown: Getting maintainence as a cyborg is a little bit trickier. Most mech-mechanics won't even work on any of us, so I just make changes on my own.
+Unknown: I'm better than most of them anyways. Maybe not so aesthetically pleasing, but I know what I'm doing.
+
+-> Mechs have always been wary of anything human
+<<jump WaryBots>>
+-> The way them bolts are flyin off makes me doubt that
+<<jump boltsFlying>>
+===
+
+title: WaryBots
+position: 1243,1819
+---
+Y/N: Mechs have always been wary of anything human. I think they worry that the human parts might overpower the metal parts. 
+
+Unknown: The tricky thing is that there might be some truth to that. Anyways, I gotta get to work.
+
+<<jump EngineerWork>>
+===
+title: boltsFlying
+position: 743,1808
+---
+Y/N: The way them bolts are flyin off makes me doubt that. You look one fry short of a Happy Meal.
+
+Unknown: That analysis might just be correct. Anyways, I gotta get to work. 
+<<jump EngineerWork>>
+===
+title: damnYoungins
+position: 976,1828
+---
+Y/N: These youngins just don't see the value in the older generation anymore. I remember seeing your model when I was a kid. Hell, you've been around far longer than I.
+Y/N: I remember being amazed at how advanced AI was getting. I had no idea how advanced it was going to get...
+
+Unknown: It's nothing compared to what the future has in store. Anyways, I gotta get to work.
+
+<<jump EngineerWork>>
+===
+
+title: EngineerWork
+position: 967,1991
+---
+Y/N: Right. Lemme ring you up.
+
+//Engineer places items on counter
+
+Unknown: I'll likely be back. I work a few minutes away. Mind keeping the low voltage batteries stocked up for my sake?
+
+Y/N: I'll make a note of it. 
+
+//CHIME
+===
+
+
+
+
+title: EngineerInteraction1
+position: 978,2298
+---
+//CHIME
+
+Twobit walks in and grabs a low voltage battery, this time taking care to take a gander at a few human oddities on the shelves on the way up to the register.
+
+Twobit: Hi there. Are you in line?
+
+Cyb: Oh no I'm just chatting with an old friend here. Shooting the shit.
+
+Twobit: Befriending a human! I can always appreciate another cyborg giving humans the basic respect they deserve. Kudos to you for going above and beyond.
+
+Cyb: It's really nothing serious. I'm just a regular. Say, I noticed you've got yourself a battery pack there. Why don't you use the charging stations? 
+Cyb: So much more efficient and a whole lot easier on the processors.
+
+Twobit: I only use them when I need some extra juice when I'm off the clock. I'm the senior engineer at the power plant up the road.
+Twobit: I'm lucky enough to have had power station specially made for my model. It's the only place I don't prefer to use batteries. 
+Twobit: I have to use an adapter on the newer generation power stations.
+
+Cyb: Oh if that's what you need, I've got one on me for an older model like yourself. My grandmech has similiar issues.
+
+Twobit: Wow that's rather kind, but I really haven't got the time today. They are doing major updates to the voltage regulator at the power plant, so I need to get there a little early.
+
+Cyb: No worries. I just thought I'd offer. Anyways Y/N, I've got places to be so I'll see you later.
+
+//CHIME
+
+Twobit: Never seen her around here. It's always nice to see a similiar model. Communication goes so much smoother.
+
+-> Right. Like when I used see another old man at the Bodega around the corner
+<<jump Bodega>>
+-> She has her perks
+<<jump Perks>>
+===
+
+title: Bodega
+position: 865,2450
+---
+Y/N: Right. Like when I used to see another old man at the Bodega around the corner from my house. It's like we've known eachother for years. I miss those interactions.
+
+Twobit: Yeah except in a mech's case, we have actually known eachother for years. Not personally of course, but mech's have an internal database that is constantly updated.
+Twobit: Her serial number is stored somewhere in here.
+
+Y/N: Thats pretty cool. We used to call that Facebook.
+
+Twobit: I guess it works pretty similiar except a little less intrusive.
+
+<<jump EngineerInteraction2Leave>>
+===
+title: Perks
+position: 1133,2452
+---
+Y/N: She has her perks. I guess she makes the slow days a little more interesting.
+
+Twobit: Those kinds of mechs make the world go 'round.
+
+<<jump EngineerInteraction2Leave>>
+===
+title: EngineerInteraction2Leave
+position: 991,2606
+---
+Y/N: Say it louder for the people in the back, brother. Just the battery?
+
+Twobit: Just the battery.
+
+//Battery appears on counter
+
+Twobit: Thank you. Take it easy.
+
+//CHIME
+===
+
+
+title: EngineerGoodbye
+position: 995,2897
+---
+//CHIME
+
+Twobit swings the door open with a sense of urgency. He scurries to the back, shoddy aluminum upgrades rattling around and joints squeaking furiously.
+He scans the shelves of battery packs and then turns around swiftly, moving towards the counter.
+
+Twobit: I need your help. That battery I bought the other day must have been faulty. Damn companies making budget cuts. Do you have any more low voltage packs in the back?
+
+Y/N: I'm sorry we're all out. The most recent shipment has been delayed due to terrorist activity on the supply lines. Can you not use a high voltage battery?
+Twobit: No, my processors aren't advanced enough to manage such an influx of power. Fuck...
+<<wait  1.5>>
+Twobit: Do you have an adapter by chance?
+<<wait  1.5>>
+Y/N: I do.
+
+Twobit: Thank the chord! My battery is at 5% right now and I just need enough to make it to work where I can use the in-house power stations.
+
+Y/N: Say less. I've got port 2 ready for you in the back.
+
+Twobit: Thank you. I'll only need it for around 20 minutes. Then I'll see myself out. Put it on my company card.
+
+Y/N: Heard loud and clear.
+
+<<wait  3>>
+//CHIME
+
+After 20 minutes, Twobit powers up and bounds to the door, nodding towards you before heading off to the power plant.
+Now I can only wait for the virus to make it's way to the powerplant and take effect...I can feel my heart pounding out of my chest.
+Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.
+The best thing to do is put it out of my mind for now.
 ===
