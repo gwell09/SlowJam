@@ -18,11 +18,14 @@ title: 1_customer
 position: 81,-580
 tags:
 ---
+<<set $day to 1>>
+<<Fade @ black>>
+Day {$day}
+<<FadeIn>>
  Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
-//CHIME
-
+<<PlayAudio @ bell, 0.5>>
 Dusty: Howdy, Dogmeat!
 Y/N: *sighs* Afternoon, Dusty. What can I do for ya?
 
@@ -191,6 +194,7 @@ Y/N: ...
 
 B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Y/N, and I will see you tomorrow! Goodnight!
 
+<<set $day to 2>>
 // END OF DAY 1
 ===
 
@@ -200,6 +204,9 @@ B00MER: Regardless, there are still duties to be done! Please restock the new sh
 title: IntroduceTinker
 position: 2937,1147
 ---
+<<Fade @ black>>
+Day {$day}
+<<FadeIn>>
 //How to describe physically?????
 //CHIIME
 
@@ -316,7 +323,7 @@ Tinker: Next time I visit I will be interested to learn a little more about huma
 //CHIME. Tinker leaves
 
 Y/N: Pff...reproductive experience my ass...robo-freak.
-
+<<set $day to 5>>
 //END OF DAY 4
 ===
 
@@ -827,6 +834,7 @@ Garbo: Until next time, friend!
 //Chime sound & fade out 
 
 //END OF DAY 2
+<<set $day to 3>>
 ===
 
 
@@ -941,6 +949,7 @@ Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 //CHIME
 
 //END OF DAY 7
+<<set $day to 8>>
 ===
 title: EngineerIntro
 position: 2906,227
@@ -1251,6 +1260,7 @@ position: 2043,1772
 //CHIME
 
 //END OF DAY 3
+<<set $day to 4>>
 ===
 title: 010010Interaction1
 position: 5651,-430
@@ -1657,7 +1667,7 @@ You open your mouth to question this random string of sentences when-
 
 //engineer convo starts
 <<jump EngineerInteraction1>>
-
+<<set $day to 7>>
 //END OF DAY 6
 ===
 

@@ -6,24 +6,40 @@ public class ItemBehavior : MonoBehaviour
 {
     public Item item;
     public GameObject itemPrefab;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private ClickableSprite clickable;
+    private CursorFollower follower;
 
+    private void Start()
+    {
+        follower = GetComponent<CursorFollower>();
+        clickable = GetComponent<ClickableSprite>();
+    }
     public void SpawnAtInit()
     {
        GameObject g = Instantiate(itemPrefab,transform.position,Quaternion.identity);
        ItemBehavior i = g.GetComponent<ItemBehavior>();
        i.item = item;
        g.name = item.ToString();
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.GetComponent<ItemChecker>()!= null)
+        {
+            ItemChecker checker = collision.GetComponent<ItemChecker>();
+            if (clickable.interactable && !clickable.isCursorDown)
+            {
+                if (checker.ContainsCorrectKey(item))
+                {
+                    clickable.interactable = false;
+                    clickable.enabled = false;
+                    this.enabled = false;
+                    follower.shouldFollowCursor = false;
+                    checker.CheckForCompletion();
+                }
+            }
+        }
     }
 }
 public enum Item
