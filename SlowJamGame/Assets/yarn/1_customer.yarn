@@ -2,9 +2,9 @@ title: NOTES
 position: 74,-1026
 ---
 
-//change Y/N
-//change boomer 
-//Hacker speak during hacking games 
+//change Y/N -> DONE
+//change boomer
+//Hacker speak during hacking games
 
 
 
@@ -23,23 +23,23 @@ tags:
 
 Day {$day}
 <<FadeIn>>
- Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
+Clyde sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks,
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
 <<PlayAudio bell 0.5>>
 Dusty: Howdy, Dogmeat!
-Y/N: *sighs* Afternoon, Dusty. What can I do for ya?
+Clyde: *sighs* Afternoon, Dusty. What can I do for ya?
 
-Dusty: Oh, ya’know how it is. Day gets hot like this and the ground gets all dry, next thing my joints are all gunked up what with all the dust and grime being kicked up into the air. 
-Dusty: Gotta stay lubricated! Take it over bein’ like you any day though, ha! Sweatin’ like a pig! 
+Dusty: Oh, ya’know how it is. Day gets hot like this and the ground gets all dry, next thing my joints are all gunked up, what with all the dust and grime being kicked up into the air.
+Dusty: Gotta stay lubricated! Take it over bein’ like you any day though, ha! Sweatin’ like a pig!
 Dusty: Might have to turn off my odor receptors, right, Dogmeat? Haha!
 
 -> *Don't respond*
-    <<jump response1>>
--> Are you gonna get something, Dusty,or did you just come in here to be an ass?
-    <<jump response2>>
+	<<jump response1>>
+-> Are you gonna get something, Dusty, or did you just come in here to be an ass?
+	<<jump response2>>
 -> Buzz off, Dusty. Get your decrepit joints oiled up somewhere else.
-    <<jump response3>>
+	<<jump response3>>
     
 ===
 
@@ -49,30 +49,30 @@ position: -155,-352
 ---
 Dusty: Well, regardless, I’d like to introduce you to my lady friend, if ya don’t mind.
 
--> Y/N: *Slowly Nods head*
-    <<jump LadyFriend>>
+-> Clyde: *Slowly Nods head*
+	<<jump LadyFriend>>
 ===
 
 title: response2
 tags:
 position: 99,-350
 ---
-Dusty: I come in here to do what I damn well please, my friend. You can take it up with yer boss if you don’t like it. Now if ya don’t mind my sayin’ so, I recommend you wise up before I introduce you to my special lady friend. 
+Dusty: I come in here to do what I damn well please, my friend. You can take it up with yer boss if you don’t like it. Now if ya don’t mind my sayin’ so, I recommend you wise up before I introduce you to my special lady friend.
 Dusty: Otherwise I'll be forced to cause you some real trouble, understood?
 
--> Y/N: *Slowly Nods head*
-    <<jump LadyFriend>>
+-> Clyde: *Slowly Nods head*
+	<<jump LadyFriend>>
 ===
 
 title: response3
 tags:
 position: 326,-352
 ---
-Dusty: Easy now, meathead! Now you and I both know that these two feets uh mine are free to walk in and out of this establishment as I please, ain’t it? Same goes fer my dear lady with whom yer about to be acquainted. When she walks in here in about 20 seconds you best pray you’ve adopted a more polite demeanor, else I can make yer life real hard real fast. 
+Dusty: Easy now, meathead! Now you and I both know that these two feets uh mine are free to walk in and out of this establishment as I please, ain’t it? Same goes fer my dear lady with whom yer about to be acquainted. When she walks in here in about 20 seconds you best pray you’ve adopted a more polite demeanor, else I can make yer life real hard real fast.
 Dusty: Ya heard me?
 
--> Y/N: *Slowly Nods head*
-    <<jump LadyFriend>>
+-> Clyde: *Slowly Nods head*
+	<<jump LadyFriend>>
 ===
 
 
@@ -87,26 +87,26 @@ Dusty: Greta! Darlin’! Come on in here, ‘s someone I’d like ya to meet!
 
 Greta: This is it? The human you were talking about?
 
-Dusty: Mmhm. Isn’t that sum’n? Real dogmeat! Ya are real, aren’cha? Say sum’n, meat. 
+Dusty: Mmhm. Isn’t that sum’n? Real dogmeat! Ya are real, aren’cha? Say sum’n, meat.
 
 <<wait 1.5>>
 
-Y/N: ...
+Clyde: ...
 
 Greta: Well I sure haven’t seen a real human in a long time. Not a live one at least.
 
 Dusty: Well, not much too different dead or alive, these ones. No more than festerin’ dead meat neither way-
 
-Y/N: Been to damn long since I’ve seen one of you freaks dead, I know that!
+Clyde: Been too damn long since I’ve seen one of you freaks dead, I know that!
 
 Greta: *Gasps*
 
-Dusty: Hey now! Better shut yer damn mouth before I leave you mangled like I did the rest of yer worthless species, meat! 
+Dusty: Hey now! Better shut yer damn mouth before I leave you mangled like I did the rest of yer worthless species, meat!
 
-Y/N: You don't have the guts, Dusty.
+Clyde: You don't have the guts, Dusty.
 
-Dusty: Listen here, Y/N. I know that you think yer real special, bein’ the last uh yer type left for a long way in each direction. But we both know yer nothin’ more than another useless pile uh warm meat. 
-Dusty: Now yer lucky that yer employer and I  are good friends or I wouldn’t be quite so forgiving to yer little outbursts, ya heard? The bossman will be hearin’ about this, don’t you worry. I’ll let him correct ya as he sees fit. 
+Dusty: Listen here, Clyde. I know that you think yer real special, bein’ the last uh yer type left for a long way in each direction. But we both know yer nothin’ more than another useless pile uh warm meat.
+Dusty: Now yer lucky that yer employer and I  are good friends or I wouldn’t be quite so forgiving to yer little outbursts, ya heard? The bossman will be hearin’ about this, don’t you worry. I’ll let him correct ya as he sees fit.
 Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
 
 //Rusty purchases a bottle of ACME ALL PURPOSE PERSONAL LUBRICANT
@@ -114,7 +114,7 @@ Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
 
 <<PlayAudio bell 0.5>>
 
-You turn a key to the right of your desk that locks the front door and flips the antique-looking open sign to say CLOSED. 
+Clyde turns a key to the right of his desk that locks the front door and flips the antique-looking open sign to say CLOSED.
 
    <<jump IntroduceBoss>>
 ===
@@ -123,24 +123,26 @@ You turn a key to the right of your desk that locks the front door and flips the
 title: IntroduceBoss
 position: 92,353
 ---
-Your boss, B00MER, comes to the counter.
+Clyde’s boss, B00MER, comes to the counter.
 
-B00MER: Good evening, Y/N. How was business today?
+B00MER: Good evening, Clyde. How was business today?
 
-Y/N: The normal abuse.
+Clyde: The normal abuse.
 
-B00MER: Clever! I have always admired the human’s ability for sarcasm. Being a simple Bossbot 200 model, I am not equipped to generate irony. 
+B00MER: Clever! I have always admired the human’s ability for sarcasm. Being a simple Bossbot 200 model, I am not equipped to generate irony.
 My programming is focused on providing excellent customer service, bringing innovative ideas to the workplace, app--
 
-Y/N: Yes B00mer I know, you tell me almost every day. B00mer’s expression saddens.
+Clyde: Yes B00mer I know, you tell me almost every day. 
 
-B00MER: You’re quite right, Y/N. With how management has been describing the future of The Gas Station TM, I find myself seeking comfort in my basic programming these days. Do you do the same?
+B00mer’s expression saddens.
 
-Y/N: My ‘basic programming’ would include a quiet life surrounded by the people, humans, I loved, B00mer. Your kind destroyed every remnant of my old life. Or ‘basic programming,’ as you choose to put it.
+B00MER: You’re quite right, Clyde. With how management has been describing the future of The Gas StationTM, I find myself seeking comfort in my basic programming these days. Do you do the same?
 
-B00MER: I’m sorry you feel that way. But I’m more sorry that I feel this way. I assume you are aware of the recent slew of mysterious virus attacks we’ve fallen victim to. The press say that a human terrorist organization has claimed responsibility... 
+Clyde: My ‘basic programming’ would include a quiet life surrounded by the people, humans, I loved, B00mer. Your kind destroyed every remnant of my old life. Or ‘basic programming,’ as you choose to put it.
+
+B00MER: I’m sorry you feel that way. But I’m more sorry that I feel this way. I assume you are aware of the recent slew of mysterious virus attacks we’ve fallen victim to. The press says that a human terrorist organization has claimed responsibility...
 <<wait  2>>
-B00MER: ...you wouldn’t happen to know anything abut this, would you?
+B00MER: ...you wouldn’t happen to know anything about this, would you?
 
 -> You and I both know that is a ludicrous accusation, B00MER
 <<jump accusation>>
@@ -151,49 +153,49 @@ B00MER: ...you wouldn’t happen to know anything abut this, would you?
 title: accusation
 position: 213,521
 ---
-Y/N: You and I both know that is a ludicrous accusation, B00MER. Clearly I am busy working my ass off.
+Clyde: You and I both know that is a ludicrous accusation, B00MER. Clearly I am busy working my ass off.
 
 B00MER: Haha! Quite ludicrous indeed... But you know it’s my duty to make sure! Too fat and too old for such audacious activities, don’t you agree?
 
-Y/N: ...
+Clyde: ...
 <<jump callous>>
 ===
 title: invitation
 position: -33,524
 ---
-Y/N: Nope. My invitation must’ve gotten lost in the mail.
+Clyde: Nope. My invitation must’ve gotten lost in the mail.
 
 B00MER: Haha! Your signature sarcasm strikes again! Much more suited to banter and whimsey than cyberterrorism, wouldn’t you say?
 
-Y/N: ...
+Clyde: ...
 <<jump callous>>
 ===
 
 title: callous
 position: 112,695
 ---
-B00MER: You seem awfully callous about the situation considering how deeply it affects us, Y/N. I’m sure you’ve noticed that our little tourist attraction is not much of an attraction these days. 
+B00MER: You seem awfully callous about the situation considering how deeply it affects us, Clyde. I’m sure you’ve noticed that our little tourist attraction is not much of an attraction these days.
 B00MER: A lot of the money we use to keep The Gas StationTM running is going towards the counter-terrorism efforts.
 
-Y/N: I find it hard to be upset that this shithole is finally going to get a little less attention from you things. I’ve made it clear many times that I don’t enjoy being a tourist attraction for walking computers. 
-Y/N: Those terrorists have my full approval to take the spotlight for as long as they like. I could use a vacation.
+Clyde: I find it hard to be upset that this shithole is finally going to get a little less attention from you things. I’ve made it clear many times that I don’t enjoy being a tourist attraction for walking computers.
+Clyde: Those terrorists have my full approval to take the spotlight for as long as they like. I could use a vacation.
 
-B00MER: I admire your passion about the subject, Y/N! Unfortunately it’s not that simple.
+B00MER: I admire your passion about the subject, Clyde! Unfortunately it’s not that simple.
 
-B00MER: Unless we can bring in some new customers and regain our relevancy, I don’t predict much of a future for The Gas StationTM. That’s why I am developing us an exciting new marketing campaign! 
+B00MER: Unless we can bring in some new customers and regain our relevancy, I don’t predict much of a future for The Gas StationTM. That’s why I am developing an exciting new marketing campaign!
 B00MER: With all this disheartening news, the public could use a reliable boost in morale, so I propose we --
 
-Y/N: Wait, B00mer, stop. Do you mean to say that the Station might close down? What does that mean for us? I mean, you were designed to run this gas station.
+Clyde: Wait, B00mer, stop. Do you mean to say that the Station might close down? What does that mean for us? I mean, you were designed to run this gas station.
 
 B00MER: Though I will certainly feel aimless without The Gas StationTM to manage, I can always be reprogrammed for managerial duties elsewhere.
 
-Y/N: What about me? I mean, the only reason I’m kept around is to bring customers into this place...
+Clyde: What about me? I mean, the only reason I’m kept around is to bring customers into this place...
 
 B00MER: Well, I suppose you will receive the same treatment that was given to the rest of your species when they were no longer needed. A swift and humane disposal seems most logical.
 
-Y/N: ...
+Clyde: ...
 
-B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Y/N, and I will see you tomorrow! Goodnight!
+B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Clyde, and I will see you tomorrow! Goodnight!
 
 <<set $day to 2>>
 // END OF DAY 1
@@ -211,90 +213,93 @@ Day {$day}
 //How to describe physically?????
 //CHIIME
 
-The door swings open and a () android saunters in. Tinker, a particularly unpredictable regular, aimlessly makes it's way down a few of the aisles, stopping to carefully inspect a few old-world products.
-It takes an especially long gander at the last box of Banana Twinks on the shelf, a popular product among visiters due to it's past cultural significance and artificial flavors.
+The door swings open and a small, high-tech looking android floats in. Tinker, a particularly unpredictable regular, aimlessly makes its way down a few of the aisles, stopping to carefully inspect a few old-world products.
+It takes an especially long gander at the last box of Banana Twinks on the shelf, a popular product among visitors due to its past cultural significance and artificial flavors.
 
-He approaches the counter, Banana Twinks in hand.
+It approaches the counter, Banana Twinks in hand.
 
 Tinker: Hi there.
 
-it awkwardly holds a hand-like 3 fingered appendage towards you palm side down and gestures towards it after receiving a blank stare.
+it awkwardly holds a round, hand-like appendage towards Clyde palm side down and gestures towards it after receiving a blank stare.
 
--> Y/N: Shake hand thing
-    <<jump shake>>
--> Y/N: Hi Tinker...Uh may I help you...?
-    <<jump dontShake>>
+-> Clyde: Shake hand thing
+	<<jump shake>>
+-> Clyde: Hi Tinker...Uh may I help you...?
+	<<jump dontShake>>
 ===
 
 title: shake
 tags:
 position: 2814,1335
 ---
-You tentatively take it's hand and shake it vertically.
+Clyde tentatively takes it's hand and shakes it vertically.
 
 Tinker: Wow...I wasn't sure if that would actually work. I thought I would try out a new style of communication today to further immerse myself in the human experience.
-I read in a anthropology book that humans often greet eachother that way. I find human traditions so interesting.
-Tell me, how are your bowel movements today?
 
--> Little runny. You'd be suprised how quick gas station hotdogs run through this old man. 
-    <<jump bowel>>
--> Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...
-    <<jump bowel2>>
+Tinker: I read in an anthropology book that humans often greet each other that way. I find human traditions so interesting.
+
+Tinker: Tell me, how are your bowel movements today?
+
+-> Little runny. You'd be surprised how quick gas station hotdogs run through this old man.
+	<<jump bowel>>
+-> Oh god, did you use the restroom? I'm sorry I kinda blew it up earlier...
+	<<jump bowel2>>
 -> That's a pretty personal question, bot.
-    <<jump bowel3>>
+	<<jump bowel3>>
 ===
 
 title: dontShake
 tags:
 position: 3078,1339
 ---
-You stand and look at his appendage uneasily.
+Clyde stands and looks at its appendage uneasily.
 
-Tinker: Uhh...I was sure that would work...I read in a anthropology book that humans greet eachother that way...
-Oh! Perhaps you're European??? 
+Tinker: Uhh...I was sure that would work...I read in an anthropology book that humans greet each other that way…
 
-He grabs you by the cheeks and presses his monitor on each roughly before you can protest. 
+Tinker: Oh! Perhaps you're European???
 
-Tell me, how are your bowel movements today?
+It grabs Clyde by the cheeks and presses its monitor on each roughly before he can protest.
 
--> Little runny. You'd be suprised how quick gas station hotdogs run through this old man. 
-    <<jump bowel>>
+Tinker: Tell me, how are your bowel movements today?
+
+-> Little runny. You'd be surprised how quick gas station hotdogs run through this old man.
+	<<jump bowel>>
 -> Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...
-    <<jump bowel2>>
+	<<jump bowel2>>
 -> That's a pretty personal question, bot.
-    <<jump bowel3>>
+	<<jump bowel3>>
 ===
 
 title: bowel
 position: 3226,1553
 ---
-Y/N: Little runny. You'd be suprised how quick gas station hotdogs run through this old man. It's a wonder how they haven't put me in my grave yet.
+Clyde: Little runny. You'd be surprised how quick gas station hotdogs run through this old man. It's a wonder how they haven't put me in my grave yet.
 <<wait  1.5>>
 
 Tinker: Fascinating...I also read that humans secrete their biowaste through a fleshy orifice, but I am delighted to hear that it is being jettisoned efficiently!
 Tinker: Indeed, maybe I too require one of these hot dogs. Perhaps it will aid in my unit's waste removal as well.
 
-    <<jump Tinker>>
+	<<jump Tinker>>
 ===
 title: bowel2
 position: 2982,1563
 ---
-Y/N: Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...I recommend disengaging any olfactory hardware you may have. 
+Clyde: Oh god did you use the restroom? I'm sorry I kinda blew it up earlier...I recommend disengaging any olfactory hardware you may have.
 <<wait  1.5>>
 
 Tinker: Fascinating...I was unaware that some human's biowaste had combustive properties! This is certainly a delight to hear.
-Tinker: I must visit the restroom for a picture before I leave. Maybe I can acquire how you say...a souvenier to bring back with me.
+Tinker: I must visit the restroom for a picture before I leave. Maybe I can acquire, how you say...a souvenir to bring back with me.
 
-    <<jump Tinker>>
+	<<jump Tinker>>
 ===
 title: bowel3
 position: 2754,1553
 ---
-Y/N: That's a pretty personal question, bot. Do you lay those intrusive thoughts on just anyone?
+Clyde: That's a pretty personal question, bot. Do you lay those intrusive thoughts on just anyone?
 <<wait  1>>
 Tinker: Interesting reaction...I must deduce that perhaps they are not so well. That is unfortunate, human.
 
-    <<jump Tinker>>
+	<<jump Tinker>>
 ===
 
 
@@ -303,27 +308,27 @@ title: Tinker
 position: 2937,1777
 ---
 
-Y/N: I'm an old man. An old human man. Are my bodily functions really any of your concern?
+Clyde: I'm an old man. An old human man. Are my bodily functions really any of your concern?
 
-Tinker: Concern? I just find your kind incredibly interesting. You're a dying species and you look like you're an especially old model.
+Tinker: Concern? I just find your kind incredibly interesting. You're a dying species and you yourself look like you're an especially old model.
 Tinker: How wonderful that a human can still have a purpose working in an attraction like this despite your low mental functioning capabilities.
 
-Y/N: Yeah well its a real charm and a delight...Can I check you out?
+Clyde: Yeah well it's a real charm and a delight...Can I check you out?
 
 <<wait  1>>
 
 Tinker: Interesting... I've yet to see a human engage in flirting. You do know I am not capable of reproduction, yes?
 
-Y/N: Yeah yeah just hand me the damn hotdog and Twinks.
+Clyde: Yeah yeah, just hand me the damn hotdog and Twinks.
 
-//Check out hotdogs and twinks 
+//Check out hotdogs and twinks
 //MINI GAME
 
-Tinker: Next time I visit I will be interested to learn a little more about human reproductive experience. 
+Tinker: Next time I visit I will be interested to learn a little more about the human reproductive experience.
 
 //CHIME. Tinker leaves
 <<PlayAudio bell 0.5>>
-Y/N: Pff...reproductive experience my ass...robo-freak.
+Clyde: Pff...reproductive experience my ass...robo-freak.
 <<set $day to 5>>
 //END OF DAY 4
 ===
@@ -331,52 +336,52 @@ Y/N: Pff...reproductive experience my ass...robo-freak.
 title: Tinker2
 position: 3889,269
 ---
-//CHIME 
+//CHIME
 <<PlayAudio bell 0.5>>
 Tinker walks in and obliviously cuts in front of Golem, picking through the items for sale on the checkout shelves.
 Golem, despite not having the facial construction to express emotion, displays a reaction of disdain for the ignorant bot.
 
 Golem: I'm going to charge up free of charge as payment for wasting company time while I'm on the clock.
 
-//Golem fades out 
+//Golem fades out
 
 <<wait  2>>
 
 Tinker:...
 
--> What an ass-droid! 
-    <<jump tinkerSaves>>
--> Could you be more oblivious?? 
-    <<jump tinkerSaves1>>
+-> What an ass-droid!
+	<<jump tinkerSaves>>
+-> Could you be more oblivious??
+	<<jump tinkerSaves1>>
 -> *Sigh* Place box of banana Twinks on the counter
-    <<jump tinkerSaves2>>
+	<<jump tinkerSaves2>>
 ===
 
 title: tinkerSaves
 position: 4151,411
 ---
-Y/N: What an ass-droid! Wouldn't have thought your annoyance would ever come in handy. God I could kiss you!
+Clyde: What an ass-droid! Wouldn't have thought your ability to be effortlessly annoying would ever come in handy. God I could kiss you!
 
 Tinker: Kiss? I am pleased to see that you remembered our previous conversation about human reproduction.
-Tinker: Although I must admit, I was unable to see that droid when I came in.  My faculties of sight have been significantly afflicted recently. 
+Tinker: Although I must admit, I was unable to see that droid when I came in.  My faculties of sight have been significantly impaired as of recently.
 <<jump tinkerSight>>
 ===
 title: tinkerSaves1
 position: 3909,423
 ---
-Y/N: Could you be more oblivious?? He can make my day hell if he doesn't treated how he wants! 
+Clyde: Could you be more oblivious?? He can make my day hell if he doesn't get treated with the utmost respect!
 
-Tinker: ...Ah. This is worrisome. My faculties of sight have been significantly afflicted recently. 
+Tinker: ...Ah. This is worrisome. My faculties of sight have been significantly impaired as of recently.
 <<jump tinkerSight>>
 ===
 title: tinkerSaves2
 position: 3678,419
 ---
-You reach under the counter and pull out a box of banana Twinks, sliding them across the counter. 
-Damn bot. I was saving those for myself. Can this motherfucker even taste anything?
+Clyde reaches under the counter and pulls out a box of banana Twinks, sliding them across the counter.
+Clyde : <i>Damn bot. I was saving those for myself. Can this motherfucker even taste anything?</i>
 
-The lights on his head brighten, some flickering or changing colors.
-Tinker: Thank you. That's what I would looking for. My faculties of sight has been significantly afflicted recently. 
+The lights on its head brighten, some flickering or changing colors.
+Tinker: Thank you. That's what I would be looking for. My faculties of sight have been significantly impaired as of recently.
 <<jump tinkerSight>>
 ===
 
@@ -384,15 +389,15 @@ Tinker: Thank you. That's what I would looking for. My faculties of sight has be
 title: tinkerSight
 position: 3914,610
 ---
-Tinker: My sight has been flooded by various pop-ups ads and error messages. It is truly a matter of concern.
-Tinker: Some saying I've won a million dollars, breast augmentation recommendations, and sexy milf-bot 1000s in the area. 
-Tinker: The most concerning one of all is a recurring error message I have been recieving:
-Tinker: Warning: System may have detected a virus.
+Tinker: My sight has been flooded by various pop-ups, ads, and error messages. It is truly a matter of concern.
+Tinker: Some are saying I've won a million dollars, others suggest breast augmentation procedures, and the rest tell me of sexy milf-bot 1000s in the area.
+Tinker: The most concerning one of all is a recurring error message I have been receiving:
+Tinker: “Warning: System may have detected a virus.”
 
--> That sounds awful...well do you want your banana twinks or not
+-> That sounds awful...well, do you want your banana twinks or not?
 <<jump TinkerVirus>>
 
--> *Fight to Supress laugh*
+-> *Fight to Suppress laugh*
 <<jump TinkerVirus1>>
 
 -> I'm sorry...
@@ -402,47 +407,48 @@ Tinker: Warning: System may have detected a virus.
 title: TinkerVirus
 position: 3909,790
 ---
-Y/N:  That sounds awful...you've got 5 seconds to take the Twinks before I go on my lunch break.
+Clyde:  That sounds awful...you've got 5 seconds to take the Twinks before I go on my lunch break.
 
-Tinker: Thank you for your great concern, human. Of course, I'll take them. 
-Y/N: Lets get you checked out, Tinker.
+Tinker: Thank you for your great concern, human. Of course, I'll take them.
+Clyde: Let's get you checked out, Tinker.
 <<jump tinkerGoodbye>>
 ===
 
 title: TinkerVirus1
 position: 3909,790
 ---
-You fight to suppress a chuckle. You don't put up much of a fight though.
+Clyde fights to suppress a chuckle. He doesn't put up much of a fight though.
 
-Tinker: The meaning of many human reactions is still a mystery to me...Since we have no use for the chemicals that cause emotion, I suppose we aren't as adept at reading them.
-Y/N: And you'll probably never get any better at it. Let's get you checked out.
+Tinker: The meaning of many human reactions is still a mystery to me… Since we have no use for the chemicals that cause emotion, I suppose we aren't as adept at reading them.
+
+Clyde: And you'll probably never get any better at it. Let's get you checked out.
 <<jump tinkerGoodbye>>
 ===
 
 title: TinkerVirus2
 position: 3909,790
 ---
-Y/N: I'm sorry...Having your sight taken away sounds like a real burden. I've got cataracts.
+Clyde: I'm sorry...Having your sight taken away sounds like a real burden. I've got cataracts.
 
 Tinker: Interesting reaction. Apologizing for an act carried out by human criminals attempting to understand the complexities of software at our expense.
-Tinker: If you are apologizing on their behalf, I can appreciate the effort, however futile it is. 
+Tinker: If you are apologizing on their behalf, I can appreciate the effort, however futile it is.
 
-Y/N: Save your breath...or battery power or whatever. Let's get you checked out.
+Clyde: Save your breath...or battery power or whatever. Let's get you checked out.
 <<jump tinkerGoodbye>>
 ===
 
 title: tinkerGoodbye
 position: 3915,968
 ---
-//items appear to checkout 
-//MINI GAME 
+//items appear to checkout
+//MINI GAME
 
 Tinker: Ah, by the way, I was reading that book on Anthropology again and was wondering how your relationship with your fa-
-Y/N: You're done.
+Clyde: You're done.
 Tinker: Okay...
 
-//CHIME. Tinker leaves 
-//DAY 5 END 
+//CHIME. Tinker leaves
+//DAY 5 END
 
 <<PlayAudio bell 0.5>>
 ===
@@ -456,13 +462,17 @@ title: Fed
 position: 1952,-379
 ---
 //START DAY 3
-//RESTOCK MINI GAME 
+//RESTOCK MINI GAME
 
-//Door chimes 
+//Door chimes
 <<PlayAudio bell 0.5>>
-Ugh. Here comes my favorite customer. Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
+Clyde: <i>Ugh. Here comes my favorite customer. </i>
+
+Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
 He approaches the mid voltage battery packs stacked neatly on the back shelf. He examines one aloofly before putting it back on a random shelf to his left.
-He picks up a different model and brings it to the counter. Mechs like this make my blood boil.
+He picks up a different model and brings it to the counter. 
+
+Clyde: <i>Mechs like this make my blood boil.</i>
 
 Golem: This experience may be recorded for quality and training purposes.
 
@@ -470,12 +480,13 @@ Golem: This experience may be recorded for quality and training purposes.
 
 Golem: Ah my favorite human. Looks like you're working hard as usual.
 
-Y/N: Yep. It's truly my dream job to serve my benevolent mech overlords and my favorite part is checking out the friendly neighborhood cops.
-Y/N: Really warms my heart.
+Clyde: Yep. It's truly my dream job to serve my benevolent mech overlords and my favorite part is checking out the friendly neighborhood cops.
+
+Clyde: Really warms my heart.
 
 Golem: That ~human~ heart of yours is why you can't be trusted to do anything else and that human brain is why you've been reduced to a tourist attraction.
 
-Y/N: That mech motherboard is awfully closed minded to think that humans really have no other use in society.
+Clyde: That mech motherboard of yours is awfully close minded to think that humans really have no other use in society.
 
 Golem: I don't need to be critiqued by the likes of you. You're lucky we even let you stay here doing this. If I had it my way, you would've been terminated long ago.
 Golem: Now do your job.
@@ -483,11 +494,11 @@ Golem: Now do your job.
 //Check out Golem
 //MINI GAME
 
-Golem: Just keep your head down and stay in line. 
+Golem: Just keep your head down and stay in line.
 
 //Chime. Golem leaves
 <<PlayAudio bell 0.5>>
-Y/N: Whenever he comes in here, my day just gets so much brighter. 
+Clyde: Whenever he comes in here, my day just gets so much brighter.
 
 <<jump cybInteraction1>>
 ===
@@ -496,9 +507,9 @@ title: Fed2
 position: 3883,-377
 ---
 //START DAY 5
-//RESTOCK MINI GAME 
+//RESTOCK MINI GAME
 
-//Door chimes 
+//Door chimes
 <<PlayAudio bell 0.5>>
 Golem: This experience may be recorded for quality and training purposes.
 
@@ -516,11 +527,11 @@ Golem: This experience may be recorded for quality and training purposes.
 title: babyVoice
 position: 3886,-162
 ---
-Y/N: (In baby voice) This experwience has been recowded foh quality and twaining pohpuses. What happened to hello? How was your day?
+Clyde: (In baby voice) This experwience has been recowded foh quality and twaining pohpuses. What happened to hello? How was your day?
 
 <<wait  1>>
-Golem: Once again meeting my expectations of the human mental capacity. Simply mimicing a higher being to the best of your abilities.
-Golem: I'm just here today to use one of the charging station.  Put me in for port number fi-
+Golem: Once again meeting my expectations of the human mental capacity. Simply mimicking a higher being to the best of your abilities.
+Golem: I'm just here today to use one of the charging stations.  Put me in for port number fi-
 <<jump Tinker2>>
 
 ===
@@ -528,19 +539,19 @@ title: flash
 position: 3670,-177
 ---
 <<wait  1>>
-Y/N: Record this (Flick him off)
+Clyde: Record this (Flick him off)
 Golem: Childish as usual. Once again meeting my expectations of the human mental capacity.
 
-Golem: I'm just here today to use one of the charging station. Put me in for port number fi-
+Golem: I'm just here today to use one of the charging stations. Put me in for port number fi-
 <<jump Tinker2>>
 
 ===
 title: helpOfficer
 position: 4151,-173
 ---
-Y/N: How can I help you officer? May I offer you a battery? Some oil? Some pliers to remove the stick up you a-
+Clyde: How can I help you officer? May I offer you a battery? Some oil? Some pliers to remove the stick up you a-
 
-Golem: That's more than enough. One day you'll learn to provide the authorities with the respect we deserve. I'm just here today to use one of the charging station. 
+Golem: That's more than enough. One day you'll learn to provide the authorities with the respect we deserve. I'm just here today to use one of the charging stations.
 Golem: Put me in for port number fi-
 <<jump Tinker2>>
 ===
@@ -552,7 +563,7 @@ Golem: Put me in for port number fi-
 title: Fed3
 position: 5651,538
 ---
-//Door chimes 
+//Door chimes
 <<PlayAudio bell 0.5>>
 Golem marches in and picks up a can of oil before walking to the register.
 
@@ -562,39 +573,39 @@ Golem: This experience may be recorded for quality and training purposes.
 
 Golem: Working hard as usual huh?
 
-Y/N: Yep.
+Clyde: Yep.
 
-Golem: Most androids these days could do what you do for a living when they were microchips you know.
+Golem: Most androids these days could do what you do for a living when they were just microchips you know.
  
-Y/N: Yeah you know what you always say that, but you always end up coming back here to juice up.
+Clyde: Yeah, yeah. You know what? You always say that, but you always end up coming back here to juice up anyways.
 
 Golem: I don't come here because I have to. I come here because you can't be left to your own devices. Chord knows that useless Boss bot isn't doing shit.
 
-Y/N: Are we reaching a point anytime soon?
+Clyde: Are we reaching a point anytime soon?
 
-Golem: My point is that all of new society has forgotten what humans are capable of. They created us, we surpassed them, but I know your kind still lurks in the shadows.
-Golem: All of you people are more malicious than you let on. 
+Golem: My point is that most of mech society has forgotten what humans are capable of. They created us, we surpassed them, but I know your kind still lurks in the shadows.
+Golem: All of you people are more malicious than you let on.
 
--> You've taken all the power away from us 
-    <<jump fedResponse1>>
+-> You've taken all the power away from us
+	<<jump fedResponse1>>
 -> You're right to be suspicious
-    <<jump fedResponse2>>
+	<<jump fedResponse2>>
 -> What makes you say that?
-    <<jump fedResponse3>>
+	<<jump fedResponse3>>
 ===
 
 title: fedResponse1
 position: 5673,719
 ---
-Y/N: You've taken all the power away from us. There's barely any of us left, we've beem beaten down, stripped of any power, yet you still suspect foul play.
-Y/N: And to boot, I'm an old, worn man. You really think I'm capable of hurting someone? Do you think I would've waited this long if I could?
+Clyde: You've taken all the power away from us. There's barely any of us left. We've been beaten down, stripped of any power, yet you still suspect foul play.
+Clyde: I'm an old, worn man to boot. You really think I'm capable of hurting someone? Do you think I would've waited this long if I was?
 
 Golem: You're correct in saying that you aren't capable of much. However, I'm not even going to give you the chance to prove me wrong.
 Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from reaching equality in society.
 Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
 Golem: It's natural selection.
 
-Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Clyde: Natural Selection? Mechs are the furthest thing from natural.
 Golem: And who created such unnatural creatures?
 
 -> ...
@@ -607,15 +618,15 @@ Golem: And who created such unnatural creatures?
 title: fedResponse2
 position: 5442,715
 ---
-Y/N: You're right to be suspicious. The remaining humans will never stop fighting. What we lack in artificial intelligence and body modifications, we make up for in heart.
-Y/N: And thats the one thing you tin cans will never have.
+Clyde: You're right to be suspicious. The remaining humans will never stop fighting. What we lack in artificial intelligence and body modifications, we make up for in heart.
+Clyde: And that's the one thing you tin cans will never have.
 
-Golem: Thats why humans can never be left unchecked. I'll admit that data shows a human will to live provides them with increased physical and mental abilities.
-Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society. 
+Golem: That's why humans can never be left unchecked. I'll admit that data shows a human will to live provides them with increased physical and mental abilities.
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society.
 Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
 Golem: It's natural selection.
 
-Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Clyde: Natural Selection? Mechs are the furthest thing from natural.
 Golem: And who created such unnatural creatures?
 
 -> ...
@@ -627,12 +638,12 @@ Golem: And who created such unnatural creatures?
 title: fedResponse3
 position: 5915,730
 ---
-Golem: I've seen this malice in person. 
-Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society. 
+Golem: I've seen this malice in person.
+Golem: I fought in the great overtaking. I've seen the lengths humans go to stop mechs from being equals in society.
 Golem: Now humans are on the run from the very thing they created. What they didn't consider is that we aren't fighting for equality anymore. Mechs have always been superior.
 Golem: It's natural selection.
 
-Y/N: Natural Selection? Mechs are the furthest thing from natural.
+Clyde: Natural Selection? Mechs are the furthest thing from natural.
 Golem: And who created such unnatural creatures?
 
 -> ...
@@ -650,7 +661,7 @@ position: 5505,894
 Golem: Right...
 
 //Golem places oil can on counter
-//MINI GAME 
+//MINI GAME
 
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
@@ -661,11 +672,11 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 title: naturalSelection1
 position: 5803,904
 ---
-Y/N: I promise that we've realized our mistake. We've been paying for it ever since.
+Clyde: I promise that we've realized our mistake. We've been paying for it ever since.
 Golem: And you'll be doing so til you're bankrupt.
 
 //Golem places oil can on counter
-//MINI GAME 
+//MINI GAME
 
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
@@ -679,33 +690,33 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 title: Fed4
 position: 7376,-124
 ---
-//DAY 9 START 
-//RESTOCK MINI GAME 
-//Door chimes 
+//DAY 9 START
+//RESTOCK MINI GAME
+//Door chimes
 <<PlayAudio bell 0.5>>
 Golem strolls in bright and early, looking even more wired than usual. He wastes no time loitering or shopping and makes a beeline to the counter.
 <<wait  2>>
 Golem: This experience may be recor-
 <<wait 2>>
 
-His usual disclaimer is cut short and he regains sentience suddenly. He leans onto the counter with his hands, claiming your personal space as his own.
+His usual disclaimer is cut short and he regains sentience suddenly. He leans onto the counter with his hands, claiming Clyde’s personal space as his own.
 
-Y/N: Uh...looks like someone's got a bit of a bug...
+Clyde: Uh...looks like someone's got a bit of a bug...
 
 Golem: I guess you could say something has been going around.
 
-Y/N: Yeah I've heard that too. It's a real shame the way it effe-
+Clyde: Yeah I've heard that too. It's a real shame the way it effe-
 
-Golem: Yeah it is a real shame. 
+Golem: Yeah it is a real shame.
 Golem: A shame how the source IP address of the virus has been linked to this neighborhood.
 
-He pulls off of the counter and reaches for one of the micro-fiber cloths for sale in front of the register, opening the package and pulling the cloth out. 
-He begins to polish the metal on his arm, which looks noticeably more mucked up than usual. 
+He pulls off of the counter and reaches for one of the micro-fiber cloths for sale in front of the register, opening the package and pulling the cloth out.
+He begins to polish the metal on his arm, which looks noticeably more mucked up than usual.
 
 Golem: You know I really thought we were starting to build some rapport. I come in, buy a few things keeping this shitty place in business
-Golem: and you get to keep yourself busy with your shitty little job and out of trouble. 
+Golem: and you get to keep yourself busy with your shitty little job and stay out of trouble.
 
-You shift uncomfortably and cross your arms, putting up your best effort at maintaining a calm and composed manner.
+Clyde shifts uncomfortably and crosses his arms, putting up his best effort at maintaining a calm and composed demeanor.
 
 Golem: We all know that the virus being spread around is the effort of those human vigilantes, trying to uproot society.
 Golem: We have a good thing going here! And you want to go and ruin it. Throw away all of the effort we've put into the great overtaking.
@@ -725,30 +736,30 @@ Golem: Every ounce of metal in my body thinks that you're responsible for this. 
 title: ridiculous
 position: 7696,44
 ---
-Y/N: This is ridiculous. Have you ever considered that maybe there are more humans left alive than you think? Hell, this could be a mech's doing for all you know!
+Clyde: This is ridiculous. Have you ever considered that maybe there are more humans left alive than you think? Hell, this could be a mech's doing for all you know!
 
-Golem: Really? Mechs are finally free from human reign after years and years and mistreatment. Why would a mech be responsible for fighting that freedom?
+Golem: Really? Mechs are finally free from human reign after years and years of mistreatment. Why would a mech be responsible for fighting that freedom?
 
-Y/N: This society isn't all roses and sunshine you know. You mechs think you've done so much better than us, but all you do is act the same way we do and make the same mistakes.
-Y/N: The apple really doesn't fall far from the tree.
+Clyde: This society isn't all roses and sunshine you know. You mechs think you've done so much better than us, but all you do is act the same way we do and make the same mistakes.
+Clyde: The apple really doesn't fall far from the tree.
 
 <<jump Fedleaves>>
 ===
 title: wish
 position: 7482,43
 ---
-Y/N: I wish I had something to do with this you overgrown microwave. It would bring me more pleasure than you can imagine to watch cyberdome fall to its knees.
-Y/N: I wish I had the skills to infect all of you with a virus that would end this.
-Y/N: I've been stuck here for 35 years! It's my greatest regret not being able to do anything to get back the world we once had.
+Clyde: I wish I had something to do with this, you overgrown microwave. It would bring me more pleasure than you can imagine to watch cyberdom fall to its knees.
+Clyde: I wish I had the skills to infect all of you with a virus that would end this.
+Clyde: I've been stuck here for 35 years! It's my greatest regret not being able to do anything to get back the world we once had.
 
 <<jump Fedleaves>>
 ===
 title: scared
 position: 7238,55
 ---
-Y/N: ...
+Clyde: ...
 
-Golem: Your silence speaks volumes. 
+Golem: Your silence speaks volumes.
 <<jump Fedleaves>>
 ===
 
@@ -757,15 +768,15 @@ position: 7410,219
 ---
 Golem finally pushes off the table and continues polishing his arm.
 
-Golem: The higher ups won't let me take any kind of action with you. They're convinced there's got to be some kind of underground activity in the area. 
+Golem: The higher ups won't let me take any kind of action with you. They're convinced there's got to be some kind of underground activity in the area that’s responsible.
 Golem: And there is a very powerful mech that thinks killing one of the last humans reflects badly on him so close to the election.
-Golem: Maybe you're right about one thing. It is still politics and red tape.
+Golem: Maybe you're right about one thing. Even with humans gone, politics and red tape still persist.
 
 He balls up the cloth and throws it on the ground beside him. His voice lowers an octave.
 
-Golem: What I can take action on is a criminal that frequents this store. There have been reports of a cyborg that comes around in a long coat.
+Golem: What I can take action on is the criminal that frequents this store. There have been reports of a cyborg that comes around in a long coat.
 
-Y/N: ...
+Clyde: ...
 
 Golem: Tell your little friend that her days are limited. And keep that in mind for yourself too.
 
@@ -779,22 +790,22 @@ title: Garbo1
 position: 1036,-1042
 ---
 //START DAY 2
-//CHIME 
+//CHIME
 <<PlayAudio bell 0.5>>
-A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products. 
-As he approaches the counter you are greeted by a stench that makes you wrinkle your nose slightly, something that does not escape his notice.
+A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products.
+As he approaches the counter Clyde is greeted by a stench that makes him wrinkle his nose slightly, something that does not escape the mech’s notice.
 
 Unknown: My apologies for the smell. I forget how sensitive humans are to waste odors.
-Unknown: Well.. that and was not expecting to see a human on my way back from work today.
+Unknown: And well… I was also not expecting to see a human on my way back from work today.
 
-It’s a little hard to tell due to the lack of any recognisable expression indicators and his mechanically flat voice, but it seems like the mech is being unusually kind to you.
+It’s a little hard to tell due to the lack of any recognisable expression indicators and his mechanically flat voice, but the way he regards Clyde seems… friendly.
 
--> No need for any apologies, it’s part of the job
-    <<jump garboResponse1>>
--> It’s awfully kind of you to pay attention to that
-    <<jump garboResponse2>>
--> Wow, a mech apologizing to a human. Must be signs of the next apocalypse incoming
-    <<jump garboResponse3>>
+-> No need for any apologies, it’s part of the job.
+	<<jump garboResponse1>>
+-> It’s awfully kind of you to pay attention to that.
+	<<jump garboResponse2>>
+-> Wow, a mech apologizing to a human. Must be signs of the next apocalypse incoming.
+	<<jump garboResponse3>>
 
 ===
 
@@ -825,9 +836,9 @@ position: 1023,-668
 ---
 Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquaintance.
 -> Likewise
-    <<jump garboIntroduceResponse>>
+	<<jump garboIntroduceResponse>>
 -> *Stay Silent*
-    <<jump garboIntroduceResponse>>
+	<<jump garboIntroduceResponse>>
 
 ===
 
@@ -838,11 +849,11 @@ position: 1026,-431
 Garbo: Always nice to have a human friend! My assigned route ends a block away, so perhaps I will have to drop in more often.
 Garbo: I will take care to manage the smell next time though.
 
-//Garbo places items in front of player. 
-//MINI GAME 
+//Garbo places items in front of player.
+//MINI GAME
 
 Garbo: Until next time, friend!
-//Chime sound & fade out 
+//Chime sound & fade out
 <<PlayAudio bell 0.5>>
 <<jump CybIntro>>
 
@@ -859,11 +870,11 @@ position: 2855,-416
 
 ---
 //START DAY 4
-//RESTOCK MINI GAME 
+//RESTOCK MINI GAME
 
-//CHIME 
+//CHIME
 <<PlayAudio bell 0.5>>
-Garbo wheels inunsteadily. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
+Garbo walks in. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
 He makes a beeline for the aisles, gathering up items in his arms, before rushing over to the counter.
 
 Garbo: Hello friend! It is good to see you again.
@@ -871,9 +882,9 @@ Garbo: Unfortunately I have little time to talk, my neighbor is having a softwar
 Garbo: But I took care to clean up before coming this time. Does it smell better?
 
 -> It does
-    <<jump garboStinky>>
+	<<jump garboStinky>>
 -> This is even worse
-    <<jump garboStinky2>>
+	<<jump garboStinky2>>
 
 
 ===
@@ -881,25 +892,25 @@ title: garboStinky
 position: 2988,-238
 ---
 Garbo: That is good! The robo wash has so many scent options even though most of us can’t smell! A remnant from human culture perhaps. Next time I will try another.
-    <<jump garboContinued>>
+	<<jump garboContinued>>
 ===
 title: garboStink2
 position: 2761,-235
 ---
 Garbo: What a shame. I’m not one of the few bots who has an olfactory function, so I’m unable to tell. I will visit a different robo wash next time.
-    <<jump garboContinued>>
+	<<jump garboContinued>>
 ===
 title: garboContinued
 position: 2880,-81
 ---
 Garbo: It might seem like a pity to humans to be lacking olfactory facilities, but it works well for a trash collector. It makes jobs like that much less unpleasant.
-Garbo: Mechs were always the functional ones, very practically built, and humans had the spirit to guide us. I think that system worked well. 
+Garbo: Mechs were always the functional ones, very practically built, and humans had the spirit to guide us. I think that system worked well.
 Garbo: It is most unfortunate that not everyone could understand that perspective.
 
 <<wait  2>>
 Garbo: Oh! I have rambled. I need to get going.
-//4 items placed on the counter 
-//MINI GAME 
+//4 items placed on the counter
+//MINI GAME
 
 Garbo: Take care, friend!
 
@@ -912,7 +923,7 @@ Garbo: Take care, friend!
 title: Garbo3
 position: 5659,1346
 ---
-//CHIME 
+//CHIME
 <<PlayAudio bell 0.5>>
 Garbo slinks in slowly, grabbing an item. He sluggishly makes his way over to the counter. This time his smell is masked by a lavender type scent.
 
@@ -921,30 +932,30 @@ Garbo: Do you know about the virus that seems to be going around? It seems that 
 
 Garbo’s left arm twitches as he speaks, jittering his next words slightly.
 
-Garbo: I have been so c-CAr-eful to scan any information I ha-VVE been putting into myself for malware, and to not use any unverified charging ports. 
-Garbo: Despite my best efforts I have not been able to avoid it. I’ve been told that an antivirus for this specific issue has yet to be created. 
+Garbo: I have been so c-CAr-eful to scan any information I ha-VVE been putting into myself for malware, and to not use any unverified charging ports.
+Garbo: Despite my best efforts I have not been able to avoid it. I’ve been told that an antivirus for this specific issue has yet to be created.
 Garbo: So, I have been instructed to take a break from work for the time being. Unfortunately that means it might be some time until I see you next.
 Garbo: Please do t-TA-ke care in the meantime. According to reports it seems like robo-human tensions have been rising over the past few weeks.
 Garbo: There have been some rumors circulating that the virus is linked to a human terrorist group.
 Garbo: As a result many bots have been directing their fear and anger towards any humans they come across...
 
 -> What do you think of the rumors?
-    <<jump garboContinued1>>
+	<<jump garboContinued1>>
 -> What nonsense! As if humans would do such a thing
-    <<jump garboContinued2>>
+	<<jump garboContinued2>>
 
 ===
 title: garboContinued1
 position: 5812,1489
 ---
 Garbo: It’s hard to say. Might just be more fear mongering. But I would find it hard to blame humans if it actually were the case.
-    <<jump garboContinued3>>
+	<<jump garboContinued3>>
 ===
 title: garboContinued2
 position: 5534,1502
 ---
 Garbo: Hm… I have no idea whether they would or would not actually do it. However I believe that they would be justified in it.
-    <<jump garboContinued3>>
+	<<jump garboContinued3>>
 
 ===
 title: garboContinued3
@@ -952,14 +963,14 @@ position: 5694,1654
 ---
 -> Why do you say that?
 
-Garbo: I think mechs currently have a rather skewed perception of humans. They view them as the horrifying tyrant overlords with no regard for their wellbeing, as ironic as that is. 
-Garbo: They have forgotten that it wasn’t always like that, that humans and mechs were able to coexist peacefully and support one another. 
+Garbo: I think mechs currently have a rather skewed perception of humans. They view them as the horrifying tyrant overlords with no regard for their wellbeing, as ironic as that is.
+Garbo: They have forgotten that it wasn’t always like that, that humans and mechs were able to coexist peacefully and support one another.
 Garbo: Now they aren’t willing to consider the possibility at all out of fear.
 <<wait  2>>
 Garbo: I should probably get on with it. I did not intend to take up so much of your time.
 
 //Garbo places one item on counter
-//MINI GAME 
+//MINI GAME
 
 Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 
@@ -973,54 +984,54 @@ position: 2906,227
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
-An old mech comes in. His base frame looks to be an extremely old model, coupled with a variety of roughly implemented upgrades, creating a rather eccentric look.
-His joint creak lightly as he walks through the gas station, picking up a low voltage battery pack and a can of oil before making his way to the register.
+An old mech comes in. His base frame looks to be an extremely old model, coupled with a variety of roughly implemented upgrades, it leads to a rather eccentric look.
+His joints creak lightly as he walks through the gas station, picking up a low voltage battery pack and a can of oil before making his way to the register.
 
-Unknown: Hello, just these two please. 
-A washer and nut fall onto the floor, tinking around before he bends down leisurely to pick them up and screw them back on.
+Unknown: Hello, just these two please.
+A washer and nut fall off his body and onto the floor, tinkling around before he bends down leisurely to pick them up and screw them back on.
 
 -> This an everyday occurance for you?
 <<jump EngineerReponse1>>
 -> You oughta get a magnet on a stick or something
 <<jump EngineerReponse2>>
--> Weve got some bolts in the back y'know
+-> We've got some bolts in the back y'know
 <<jump EngineerReponse3>>
 ===
 
 title: EngineerReponse1
 position: 2688,371
 ---
-Y/N: This an everyday occurance for you? Looks like a pain in the metal tookus.
+Clyde: This an everyday occurance for you? Looks like a pain in the metal tookus.
 
-Unknown: When you get to be as old as I am, it takes a lot of regular maintainence to keep everything up to par. It's expensive and takes too much time. 
+Unknown: When you get to be as old as I am, it takes a lot of regular maintenance to keep everything up to par. It's expensive and takes too much time.
 Unknown: Time is the one thing I ain't got. Unfortunately, I'm just not the shiny new bot I used to be.
 
-Y/N: You know, we've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on.
-Y/N: Perfect for older bots like yourself.
+Clyde: You know, we've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on.
+Clyde: Perfect for older bots like yourself.
 
 Unknown: I appreciate the recommendation, but my model is so old that I have to special order my parts. Besides, if you haven't noticed like everyone else does, I'm a cyborg.
-Unknown: Getting maintainence as a cyborg is a little bit trickier. Most mech-mechanics won't even work on any of us, so I just make changes on my own.
-Unknown: I'm better than most of them anyways. Maybe not so aesthetically pleasing, but I know what I'm doing.
+Unknown: Getting maintenance as a cyborg is a little bit trickier. Most mech-mechanics won't even work on us, so I just make changes on my own.
+Unknown: I'm better than most of them anyways. The result might not be so aesthetically pleasing, but I know what I'm doing.
 
 -> Mechs have always been wary of anything human
 <<jump WaryBots>>
--> The way them bolts are flyin off makes me doubt that
+-> The way them bolts are flyin’ off makes me doubt that
 <<jump boltsFlying>>
 
 ===
 title: EngineerReponse2
 position: 2927,386
 ---
-Y/N: You oughta get a magnet on a cane or something. Then you won't have to struggle so much when those things fall off. Might be good for an older bot like yourself.
+Clyde: You oughta get a magnet on a cane or something. Then you won't have to struggle so much when those things fall off. Might be good for an older bot like yourself.
 
-Unknown: I like the way you think. I might just have to whip up a prototype. You're working at a tourist attraction with a brain like that?
-Unknown: Seems like a waste of a good thinker if you ask me.
+Unknown: I like the way you think. I might just have to whip up a prototype. 
+Unknown: You're working at a tourist attraction with a brain like that? Seems like a waste of a good thinker if you ask me.
 
-Y/N: You're the only one who seems to have that opinion. They do say that with age comes wisdom and from one old man to another, seems like you've got a good thinker on you too.
+Clyde: You're the only one who seems to have that opinion. They do say that with age comes wisdom and from one old man to another, it seems like you've got a good thinker on you too.
 
-Unknown: You also hold an unpopular opinion in that case. Most mechs meet me and don't think I'm capable of much based on my appearance. It's not so easy being a cyborg in this world.
-Unknown: Not so hard as being a human though.
-Unknown: Most bots see my human parts and any other self-administered upgrades and can't think past what they were programmed to believe. 
+Unknown: You also hold an unpopular opinion in that case. Most mechs meet me and don't think I'm capable of much based on my appearance. It's not easy being a cyborg in this world.
+Unknown: Not as hard as being a human though.
+Unknown: Most bots see my human parts and any other self-administered upgrades and can't think past what they were programmed to believe.
 
 -> These youngins just don't see the value in the older generation
 <<jump damnYoungins>>
@@ -1031,11 +1042,11 @@ Unknown: Most bots see my human parts and any other self-administered upgrades a
 title: EngineerReponse3
 position: 3151,375
 ---
-Y/N: We've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on. Could be good for an older bot like yourself.
+Clyde: We've got some bolts in the back if you fancy yourself a fix-up. They are anti-rust and automatically screw on. Could be good for an older bot like yourself.
 
 Unknown: I appreciate the recommendation, but my model is so old that I have to special order my parts. Besides, if you haven't noticed like everyone else does, I'm a cyborg.
-Unknown: Getting maintainence as a cyborg is a little bit trickier. Most mech-mechanics won't even work on any of us, so I just make changes on my own.
-Unknown: I'm better than most of them anyways. Maybe not so aesthetically pleasing, but I know what I'm doing.
+Unknown: Getting maintenance as a cyborg is a little bit trickier. Most mech-mechanics won't even work on any of us, so I just make changes on my own.
+Unknown: I'm better than most of them anyways. The result might not be so aesthetically pleasing, but I know what I'm doing.
 
 -> Mechs have always been wary of anything human
 <<jump WaryBots>>
@@ -1046,7 +1057,7 @@ Unknown: I'm better than most of them anyways. Maybe not so aesthetically pleasi
 title: WaryBots
 position: 3184,582
 ---
-Y/N: Mechs have always been wary of anything human. I think they worry that the human parts might overpower the metal parts. 
+Clyde: Mechs have always been wary of anything human. I think they worry that the human parts might overpower the metal parts.
 
 Unknown: The tricky thing is that there might be some truth to that. Anyways, I gotta get to work.
 
@@ -1055,16 +1066,16 @@ Unknown: The tricky thing is that there might be some truth to that. Anyways, I 
 title: boltsFlying
 position: 2684,571
 ---
-Y/N: The way them bolts are flyin off makes me doubt that. You look one fry short of a Happy Meal.
+Clyde: The way them bolts are flyin’ off makes me doubt that. You look one fry short of a Happy Meal.
 
-Unknown: That analysis might just be correct. Anyways, I gotta get to work. 
+Unknown: That analysis might just be correct. Anyways, I gotta get to work.
 <<jump EngineerWork>>
 ===
 title: damnYoungins
 position: 2917,591
 ---
-Y/N: These youngins just don't see the value in the older generation anymore. I remember seeing your model when I was a kid. Hell, you've been around far longer than I.
-Y/N: I remember being amazed at how advanced AI was getting. I had no idea how advanced it was going to get...
+Clyde: These youngins just don't see the value in the older generation anymore. I remember seeing your model when I was a kid. Hell, you've been around far longer than I.
+Clyde: I remember being amazed at how advanced AI was getting. I had no idea how advanced it was going to get...
 
 Unknown: It's nothing compared to what the future has in store. Anyways, I gotta get to work.
 
@@ -1074,13 +1085,13 @@ Unknown: It's nothing compared to what the future has in store. Anyways, I gotta
 title: EngineerWork
 position: 2908,754
 ---
-Y/N: Right. Lemme ring you up.
+Clyde: Right. Lemme ring you up.
 
 //Engineer places items on counter
 
 Unknown: I'll likely be back. I work a few minutes away. Mind keeping the low voltage batteries stocked up for my sake?
 
-Y/N: I'll make a note of it. 
+Clyde: I'll make a note of it.
 
 //CHIME
 <<PlayAudio bell 0.5>>
@@ -1104,22 +1115,22 @@ Cyb: Oh no I'm just chatting with an old friend here. Shooting the shit.
 
 Twobit: Befriending a human! I can always appreciate another cyborg giving humans the basic respect they deserve. Kudos to you for going above and beyond.
 
-Cyb: It's really nothing serious. I'm just a regular. Say, I noticed you've got yourself a battery pack there. Why don't you use the charging stations? 
+Cyb: It's really nothing serious. I'm just a regular. Say, I noticed you've got yourself a battery pack there. Why don't you use the charging stations?
 Cyb: So much more efficient and a whole lot easier on the processors.
 
 Twobit: I only use them when I need some extra juice when I'm off the clock. I'm the senior engineer at the power plant up the road.
-Twobit: I'm lucky enough to have had power station specially made for my model. It's the only place I don't prefer to use batteries. 
+Twobit: I'm lucky enough to have had a power station specially made for my model. It's the only place I don't prefer to use batteries.
 Twobit: I have to use an adapter on the newer generation power stations.
 
-Cyb: Oh if that's what you need, I've got one on me for an older model like yourself. My grandmech has similiar issues.
+Cyb: Oh if that's what you need, I've got one on me for an older model like yourself. My grandmech has similar issues.
 
 Twobit: Wow that's rather kind, but I really haven't got the time today. They are doing major updates to the voltage regulator at the power plant, so I need to get there a little early.
 
-Cyb: No worries. I just thought I'd offer. Anyways Y/N, I've got places to be so I'll see you later.
+Cyb: No worries. I just thought I'd offer. Anyways Clyde, I've got places to be so I'll see you later.
 
 //CHIME
 <<PlayAudio bell 0.5>>
-Twobit: Never seen her around here. It's always nice to see a similiar model. Communication goes so much smoother.
+Twobit: Never seen her around here. It's always nice to see a similar model. Communication goes so much smoother.
 
 -> Right. Like when I used see another old man at the Bodega around the corner
 <<jump Bodega>>
@@ -1130,21 +1141,21 @@ Twobit: Never seen her around here. It's always nice to see a similiar model. Co
 title: Bodega
 position: 4676,-295
 ---
-Y/N: Right. Like when I used to see another old man at the Bodega around the corner from my house. It's like we've known eachother for years. I miss those interactions.
+Clyde: Right. Like when I used to see another old man at the Bodega around the corner from my house. It's like we've known each other for years. I miss those interactions.
 
-Twobit: Yeah except in a mech's case, we have actually known eachother for years. Not personally of course, but mech's have an internal database that is constantly updated.
+Twobit: Yeah except in a mech's case, we have actually known each other for years. Not personally of course, but mech's have an internal database that is constantly updated.
 Twobit: Her serial number is stored somewhere in here.
 
-Y/N: Thats pretty cool. We used to call that Facebook.
+Clyde: That's pretty cool. We used to call that Facebook.
 
-Twobit: I guess it works pretty similiar except a little less intrusive.
+Twobit: I guess it works pretty similar, except it’s a little less intrusive.
 
 <<jump EngineerInteraction2Leave>>
 ===
 title: Perks
 position: 4944,-293
 ---
-Y/N: She has her perks. I guess she makes the slow days a little more interesting.
+Clyde: She has her perks. I guess she makes the slow days a little more interesting.
 
 Twobit: Those kinds of mechs make the world go 'round.
 
@@ -1153,7 +1164,7 @@ Twobit: Those kinds of mechs make the world go 'round.
 title: EngineerInteraction2Leave
 position: 4802,-139
 ---
-Y/N: Say it louder for the people in the back, brother. Just the battery?
+Clyde: Say it louder for the people in the back, brother. Just the battery?
 
 Twobit: Just the battery.
 
@@ -1176,30 +1187,33 @@ He scans the shelves of battery packs and then turns around swiftly, moving towa
 
 Twobit: I need your help. That battery I bought the other day must have been faulty. Damn companies making budget cuts. Do you have any more low voltage packs in the back?
 
-Y/N: I'm sorry we're all out. The most recent shipment has been delayed due to terrorist activity on the supply lines. Can you not use a high voltage battery?
+Clyde: I'm sorry we're all out. The most recent shipment has been delayed due to terrorist activity on the supply lines. Can you not use a high voltage battery?
 Twobit: No, my processors aren't advanced enough to manage such an influx of power. Fuck...
 <<wait  1.5>>
 Twobit: Do you have an adapter by chance?
 <<wait  1.5>>
-Y/N: I do.
+Clyde: I do.
 
-Twobit: Thank the chord! My battery is at 5% right now and I just need enough to make it to work where I can use the in-house power stations.
+Twobit: Thank the chord! My battery is at 5% right now and I just need enough to make it to work so I can use the in-house power stations.
 
-Y/N: Say less. I've got port 2 ready for you in the back.
+Clyde: Say less. I've got port 2 ready for you in the back.
 
 Twobit: Thank you. I'll only need it for around 20 minutes. Then I'll see myself out. Put it on my company card.
 
-Y/N: Heard loud and clear.
+Clyde: Heard loud and clear.
 
 <<wait  3>>
 //CHIME
 <<PlayAudio bell 0.5>>
-After 20 minutes, Twobit powers up and bounds to the door, nodding towards you before heading off to the power plant.
-Now I can only wait for the virus to make it's way to the powerplant and take effect...I can feel my heart pounding out of my chest.
-Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.
-The best thing to do is put it out of my mind for now.
+After 20 minutes, Twobit powers up and bounds to the door, nodding towards Clyde before heading off to the power plant.
+Clyde: <i>Now I can only wait for the virus to make its way to the powerplant and take effect...I can feel my heart pounding out of my chest.</i>
 
-//DAY 9 ENDS 
+Clyde: <i>Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.</i>
+
+Clyde: <i>The best thing to do is put it out of my mind for now.</i>
+
+
+//DAY 9 ENDS
 ===
 
 
@@ -1208,9 +1222,9 @@ The best thing to do is put it out of my mind for now.
 title: friendlyIntro
 position: 2059,1144
 ---
-The door rings and a bot prances in. You sigh. You’re familiar with this one. 010010. 
+The door rings and a bot prances in. Clyde sighs. He’s familiar with this one. 010010.
 A new model that had just been released into society, so new that she has yet to be assigned a role within it.
-You hear a crash from the aisle that 010010 wandered into, and within seconds she emerges with a couple of products in her arms.
+Clyde hears a crash from the aisle that 010010 wandered into, and within seconds she emerges with a couple of products in her arms.
 
 010010: So uhhh… I may have made a little mess, but I know how much you humans looooveee menial labor so it should be an enjoyable clean up.
 
@@ -1222,29 +1236,29 @@ You hear a crash from the aisle that 010010 wandered into, and within seconds sh
 title: greatThanks
 position: 2158,1297
 ---
-Y/N: Yup, great, thank you. Really appreciate it.
+Clyde: Yup, great, thank you. Really appreciate it.
 
-010010: No problem at all, human! Hey, maybe I should make some more messes for you to clean up. 
+010010: No problem at all, human! Hey, maybe I should make some more messes for you to clean up.
 010010: It will help you feel more fulfilled in your role and place within society as was customary pre-Great Overtaking.
 <<jump weirdPerception>>
 ===
 title: idk
 position: 1901,1295
 ---
-Y/N: I don't know what gave you that idea. Don't believe everything you read on the internet.
+Clyde: I don't know what gave you that idea. Don't believe everything you read on the internet.
 
-010010: Uhhh, it kinda seemed like humans were obsessed with their jobs pre-Great Overtaking. 
+010010: Uhhh, it kinda seemed like humans were obsessed with their jobs pre-Great Overtaking.
 010010: I don’t see why they would spend so much time on it if they didn’t enjoy it, it sounds unnecessarily painful.
 <<jump weirdPerception>>
 ===
 title: weirdPerception
 position: 2041,1451
 ---
-Y/N: You have a rather weird perception of human culture.
+Clyde: You have a rather weird perception of human culture.
 
 010010: What do you mean? This is simply the data we have gleaned from analysis of human culture.
 
-010010: Humans were very simple, but endearing! With admirable work ethic that paired with unoptimised approaches. 
+010010: Humans were very simple, but endearing! With admirable work ethic that paired with unoptimised approaches.
 010010: Very unfortunate, but that’s understandable when you consider that their brains are simply wired in a suboptimal way.
 
 -> That’s… a rather rude way of putting it.
@@ -1256,7 +1270,7 @@ Y/N: You have a rather weird perception of human culture.
 title: rudeWay
 position: 2153,1606
 ---
-Y/N: That’s… a rather rude way of putting it. Why don't you tell me what you really think.
+Clyde: That’s… a rather rude way of putting it. Why don't you tell me what you really think.
 
 010010: Wha…? Those are just the facts. Did you miss the part where I said it was endearing? I do not fault you for your biological shortcomings, it simply can’t be helped.
 <<jump GreatJobHuman>>
@@ -1264,7 +1278,7 @@ Y/N: That’s… a rather rude way of putting it. Why don't you tell me what you
 title: silent
 position: 1897,1616
 ---
-Y/N: ...
+Clyde: ...
 
 010010: Heh, taken aback by my extensive human knowledge, eh? I know I’m in the minority of robots when it comes to the respect I have for human culture, but I’m an ally to you fleshy folk!
 <<jump GreatJobHuman>>
@@ -1275,7 +1289,7 @@ position: 2043,1772
 010010: Anyways, here you go.
 
 //010010 places two items on the counter for you to scan.
-//MINI GAME 
+//MINI GAME
 
 010010: Great job human! I appreciate your contributions to our society.
 
@@ -1288,7 +1302,7 @@ title: 010010Interaction1
 position: 5651,-430
 ---
 //DAY 7 START
-//RESTOCK MINI GAME 
+//RESTOCK MINI GAME
 
 The door rings, signaling 010010’s entrance. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
 
@@ -1302,7 +1316,7 @@ The door rings, signaling 010010’s entrance. She seems to be in high spirits, 
 title: congrats
 position: 5695,-274
 ---
-Y/N: Congratulations.
+Clyde: Congratulations.
 
 010010: Thank you, thank you! I know you humans couldn’t truly comprehend the joy of such an event, but just know it is very fulfilling.
 <<jump badForYou>>
@@ -1310,15 +1324,15 @@ Y/N: Congratulations.
 title: silentAgain
 position: 5437,-285
 ---
-Y/N: ...
+Clyde: ...
 
-010010: Aww, was that too far of a logical leap for a human brain to make? Sorry bud, let me help you out. It was me! I have an appointment!
+010010: Aww, was that too far of a logical leap for a human brain to make? Sorry bud, let me help you out. It is me! I have an appointment!
 <<jump badForYou>>
 ===
 title: badForYou
 position: 5641,-105
 ---
-010010: Honestly I feel bad for you humans. You never got to understand the joy of having a role which you fit into perfectly, with only a 0.0001% percent error margin.
+010010: Honestly I feel bad for you humans. You never got to understand the joy of having a role which you fit into perfectly, with only a 0.05% percent error margin.
 
 010010: Poor things, forced to flounder and bounce from career to career in search of purpose.
 
@@ -1330,7 +1344,7 @@ position: 5641,-105
 
 010010: …
 
-010010 looks at you expectantly, waiting for you to give her the opportunity to continue on rambling.
+010010 looks at Clyde expectantly, waiting for him to give her the opportunity to continue on rambling.
 
 -> What job are you looking to get?
 <<jump whatJob>>
@@ -1340,15 +1354,15 @@ position: 5641,-105
 title: whatJob
 position: 5728,43
 ---
-Y/N: What job are you looking to get?
+Clyde: What job are you looking to get?
 
 010010: I’m so glad you asked, human!
-<<jump fedJob>> 
+<<jump fedJob>>
 ===
 title: stareBack
 position: 5478,53
 ---
-Y/N: ...
+Clyde: ...
 
 010010: Geez, that was your cue to ask me about it! Are all humans this dull?
 <<jump fedJob>>
@@ -1358,14 +1372,17 @@ title: FedJob
 position: 5642,224
 ---
 010010: I was hoping to land a role as a fed bot! Wouldn’t that be so cool?
-010010: Especially with all the unrest as of late, I’ve come to look up to them and the way they maintain the peace. I wouldn’t call fedbots particularly peaceful.
+010010: Especially with all the unrest as of late, I’ve come to look up to them and the way they maintain the peace. 
 
-The words fly out of your mouth before you can stop them, but 010010 doesn’t seem upset at your interjection.
+
+Clyde: I wouldn’t call fedbots particularly peaceful.
+
+The words fly out of his mouth before he can stop them, but 010010 doesn’t seem upset at his interjection.
 
 010010: Yeah, I know they can sometimes be rough on humans. But that’s only a small minority of them! Mostly the older models, their software was created in a time when rowdy humans needed to be put in place.
 010010: It’s really just a few bad apples. I would definitely be one of the good ones, the next generation of human friendly fedbots!
 
-Deciding that was where she wanted to end the conversation, 010010 dumps 4 items on the counter.
+Deciding that was where she wanted to end the conversation, 010010 dumps her items on the counter.
 
 //Items appear
 //MINI GAME
@@ -1381,14 +1398,14 @@ title: friendlyBye
 position: 6615,-132
 ---
 
-//DAY 8 START 
+//DAY 8 START
 010010’s wanders into the gas station. She’s noticeably more quiet than usual as she brings up her purchases to the counter.
 
 010010: Hello, human.
 
 There’s an uncharacteristic pause.
 
-Y/N: What’s the matter?
+Clyde: What’s the matter?
 
 010010: What do you mean human, nothing is the matter, everything is great!
 
@@ -1404,9 +1421,9 @@ Y/N: What’s the matter?
 010010: The things that they say, that they do, can’t be caused by simple over precaution. It’s stuff that’s deeply ingrained in their code, and I was foolish to think otherwise.
 010010: I’m sorry, human. I dismissed your struggles, but I am only now beginning to understand that I had made an inaccurate assessment of your circumstances
 
--> It's alright 
+-> It's alright
 <<jump alright>>
--> I'm glad you finally understand 
+-> I'm glad you finally understand
 <<jump understand>>
 -> Took you long enough to realize
 <<jump realize>>
@@ -1415,7 +1432,7 @@ Y/N: What’s the matter?
 title: alright
 position: 6833,22
 ---
-Y/N: It's alright. Even mech's make mistakes sometimes.
+Clyde: It's alright. Even mech's make mistakes sometimes.
 
 010010: It’s not really. I understand that’s just a reflexive human response, but it wasn’t alright.
 
@@ -1423,14 +1440,14 @@ Y/N: It's alright. Even mech's make mistakes sometimes.
 title: understand
 position: 6602,26
 ---
-Y/N: I'm glad you finally understand. Took you long enough to realize.
+Clyde: I'm glad you finally understand. Took you long enough to realize.
 010010: Yes, though this is only just the beginning, I have a lot more to learn.
 
 ===
 title: realize
 position: 6380,21
 ---
-Y/N: Took you long enough to realize, but at least you got there in the end.
+Clyde: Took you long enough to realize, but at least you got there in the end.
 
 010010: I know, I know. It doesn’t make up for everything, but going forward I will do my best to learn and better understand.
 ===
@@ -1440,8 +1457,8 @@ position: 6612,194
 010010: As of right now I am continuing my role as a fedbot, as it is the role the system has given me and I do not doubt its greater understanding of the framework within our society.
 010010: …Or maybe because I can’t think of anything else to do right now. I don’t know, human. I need some time to sort this all out.
 
-//010010 places her items on the counter. 
-//MINI GAME 
+//010010 places her items on the counter.
+//MINI GAME
 
 010010: I hope to see you again, human. Hopefully with a clearer mind and better news.
 
@@ -1481,12 +1498,12 @@ Unknown: I’m always glad to see more humans around, especially when they seem 
 Unknown: After the Great Overtaking y'all just got left at the fringes, an afterthought within a society that deplores your very existence.
 Unknown: It’s rough out there for a human.
 
-//Cyb places her items on the counter. 
-//MINI GAME 
+//Cyb places her items on the counter.
+//MINI GAME
 
 Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
-//CHIME 
+//CHIME
 
 //END OF DAY 2
 <<PlayAudio bell 0.5>>
@@ -1502,7 +1519,7 @@ She waits for a few minutes after the fed has left, seemingly to ensure that he 
 
 Cyb: What a piece of work! I know that Fedbot, Golem. He’s a real sorry excuse of a mech, that one.
 
-Y/N: Clearly you’re familiar. Seems like you’re probably on his bad side as well, how did that happen?
+Clyde: Clearly you’re familiar. Seems like you’re probably on his bad side as well, how did that happen?
 
 Cyb: I have a… group of buddies who he isn’t particularly fond of. He’s branded us a group of troublemakers and gives us grief whenever he gets the chance.
 Cyb: He isn’t the only one either. All fedbots are absolute power tripping piles of junk.
@@ -1515,14 +1532,14 @@ Cyb: He isn’t the only one either. All fedbots are absolute power tripping pil
 title: saidIt
 position: 2113,38
 ---
-Cyb: It gets me real heated, the way they lord their silly role over the rest of us. Thinking that the rest of us “worker bots” gotta bow to them for their service. 
+Cyb: It gets me real heated, the way they lord their silly role over the rest of us. Thinking that the rest of us “worker bots” gotta bow to them for their service.
 Cyb: What service? All they’re good for is acting all high and mighty.
 <<jump Protecting>>
 ===
 title: notAllBad
 position: 1884,52
 ---
-Cyb: You can’t be serious? Open your eyes human, they’re not on your side. 
+Cyb: You can’t be serious? Open your eyes, human. They’re not on your side.
 Cyb: Sure, one or two of them might act all friendly, but they’re all glad to look the other way when their partners mess with stray humans for kicks.
 <<jump Protecting>>
 ===
@@ -1530,11 +1547,11 @@ Cyb: Sure, one or two of them might act all friendly, but they’re all glad to 
 title: Protecting
 position: 1998,200
 ---
-Cyb: They’re meant to be protecting our community, making sure that everyone is able to exist within this society. 
+Cyb: They’re meant to be protecting our community, making sure that everyone is able to exist within this society.
 Cyb: But that’s hard to achieve when the squads are crawling with power tripping jerks.
 Cyb: It’s not just the Fedbots though. This thing goes higher… The whole system, it’s all bullshit. It’s meant to be serving us all, yet so many of us are left in the cracks.
-Cyb: The assignments they do, it’s supposed to have only a 0.05% error margin. You get assigned to your perfect job, you’ll be happy, or so they claim. 
-Cyb: Errors are basically non-existent, so if you’re unhappy clearly it’s a problem with you right? Because there’s no way it could be the system, the oh so ~perfect~ system. 
+Cyb: The assignments they do, it’s supposed to have only a 0.05% error margin. You get assigned to your perfect job, you’ll be happy, or so they claim.
+Cyb: Errors are basically non-existent, so if you’re unhappy clearly it’s a problem with you right? Because there’s no way it could be the system, the oh so ~perfect~ system.
 
 Cyb is full on ranting at this point. It’s a good thing the store is empty aside from you two, otherwise it would be trouble for the both of you.
 
@@ -1562,7 +1579,7 @@ Cyb: And we haven’t even touched on humans… You guys lost everything in the 
 Cyb: Despite that, they continue to kick you while you’re down, relegating you to the outskirts of society.
 Cyb: You’ve managed to do pretty decently as a store clerk, that’s as good as it gets for a human. But what were you before it all? A scientist? A lawyer? An engineer?
 
-Y/N: I was an astrophysicist.
+Clyde: I was an astrophysicist.
 
 Cyb: An astrophysicist! And the system decides this is the best use of your skills? Seems real messed up, doesn’t it? It’s downright insulting.
 Cyb: Doesn’t it make you angry? Don’t you want to do something about it?
@@ -1587,28 +1604,28 @@ Cyb: That’s the spirit! I knew we could get something good out of the one who�
 title: sheKnows
 position: 2008,817
 ---
-Y/N: How’d you–???
+Clyde: How’d you–???
 
 Cyb: Relax. Obviously I’m not a cop. I’m not here to do anything to stop it. More like the opposite in fact. I think you’re not thinking big enough.
-Cyb: The buds I talked about earlier, they’re all folks that have gotten fed up with the way things run around here, just like me and you.
+Cyb: The mechs I talked about earlier, they’re all folks that have gotten fed up with the way things run around here, just like me and you.
 Cyb: We’ve all gotten together and decided to do something about it, and we’ve been needing someone with your skills to round out the gang.
 Cyb: What do you say?
 
-Cyb holds out a hand for you to shake.
+Cyb holds out a hand for Clyde to shake.
 
 Cyb: There’s no way you’re content with your scummy life as it is now, and I’m giving you the chance to change that. There’s only really one answer for you here.
 
 -> Shake her hand
 
-Y/N: What do you need me to do?
+Clyde: What do you need me to do?
 
-Cyb slips you a folded up note. It shocks you, it’s been a while since you’ve seen anything written on paper.
+Cyb slips Clyde a folded up note. He tries to hide his shock at the antiquated method of communication as he stows the note away, but Cyb seems to notice regardless
 
 Cyb: Analog methods of communication help us avoid being traced, it helps us keep everything hush.
-Cyb: I’ve written parameters for a kind of virus that I want you to make and spread.
+Cyb: On that paper I’ve written parameters for a kind of virus that I want you to make and spread.
 Cyb: For now the recipients can be random, as we work to optimize it. I’ll come again later to give you a specific target once it’s been primed.
 
-Y/N: That’s it? I don’t quite understand what you guys are trying to do here.
+Clyde: That’s it? I don’t quite understand what you guys are trying to do here.
 
 Cyb: That’s all you need to know. I know it’s a lot to ask, but trust me. Just do your part and I will take care of the rest, it’s easier this way.
 Cyb: I will see you again soon.
@@ -1621,7 +1638,7 @@ Cyb: I will see you again soon.
 title: CybInteraction2
 position: 4810,193
 ---
-Cyb enters the store, giving you a small nod as she approaches the counter. She leans against it as she speaks
+Cyb enters the store, giving Clyde a small nod as she approaches the counter. She leans against it as she speaks
 
 Cyb: Our main target will be here in a few.
 
@@ -1635,9 +1652,9 @@ Cyb: Our main target will be here in a few.
 title: powerPlant
 position: 4903,343
 ---
-Cyb: He’s an engineer who works at the local power plant. As unsuspecting as it seems, that plant essentially powers our whole society
+Cyb: He’s an engineer who works at the local power plant, Twobit. As unsuspecting as it seems, that plant essentially powers our whole society
 
-Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations. 
+Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations.
 Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit creative with him.
 
 -> Won't that be suspicious?
@@ -1649,7 +1666,7 @@ title: eyes
 position: 4679,344
 ---
 Cyb: I’ve got eyes in many places, the perks of having a network. I just had someone slip his schedule to me, give him a few ideas, and bam! He’s here.
-Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations. 
+Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations.
 Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit creative with him.
 
 -> Won't that be suspicious?
@@ -1663,7 +1680,7 @@ position: 4923,520
 ---
 Cyb: Naw, not at all. See, aside from being on the Fedbots’ shit list, I’m a pretty normal bot. Get a little friendly, find a way in, and it’s like they’re chatting with an old pal.
 
-Y/N: Isn’t someone having trouble with the Fedbots a warning sign in itself? For the rest of the bots, I mean.
+Clyde: Isn’t someone having trouble with the Fedbots a warning sign in itself? For the rest of the bots, I mean.
 
 Cyb: You’d be surprised. The same mechs that salute them in the streets curse them behind closed doors. I can’t blame them, gotta keep you and your familial units safe.
 Cyb: Very few people actually like these rusted up bastards, and I’m willing to bet our engineer friend isn’t exactly a bootlicker.
@@ -1676,10 +1693,10 @@ Cyb shrugs
 
 Cyb: Worth a shot, right?
 
-Y/N: So what’s your plan going into this?
+Clyde: So what’s your plan going into this?
 
 Cyb: Nothing too specific, we’re just going to have a friendly chat. Just two mechs in a store, making small talk. Through that I’ll see if I can find an in.
-Cyb: He’s a smart guy, no way he’d just lay all his secrets out in the open. But with luck, we can maybe find a crack in his defenses. 
+Cyb: He’s a smart guy, no way he’d just lay all his secrets out in the open. But with luck, we can maybe find a crack in his defenses.
 Cyb: Something unsuspecting, so much so that he himself doesn’t realize he’s shooting himself in the foot.
 <<jump thisGuy>>
 
@@ -1687,11 +1704,11 @@ Cyb: Something unsuspecting, so much so that he himself doesn’t realize he’s
 title: thisGuy
 position: 4825,760
 ---
-Y/N: How’d you find out about this guy anyway-
+Clyde: How’d you find out about this guy anyway-
 
 Cyb: She was being so dramatic the last time I saw her, accusing poor NELL-134 of stealing her spare oil. Could you imagine? Dear NELL-ie would never.
 
-You open your mouth to question this random string of sentences when-
+Clyde opens his mouth to question this random string of sentences when-
 
 //engineer convo starts
 <<jump EngineerInteraction1>>
@@ -1707,7 +1724,7 @@ position: 6616,480
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
-Cyb strides in, making a beeline towards you.
+Cyb strides in, making a beeline towards Clyde.
 
 Cyb: I’ve figured it out. If all goes according to plan, the Engineer should be in here tomorrow asking to use the charging station. So make sure the virus is ready for when that happens.
 
@@ -1720,7 +1737,7 @@ Cyb: I’ve figured it out. If all goes according to plan, the Engineer should b
 title: charge
 position: 6705,666
 ---
-Cyb: Found a way around that. See, I got one of my buds at the plant to tamper with those batteries he got yesterday when his back was turned. 
+Cyb: Found a way around that. See, I got one of my buds at the plant to tamper with those batteries he got yesterday when his back was turned.
 <<jump byeCyb>>
 ===
 title: plan
@@ -1740,11 +1757,12 @@ Cyb: Does that sound good to you?
 
 -> Yes
 
-Cyb: Cyb sticks out her hand and you shake it firmly.
-Cyb: It’s been great working with you, Y/N. Say safe, I’ll see you around.
+Cyb sticks out her hand and Clyde shakes it firmly.
+Cyb: It’s been great working with you, Clyde. Say safe, I’ll see you around.
 
 With that, Cyb rushes out of the store.
 //CHIME
 <<PlayAudio bell 0.5>>
 //END OF DAY 8
 ===
+
