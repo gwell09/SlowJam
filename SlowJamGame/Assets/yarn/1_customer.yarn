@@ -21,6 +21,7 @@ tags:
  Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
+//START DAY 
 //CHIME
 
 Dusty: Howdy, Dogmeat!
@@ -434,6 +435,7 @@ Y/N: You're done.
 Tinker: Okay...
 
 //CHIME. Tinker leaves 
+//DAY 5 END 
 
 ===
 
@@ -445,6 +447,7 @@ Tinker: Okay...
 title: Fed
 position: 1952,-379
 ---
+//START DAY 3
 //RESTOCK MINI GAME 
 
 //Door chimes 
@@ -484,6 +487,7 @@ Y/N: Whenever he comes in here, my day just gets so much brighter.
 title: Fed2
 position: 3883,-377
 ---
+//START DAY 5
 //RESTOCK MINI GAME 
 
 //Door chimes 
@@ -665,6 +669,7 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 title: Fed4
 position: 7376,-124
 ---
+//DAY 9 START 
 //RESTOCK MINI GAME 
 //Door chimes 
 Golem strolls in bright and early, looking even more wired than usual. He wastes no time loitering or shopping and makes a beeline to the counter.
@@ -759,8 +764,9 @@ Golem: Tell your little friend that her days are limited. And keep that in mind 
 
 
 title: Garbo1
-position: 1052,287
+position: 1036,-1042
 ---
+//START DAY 2
 //CHIME 
 
 A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products. 
@@ -782,28 +788,28 @@ It’s a little hard to tell due to the lack of any recognisable expression indi
 
 
 title: garboResponse1
-position: 789,465
+position: 773,-864
 ---
 Unknown: That does not sound like something that belongs in a job description. Expressing discomfort is very human, it should not be suppressed.
 <<jump garboIntroduce>>
 ===
 
 title: garboResponse2
-position: 1304,487
+position: 1288,-842
 ---
 Unknown: It’s a shame that you would say that. I do not think it should be anything special. mechs and humans should look out for each other after all.
 <<jump garboIntroduce>>
 ===
 
 title: garboResponse3
-position: 1031,473
+position: 1015,-856
 ---
 Unknown: I understand your skepticism. Mechs have a shameful reputation for looking down on humans. So many have forgotten where they came from.
 <<jump garboIntroduce>>
 
 ===
 title: garboIntroduce
-position: 1039,661
+position: 1023,-668
 ---
 Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquaintance.
 -> Likewise
@@ -815,7 +821,7 @@ Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquain
 
 
 title: garboIntroduceResponse
-position: 1034,852
+position: 1026,-431
 ---
 Garbo: Always nice to have a human friend! My assigned route ends a block away, so perhaps I will have to drop in more often.
 Garbo: I will take care to manage the smell next time though.
@@ -826,7 +832,8 @@ Garbo: I will take care to manage the smell next time though.
 Garbo: Until next time, friend!
 //Chime sound & fade out 
 
-//END OF DAY 2
+<<jump CybIntro>>
+
 ===
 
 
@@ -834,7 +841,9 @@ Garbo: Until next time, friend!
 
 title: Garbo2
 position: 2855,-416
+
 ---
+//START DAY 4
 //RESTOCK MINI GAME 
 
 //CHIME 
@@ -1066,6 +1075,7 @@ Y/N: I'll make a note of it.
 title: EngineerInteraction1
 position: 4789,-447
 ---
+//DAY 6 START
 //CHIME
 
 Twobit walks in and grabs a low voltage battery, this time taking care to take a gander at a few human oddities on the shelves on the way up to the register.
@@ -1169,6 +1179,8 @@ After 20 minutes, Twobit powers up and bounds to the door, nodding towards you b
 Now I can only wait for the virus to make it's way to the powerplant and take effect...I can feel my heart pounding out of my chest.
 Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.
 The best thing to do is put it out of my mind for now.
+
+//DAY 9 ENDS 
 ===
 
 
@@ -1255,6 +1267,7 @@ position: 2043,1772
 title: 010010Interaction1
 position: 5651,-430
 ---
+//DAY 7 START
 //RESTOCK MINI GAME 
 
 The door rings, signaling 010010’s entrance. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
@@ -1347,6 +1360,8 @@ Deciding that was where she wanted to end the conversation, 010010 dumps 4 items
 title: friendlyBye
 position: 6615,-132
 ---
+
+//DAY 8 START 
 010010’s wanders into the gas station. She’s noticeably more quiet than usual as she brings up her purchases to the counter.
 
 010010: Hello, human.
@@ -1415,8 +1430,9 @@ position: 6612,194
 <<jump cybGoodbye>>
 ===
 title: CybIntro
-position: 1003,-432
+position: 1003,-106
 ---
+
 A tall, dark figure sweeps past the counter. Grabbing something off the shelf they bring it to the counter.
 
 Unknown: A human cashier? How interesting.
@@ -1427,19 +1443,19 @@ Unknown: A human cashier? How interesting.
 <<jump toYou>>
 ===
 title: elusive
-position: 910,-282
+position: 910,44
 ---
 Unknown: Don’t think elusive is quite the right word. More like endangered.
 
 ===
 title: toYou
-position: 1124,-276
+position: 1124,50
 ---
 Unknown: Whoa there, that was not meant to be hostile, quite the opposite.
 
 ===
 title: alwaysGlad
-position: 1035,-142
+position: 1035,184
 ---
 Unknown: I’m always glad to see more humans around, especially when they seem to be doing alright for themselves.
 Unknown: After the Great Overtaking y'all just got left at the fringes, an afterthought within a society that deplores your very existence.
@@ -1452,7 +1468,7 @@ Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
 //CHIME 
 
-<<jump Garbo1>>
+//END OF DAY 2
 ===
 
 title: cybInteraction1
