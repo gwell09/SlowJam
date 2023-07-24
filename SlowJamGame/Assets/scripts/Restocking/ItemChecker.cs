@@ -26,32 +26,11 @@ public class ItemChecker : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckForCompletion()
     {
-        
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        
-        if (Input.GetMouseButtonUp(0))
+        if (restockSelector.selectedItems.Count == 0)
         {
-            ClickableSprite clickable = other.GetComponent<ClickableSprite>();
-            if (clickable != null) 
-            {
-                ItemBehavior item = other.GetComponent<ItemBehavior>(); 
-                CursorFollower follower = other.GetComponent<CursorFollower>(); 
-                if(ContainsCorrectKey(item.item))
-                {
-                    clickable.interactable = false;
-                    follower.shouldFollowCursor = false;
-                    if(restockSelector.selectedItems.Count == 0)
-                    {
-                        Debug.Log("<color=green>Done!</color>");
-                    }
-                }
-            }
+            Debug.Log("<color=green>Done!</color>");
         }
     }
 

@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class ClickableSprite : MonoBehaviour
 {
     public bool interactable;
+    public bool isCursorDown; // we have our mouse down on the object but it hasn't been up yet
 
     public UnityEvent OnCursorEnter, OnCursorExit, OnCursorRelease, OnObjectClicked;
 
@@ -34,6 +35,7 @@ public class ClickableSprite : MonoBehaviour
         if (interactable)
         {
             OnObjectClicked?.Invoke();
+            isCursorDown = true;
         }
     }
 
@@ -41,6 +43,7 @@ public class ClickableSprite : MonoBehaviour
     {
         if (interactable)
         {
+            isCursorDown = false;
             OnCursorRelease?.Invoke();
         }
     }
