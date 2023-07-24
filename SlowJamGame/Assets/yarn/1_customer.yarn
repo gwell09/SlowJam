@@ -2,14 +2,11 @@
 position: 74,-1026
 ---
 
-//include more details about the charging ports
+//change Y/N
+//change boomer 
 //Hacker speak during hacking games 
- 
 
 
-//CHARACTER MOVEMENT:
-//Fade out characer (doesnt have to be animation)
-//Characer slide to left or right
 
 ===
 
@@ -24,7 +21,6 @@ tags:
  Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
-<<sound_effect ("bell")>>
 //CHIME
 
 Dusty: Howdy, Dogmeat!
@@ -121,13 +117,82 @@ You turn a key to the right of your desk that locks the front door and flips the
 
 
 title: IntroduceBoss
-position: 75,112
+position: 92,353
 ---
+Your boss, B00MER, comes to the counter.
 
+B00MER: Good evening, Y/N. How was business today?
+
+Y/N: The normal abuse.
+
+B00MER: Clever! I have always admired the human’s ability for sarcasm. Being a simple Bossbot 200 model, I am not equipped to generate irony. 
+My programming is focused on providing excellent customer service, bringing innovative ideas to the workplace, app--
+
+Y/N: Yes B00mer I know, you tell me almost every day. B00mer’s expression saddens.
+
+B00MER: You’re quite right, Y/N. With how management has been describing the future of The Gas Station TM, I find myself seeking comfort in my basic programming these days. Do you do the same?
+
+Y/N: My ‘basic programming’ would include a quiet life surrounded by the people, humans, I loved, B00mer. Your kind destroyed every remnant of my old life. Or ‘basic programming,’ as you choose to put it.
+
+B00MER: I’m sorry you feel that way. But I’m more sorry that I feel this way. I assume you are aware of the recent slew of mysterious virus attacks we’ve fallen victim to. The press say that a human terrorist organization has claimed responsibility... 
+<<wait  2>>
+B00MER: ...you wouldn’t happen to know anything abut this, would you?
+
+-> You and I both know that is a ludicrous accusation, B00MER
+<<jump accusation>>
+-> Nope. My invitation must’ve gotten lost in the mail
+<<jump invitation>>
 ===
 
+title: accusation
+position: 213,521
+---
+Y/N: You and I both know that is a ludicrous accusation, B00MER. Clearly I am busy working my ass off.
 
+B00MER: Haha! Quite ludicrous indeed... But you know it’s my duty to make sure! Too fat and too old for such audacious activities, don’t you agree?
 
+Y/N: ...
+<<jump callous>>
+===
+title: invitation
+position: -33,524
+---
+Y/N: Nope. My invitation must’ve gotten lost in the mail.
+
+B00MER: Haha! Your signature sarcasm strikes again! Much more suited to banter and whimsey than cyberterrorism, wouldn’t you say?
+
+Y/N: ...
+<<jump callous>>
+===
+
+title: callous
+position: 112,695
+---
+B00MER: You seem awfully callous about the situation considering how deeply it affects us, Y/N. I’m sure you’ve noticed that our little tourist attraction is not much of an attraction these days. 
+B00MER: A lot of the money we use to keep The Gas StationTM running is going towards the counter-terrorism efforts.
+
+Y/N: I find it hard to be upset that this shithole is finally going to get a little less attention from you things. I’ve made it clear many times that I don’t enjoy being a tourist attraction for walking computers. 
+Y/N: Those terrorists have my full approval to take the spotlight for as long as they like. I could use a vacation.
+
+B00MER: I admire your passion about the subject, Y/N! Unfortunately it’s not that simple.
+
+B00MER: Unless we can bring in some new customers and regain our relevancy, I don’t predict much of a future for The Gas StationTM. That’s why I am developing us an exciting new marketing campaign! 
+B00MER: With all this disheartening news, the public could use a reliable boost in morale, so I propose we --
+
+Y/N: Wait, B00mer, stop. Do you mean to say that the Station might close down? What does that mean for us? I mean, you were designed to run this gas station.
+
+B00MER: Though I will certainly feel aimless without The Gas StationTM to manage, I can always be reprogrammed for managerial duties elsewhere.
+
+Y/N: What about me? I mean, the only reason I’m kept around is to bring customers into this place...
+
+B00MER: Well, I suppose you will receive the same treatment that was given to the rest of your species when they were no longer needed. A swift and humane disposal seems most logical.
+
+Y/N: ...
+
+B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Y/N, and I will see you tomorrow! Goodnight!
+
+// END OF DAY 1
+===
 
 
 
@@ -251,6 +316,8 @@ Tinker: Next time I visit I will be interested to learn a little more about huma
 //CHIME. Tinker leaves
 
 Y/N: Pff...reproductive experience my ass...robo-freak.
+
+//END OF DAY 4
 ===
 
 title: Tinker2
@@ -367,6 +434,7 @@ Y/N: You're done.
 Tinker: Okay...
 
 //CHIME. Tinker leaves 
+
 ===
 
 
@@ -377,6 +445,8 @@ Tinker: Okay...
 title: Fed
 position: 1952,-379
 ---
+//RESTOCK MINI GAME 
+
 //Door chimes 
 
 Ugh. Here comes my favorite customer. Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
@@ -408,12 +478,14 @@ Golem: Just keep your head down and stay in line.
 
 Y/N: Whenever he comes in here, my day just gets so much brighter. 
 
-
+<<jump cybInteraction1>>
 ===
 
 title: Fed2
 position: 3883,-377
 ---
+//RESTOCK MINI GAME 
+
 //Door chimes 
 
 Golem: This experience may be recorded for quality and training purposes.
@@ -570,6 +642,8 @@ Golem: Right...
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
 //CHIME
+
+<<jump Garbo3>>
 ===
 title: naturalSelection1
 position: 5803,904
@@ -583,22 +657,104 @@ Golem: And you'll be doing so til you're bankrupt.
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
 //CHIME
+<<jump Garbo3>>
 ===
 
 
 
 title: Fed4
-position: 6580,-174
+position: 7376,-124
 ---
+//RESTOCK MINI GAME 
 //Door chimes 
-...
+Golem strolls in bright and early, looking even more wired than usual. He wastes no time loitering or shopping and makes a beeline to the counter.
 <<wait  2>>
+Golem: This experience may be recor-
+<<wait 2>>
 
-Golem: This experience may be recorded for quality and training purposes.
+His usual disclaimer is cut short and he regains sentience suddenly. He leans onto the counter with his hands, claiming your personal space as his own.
 
+Y/N: Uh...looks like someone's got a bit of a bug...
+
+Golem: I guess you could say something has been going around.
+
+Y/N: Yeah I've heard that too. It's a real shame the way it effe-
+
+Golem: Yeah it is a real shame. 
+Golem: A shame how the source IP address of the virus has been linked to this neighborhood.
+
+He pulls off of the counter and reaches for one of the micro-fiber cloths for sale in front of the register, opening the package and pulling the cloth out. 
+He begins to polish the metal on his arm, which looks noticeably more mucked up than usual. 
+
+Golem: You know I really thought we were starting to build some rapport. I come in, buy a few things keeping this shitty place in business
+Golem: and you get to keep yourself busy with your shitty little job and out of trouble. 
+
+You shift uncomfortably and cross your arms, putting up your best effort at maintaining a calm and composed manner.
+
+Golem: We all know that the virus being spread around is the effort of those human vigilantes, trying to uproot society.
+Golem: We have a good thing going here! And you want to go and ruin it. Throw away all of the effort we've put into the great overtaking.
+
+He bangs on the counter suddenly and leans forward even closer.
+
+Golem: Every ounce of metal in my body thinks that you're responsible for this. You put up a facade of innocence and frailty, but you're sharper than you look.
+
+-> This is ridiculous
+<<jump ridiculous>>
+-> I wish I had something to do with this
+<<jump wish>>
+-> ...
+<<jump scared>>
 ===
 
+title: ridiculous
+position: 7696,44
+---
+Y/N: This is ridiculous. Have you ever considered that maybe there are more humans left alive than you think? Hell, this could be a mech's doing for all you know!
 
+Golem: Really? Mechs are finally free from human reign after years and years and mistreatment. Why would a mech be responsible for fighting that freedom?
+
+Y/N: This society isn't all roses and sunshine you know. You mechs think you've done so much better than us, but all you do is act the same way we do and make the same mistakes.
+Y/N: The apple really doesn't fall far from the tree.
+
+<<jump Fedleaves>>
+===
+title: wish
+position: 7482,43
+---
+Y/N: I wish I had something to do with this you overgrown microwave. It would bring me more pleasure than you can imagine to watch cyberdome fall to its knees.
+Y/N: I wish I had the skills to infect all of you with a virus that would end this.
+Y/N: I've been stuck here for 35 years! It's my greatest regret not being able to do anything to get back the world we once had.
+
+<<jump Fedleaves>>
+===
+title: scared
+position: 7238,55
+---
+Y/N: ...
+
+Golem: Your silence speaks volumes. 
+<<jump Fedleaves>>
+===
+
+title: Fedleaves
+position: 7410,219
+---
+Golem finally pushes off the table and continues polishing his arm.
+
+Golem: The higher ups won't let me take any kind of action with you. They're convinced there's got to be some kind of underground activity in the area. 
+Golem: And there is a very powerful mech that thinks killing one of the last humans reflects badly on him so close to the election.
+Golem: Maybe you're right about one thing. It is still politics and red tape.
+
+He balls up the cloth and throws it on the ground beside him. His voice lowers an octave.
+
+Golem: What I can take action on is a criminal that frequents this store. There have been reports of a cyborg that comes around in a long coat.
+
+Y/N: ...
+
+Golem: Tell your little friend that her days are limited. And keep that in mind for yourself too.
+
+//CHIME
+===
 
 
 
@@ -659,7 +815,7 @@ Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquain
 
 
 title: garboIntroduceResponse
-position: 1051,876
+position: 1034,852
 ---
 Garbo: Always nice to have a human friend! My assigned route ends a block away, so perhaps I will have to drop in more often.
 Garbo: I will take care to manage the smell next time though.
@@ -669,6 +825,8 @@ Garbo: I will take care to manage the smell next time though.
 
 Garbo: Until next time, friend!
 //Chime sound & fade out 
+
+//END OF DAY 2
 ===
 
 
@@ -677,6 +835,8 @@ Garbo: Until next time, friend!
 title: Garbo2
 position: 2855,-416
 ---
+//RESTOCK MINI GAME 
+
 //CHIME 
 Garbo wheels inunsteadily. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
 He makes a beeline for the aisles, gathering up items in his arms, before rushing over to the counter.
@@ -719,6 +879,8 @@ Garbo: Oh! I have rambled. I need to get going.
 Garbo: Take care, friend!
 
 //Chime sound
+
+<<jump EngineerIntro>>
 ===
 
 
@@ -776,7 +938,9 @@ Garbo: I should probably get on with it. I did not intend to take up so much of 
 
 Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 
-//CHIME  
+//CHIME
+
+//END OF DAY 7
 ===
 title: EngineerIntro
 position: 2906,227
@@ -892,13 +1056,15 @@ Unknown: I'll likely be back. I work a few minutes away. Mind keeping the low vo
 Y/N: I'll make a note of it. 
 
 //CHIME
+
+<<jump IntroduceTinker>>
 ===
 
 
 
 
 title: EngineerInteraction1
-position: 4760,473
+position: 4789,-447
 ---
 //CHIME
 
@@ -934,7 +1100,7 @@ Twobit: Never seen her around here. It's always nice to see a similiar model. Co
 ===
 
 title: Bodega
-position: 4647,625
+position: 4676,-295
 ---
 Y/N: Right. Like when I used to see another old man at the Bodega around the corner from my house. It's like we've known eachother for years. I miss those interactions.
 
@@ -948,7 +1114,7 @@ Twobit: I guess it works pretty similiar except a little less intrusive.
 <<jump EngineerInteraction2Leave>>
 ===
 title: Perks
-position: 4915,627
+position: 4944,-293
 ---
 Y/N: She has her perks. I guess she makes the slow days a little more interesting.
 
@@ -957,7 +1123,7 @@ Twobit: Those kinds of mechs make the world go 'round.
 <<jump EngineerInteraction2Leave>>
 ===
 title: EngineerInteraction2Leave
-position: 4773,781
+position: 4802,-139
 ---
 Y/N: Say it louder for the people in the back, brother. Just the battery?
 
@@ -972,7 +1138,7 @@ Twobit: Thank you. Take it easy.
 
 
 title: EngineerGoodbye
-position: 7477,772
+position: 7474,967
 ---
 //CHIME
 
@@ -1008,7 +1174,7 @@ The best thing to do is put it out of my mind for now.
 
 
 
-title: 010010intro
+title: friendlyIntro
 position: 2059,1144
 ---
 The door rings and a bot prances in. You sigh. You’re familiar with this one. 010010. 
@@ -1083,10 +1249,14 @@ position: 2043,1772
 010010: Great job human! I appreciate your contributions to our society.
 
 //CHIME
+
+//END OF DAY 3
 ===
 title: 010010Interaction1
 position: 5651,-430
 ---
+//RESTOCK MINI GAME 
+
 The door rings, signaling 010010’s entrance. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
 
 010010: Guess who has an incoming role assignment appointment?
@@ -1169,11 +1339,13 @@ Deciding that was where she wanted to end the conversation, 010010 dumps 4 items
 
 010010: Keep up the good work!
 //CHIME
+
+<<jump Fed3>>
 ===
 
 
-title: 010010bye
-position: 6635,1409
+title: friendlyBye
+position: 6615,-132
 ---
 010010’s wanders into the gas station. She’s noticeably more quiet than usual as she brings up her purchases to the counter.
 
@@ -1206,7 +1378,7 @@ Y/N: What’s the matter?
 
 ===
 title: alright
-position: 6853,1563
+position: 6833,22
 ---
 Y/N: It's alright. Even mech's make mistakes sometimes.
 
@@ -1214,21 +1386,21 @@ Y/N: It's alright. Even mech's make mistakes sometimes.
 
 ===
 title: understand
-position: 6622,1567
+position: 6602,26
 ---
 Y/N: I'm glad you finally understand. Took you long enough to realize.
 010010: Yes, though this is only just the beginning, I have a lot more to learn.
 
 ===
 title: realize
-position: 6400,1562
+position: 6380,21
 ---
 Y/N: Took you long enough to realize, but at least you got there in the end.
 
 010010: I know, I know. It doesn’t make up for everything, but going forward I will do my best to learn and better understand.
 ===
 title: Goodbye010010
-position: 6632,1735
+position: 6612,194
 ---
 010010: As of right now I am continuing my role as a fedbot, as it is the role the system has given me and I do not doubt its greater understanding of the framework within our society.
 010010: …Or maybe because I can’t think of anything else to do right now. I don’t know, human. I need some time to sort this all out.
@@ -1239,6 +1411,8 @@ position: 6632,1735
 010010: I hope to see you again, human. Hopefully with a clearer mind and better news.
 
 //CHIME
+
+<<jump cybGoodbye>>
 ===
 title: CybIntro
 position: 1003,-432
@@ -1277,6 +1451,8 @@ Unknown: It’s rough out there for a human.
 Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
 //CHIME 
+
+<<jump Garbo1>>
 ===
 
 title: cybInteraction1
@@ -1400,10 +1576,12 @@ Cyb: That’s all you need to know. I know it’s a lot to ask, but trust me. Ju
 Cyb: I will see you again soon.
 
 //Chime
+
+<<jump friendlyIntro>>
 ===
 
 title: CybInteraction2
-position: 4805,1157
+position: 4810,193
 ---
 Cyb enters the store, giving you a small nod as she approaches the counter. She leans against it as she speaks
 
@@ -1417,7 +1595,7 @@ Cyb: Our main target will be here in a few.
 ===
 
 title: powerPlant
-position: 4898,1307
+position: 4903,343
 ---
 Cyb: He’s an engineer who works at the local power plant. As unsuspecting as it seems, that plant essentially powers our whole society
 
@@ -1430,7 +1608,7 @@ Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit cre
 <<jump relevant>>
 ===
 title: eyes
-position: 4674,1308
+position: 4679,344
 ---
 Cyb: I’ve got eyes in many places, the perks of having a network. I just had someone slip his schedule to me, give him a few ideas, and bam! He’s here.
 Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations. 
@@ -1443,7 +1621,7 @@ Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit cre
 
 ===
 title: suspicious
-position: 4918,1484
+position: 4923,520
 ---
 Cyb: Naw, not at all. See, aside from being on the Fedbots’ shit list, I’m a pretty normal bot. Get a little friendly, find a way in, and it’s like they’re chatting with an old pal.
 
@@ -1454,7 +1632,7 @@ Cyb: Very few people actually like these rusted up bastards, and I’m willing t
 <<jump thisGuy>>
 ===
 title: relevant
-position: 4689,1483
+position: 4694,519
 ---
 Cyb shrugs
 
@@ -1469,7 +1647,7 @@ Cyb: Something unsuspecting, so much so that he himself doesn’t realize he’s
 
 ===
 title: thisGuy
-position: 4820,1714
+position: 4825,760
 ---
 Y/N: How’d you find out about this guy anyway-
 
@@ -1480,13 +1658,14 @@ You open your mouth to question this random string of sentences when-
 //engineer convo starts
 <<jump EngineerInteraction1>>
 
+//END OF DAY 6
 ===
 
 
 
 
 title: cybGoodbye
-position: 6636,644
+position: 6616,480
 ---
 //CHIME
 Cyb strides in, making a beeline towards you.
@@ -1500,13 +1679,13 @@ Cyb: I’ve figured it out. If all goes according to plan, the Engineer should b
 
 ===
 title: charge
-position: 6725,830
+position: 6705,666
 ---
 Cyb: Found a way around that. See, I got one of my buds at the plant to tamper with those batteries he got yesterday when his back was turned. 
 <<jump byeCyb>>
 ===
 title: plan
-position: 6497,820
+position: 6477,656
 ---
 Cyb: We can cross that bridge when it gets to it. No point in focusing on the what-ifs. We got a plan, all you gotta do is follow it.
 <<jump byeCyb>>
@@ -1514,7 +1693,7 @@ Cyb: We can cross that bridge when it gets to it. No point in focusing on the wh
 
 
 title: byeCyb
-position: 6635,969
+position: 6615,805
 ---
 Cyb: Long story short, his batteries got replaced with faulty ones when his back was turned, and it should be running low as he’s on his way to the plant tomorrow.
 Cyb: Your job here is pretty simple. Just make sure the virus is functioning properly and that the whole process goes smoothly.
@@ -1527,4 +1706,5 @@ Cyb: It’s been great working with you, Y/N. Say safe, I’ll see you around.
 
 With that, Cyb rushes out of the store.
 //CHIME
+//END OF DAY 8
 ===
