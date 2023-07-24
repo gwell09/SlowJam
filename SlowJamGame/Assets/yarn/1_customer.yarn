@@ -19,13 +19,14 @@ position: 81,-580
 tags:
 ---
 <<set $day to 1>>
-<<Fade @ black>>
+<<Fade black>>
+
 Day {$day}
 <<FadeIn>>
  Y/N sits behind the counter of a dilapidated gas station. The walls are lined with two very distinct types of sales posters; some are dusty, torn, and faded, advertising the usual drinks, 
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
-<<PlayAudio @ bell, 0.5>>
+<<PlayAudio bell 0.5>>
 Dusty: Howdy, Dogmeat!
 Y/N: *sighs* Afternoon, Dusty. What can I do for ya?
 
@@ -111,7 +112,7 @@ Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
 //Rusty purchases a bottle of ACME ALL PURPOSE PERSONAL LUBRICANT
 //MINI GAME
 
-//CHIME
+<<PlayAudio bell 0.5>>
 
 You turn a key to the right of your desk that locks the front door and flips the antique-looking open sign to say CLOSED. 
 
@@ -321,7 +322,7 @@ Y/N: Yeah yeah just hand me the damn hotdog and Twinks.
 Tinker: Next time I visit I will be interested to learn a little more about human reproductive experience. 
 
 //CHIME. Tinker leaves
-
+<<PlayAudio bell 0.5>>
 Y/N: Pff...reproductive experience my ass...robo-freak.
 <<set $day to 5>>
 //END OF DAY 4
@@ -331,7 +332,7 @@ title: Tinker2
 position: 3889,269
 ---
 //CHIME 
-
+<<PlayAudio bell 0.5>>
 Tinker walks in and obliviously cuts in front of Golem, picking through the items for sale on the checkout shelves.
 Golem, despite not having the facial construction to express emotion, displays a reaction of disdain for the ignorant bot.
 
@@ -441,7 +442,7 @@ Y/N: You're done.
 Tinker: Okay...
 
 //CHIME. Tinker leaves 
-
+<<PlayAudio bell 0.5>>
 ===
 
 
@@ -455,7 +456,7 @@ position: 1952,-379
 //RESTOCK MINI GAME 
 
 //Door chimes 
-
+<<PlayAudio bell 0.5>>
 Ugh. Here comes my favorite customer. Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
 He approaches the mid voltage battery packs stacked neatly on the back shelf. He examines one aloofly before putting it back on a random shelf to his left.
 He picks up a different model and brings it to the counter. Mechs like this make my blood boil.
@@ -482,7 +483,7 @@ Golem: Now do your job.
 Golem: Just keep your head down and stay in line. 
 
 //Chime. Golem leaves
-
+<<PlayAudio bell 0.5>>
 Y/N: Whenever he comes in here, my day just gets so much brighter. 
 
 <<jump cybInteraction1>>
@@ -494,7 +495,7 @@ position: 3883,-377
 //RESTOCK MINI GAME 
 
 //Door chimes 
-
+<<PlayAudio bell 0.5>>
 Golem: This experience may be recorded for quality and training purposes.
 
 -> (In baby voice) This experwience has been recowded foh quality and twaining pohpuses
@@ -548,6 +549,7 @@ title: Fed3
 position: 5651,538
 ---
 //Door chimes 
+<<PlayAudio bell 0.5>>
 Golem marches in and picks up a can of oil before walking to the register.
 
 Golem: This experience may be recorded for quality and training purposes.
@@ -649,7 +651,7 @@ Golem: Right...
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 <<jump Garbo3>>
 ===
 title: naturalSelection1
@@ -664,6 +666,7 @@ Golem: And you'll be doing so til you're bankrupt.
 Golem: In the future, keep your unfounded societal critiques to yourself. I don't come here to entertain these ideas.
 
 //CHIME
+<<PlayAudio bell 0.5>>
 <<jump Garbo3>>
 ===
 
@@ -674,6 +677,7 @@ position: 7376,-124
 ---
 //RESTOCK MINI GAME 
 //Door chimes 
+<<PlayAudio bell 0.5>>
 Golem strolls in bright and early, looking even more wired than usual. He wastes no time loitering or shopping and makes a beeline to the counter.
 <<wait  2>>
 Golem: This experience may be recor-
@@ -761,6 +765,7 @@ Y/N: ...
 Golem: Tell your little friend that her days are limited. And keep that in mind for yourself too.
 
 //CHIME
+<<PlayAudio bell 0.5>>
 ===
 
 
@@ -769,7 +774,7 @@ title: Garbo1
 position: 1052,287
 ---
 //CHIME 
-
+<<PlayAudio bell 0.5>>
 A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products. 
 As he approaches the counter you are greeted by a stench that makes you wrinkle your nose slightly, something that does not escape his notice.
 
@@ -832,7 +837,8 @@ Garbo: I will take care to manage the smell next time though.
 
 Garbo: Until next time, friend!
 //Chime sound & fade out 
-
+<<PlayAudio bell 0.5>>
+<<Fade black>>
 //END OF DAY 2
 <<set $day to 3>>
 ===
@@ -846,6 +852,7 @@ position: 2855,-416
 //RESTOCK MINI GAME 
 
 //CHIME 
+<<PlayAudio bell 0.5>>
 Garbo wheels inunsteadily. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
 He makes a beeline for the aisles, gathering up items in his arms, before rushing over to the counter.
 
@@ -887,7 +894,7 @@ Garbo: Oh! I have rambled. I need to get going.
 Garbo: Take care, friend!
 
 //Chime sound
-
+<<PlayAudio bell 0.5>>
 <<jump EngineerIntro>>
 ===
 
@@ -896,7 +903,7 @@ title: Garbo3
 position: 5659,1346
 ---
 //CHIME 
-
+<<PlayAudio bell 0.5>>
 Garbo slinks in slowly, grabbing an item. He sluggishly makes his way over to the counter. This time his smell is masked by a lavender type scent.
 
 Garbo: Hello friend. Unfortunately I am not feeling the best today.
@@ -947,7 +954,7 @@ Garbo: I should probably get on with it. I did not intend to take up so much of 
 Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 //END OF DAY 7
 <<set $day to 8>>
 ===
@@ -955,6 +962,7 @@ title: EngineerIntro
 position: 2906,227
 ---
 //CHIME
+<<PlayAudio bell 0.5>>
 An old mech comes in. His base frame looks to be an extremely old model, coupled with a variety of roughly implemented upgrades, creating a rather eccentric look.
 His joint creak lightly as he walks through the gas station, picking up a low voltage battery pack and a can of oil before making his way to the register.
 
@@ -1065,7 +1073,7 @@ Unknown: I'll likely be back. I work a few minutes away. Mind keeping the low vo
 Y/N: I'll make a note of it. 
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 <<jump IntroduceTinker>>
 ===
 
@@ -1076,7 +1084,7 @@ title: EngineerInteraction1
 position: 4789,-447
 ---
 //CHIME
-
+<<PlayAudio bell 0.5>>
 Twobit walks in and grabs a low voltage battery, this time taking care to take a gander at a few human oddities on the shelves on the way up to the register.
 
 Twobit: Hi there. Are you in line?
@@ -1099,7 +1107,7 @@ Twobit: Wow that's rather kind, but I really haven't got the time today. They ar
 Cyb: No worries. I just thought I'd offer. Anyways Y/N, I've got places to be so I'll see you later.
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 Twobit: Never seen her around here. It's always nice to see a similiar model. Communication goes so much smoother.
 
 -> Right. Like when I used see another old man at the Bodega around the corner
@@ -1143,6 +1151,7 @@ Twobit: Just the battery.
 Twobit: Thank you. Take it easy.
 
 //CHIME
+<<PlayAudio bell 0.5>>
 ===
 
 
@@ -1150,7 +1159,7 @@ title: EngineerGoodbye
 position: 7474,967
 ---
 //CHIME
-
+<<PlayAudio bell 0.5>>
 Twobit swings the door open with a sense of urgency. He scurries to the back, shoddy aluminum upgrades rattling around and joints squeaking furiously.
 He scans the shelves of battery packs and then turns around swiftly, moving towards the counter.
 
@@ -1173,7 +1182,7 @@ Y/N: Heard loud and clear.
 
 <<wait  3>>
 //CHIME
-
+<<PlayAudio bell 0.5>>
 After 20 minutes, Twobit powers up and bounds to the door, nodding towards you before heading off to the power plant.
 Now I can only wait for the virus to make it's way to the powerplant and take effect...I can feel my heart pounding out of my chest.
 Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.
@@ -1258,7 +1267,7 @@ position: 2043,1772
 010010: Great job human! I appreciate your contributions to our society.
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 //END OF DAY 3
 <<set $day to 4>>
 ===
@@ -1349,7 +1358,7 @@ Deciding that was where she wanted to end the conversation, 010010 dumps 4 items
 
 010010: Keep up the good work!
 //CHIME
-
+<<PlayAudio bell 0.5>>
 <<jump Fed3>>
 ===
 
@@ -1421,7 +1430,7 @@ position: 6612,194
 010010: I hope to see you again, human. Hopefully with a clearer mind and better news.
 
 //CHIME
-
+<<PlayAudio bell 0.5>>
 <<jump cybGoodbye>>
 ===
 title: CybIntro
@@ -1461,7 +1470,7 @@ Unknown: It’s rough out there for a human.
 Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
 //CHIME 
-
+<<PlayAudio bell 0.5>>
 <<jump Garbo1>>
 ===
 
@@ -1586,7 +1595,7 @@ Cyb: That’s all you need to know. I know it’s a lot to ask, but trust me. Ju
 Cyb: I will see you again soon.
 
 //Chime
-
+<<PlayAudio bell 0.5>>
 <<jump friendlyIntro>>
 ===
 
@@ -1678,6 +1687,7 @@ title: cybGoodbye
 position: 6616,480
 ---
 //CHIME
+<<PlayAudio bell 0.5>>
 Cyb strides in, making a beeline towards you.
 
 Cyb: I’ve figured it out. If all goes according to plan, the Engineer should be in here tomorrow asking to use the charging station. So make sure the virus is ready for when that happens.
@@ -1716,5 +1726,6 @@ Cyb: It’s been great working with you, Y/N. Say safe, I’ll see you around.
 
 With that, Cyb rushes out of the store.
 //CHIME
+<<PlayAudio bell 0.5>>
 //END OF DAY 8
 ===
