@@ -28,8 +28,15 @@ public class ItemBehavior : MonoBehaviour
 }
 public enum Item
 {
-    Lightbulb = 0,
-    Wire = 1,
-    Sock = 2,
-    Wheel = 3
+    lightbulb = 0,
+    highVoltBattery = 1,
+    lowVoltBattery = 2,
+    motherboard = 3,
+    oil= 4,
+    peanutbutter=5,
+    soda = 6,
+    twink= 7,
+    sock =8
+
+     //added more
 }

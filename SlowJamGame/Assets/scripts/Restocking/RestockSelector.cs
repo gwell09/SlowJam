@@ -17,7 +17,8 @@ public class RestockSelector : MonoBehaviour
 
     public Dictionary<Item,int> selectedItems;
 
-    public Item firstKey, secondKey, thirdKey;
+    public Item firstKey, secondKey, thirdKey, fourthKey, fifthKey,sixthKey, seventhKey, eighthKey,ninthKey;
+    //added more items
 
     // Start is called before the first frame update
     void Awake()
