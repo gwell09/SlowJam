@@ -19,8 +19,32 @@ public class WordPuzzleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ChooseRandomWordPuzzle(); // TODO: Should be moved somewhere else maybe? Will ask about it later - Geneva   
+        ChooseRandomWordPuzzle(GameManager.Instance.CurrentDay.wordPuzzles); 
     }
+
+    public void ChooseRandomWordPuzzle(List<WordPuzzle> puzzles)
+    {
+        if (puzzles.Count == 0)
+        {
+            Debug.LogError("The word puzzle list in WordPuzzleManager is empty or all the puzzles are completed.\nReturning...");
+            return;
+        }
+
+        int randNum = Random.Range(0, puzzles.Count);
+        WordPuzzle puzzle = puzzles[randNum]; // getting our random puzzle :3
+
+        if (puzzle != null && puzzle.isPuzzleCompleted)
+        {
+            puzzles.Remove(puzzle);
+            ChooseRandomWordPuzzle(); // keep looking for a puzzle that hasn't already been completed!
+        }
+        else
+        {
+            currentWordPuzzle = puzzle;
+            viewer.SetScrambledText(currentWordPuzzle.GetScrambledWord()); // show our scrambled word!
+        }
+    }
+
 
     /// <summary>
     /// Chooses a random puzzle from our wordPuzzles list. Won't choose a puzzle we completed

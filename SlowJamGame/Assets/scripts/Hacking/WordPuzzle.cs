@@ -4,18 +4,17 @@ using System.Linq;
 using UnityEngine;
 
 /// <summary>
-/// Scriptable Object that contains the function for scrambling the word, checking if the player's word matches,
+/// Class that contains the function for scrambling the word, checking if the player's word matches,
 /// and the actual word that's going to be scrambled
 /// </summary>
-[CreateAssetMenu(fileName ="wordpuzzle",menuName ="SO/word puzzle",order = 0)]
-public class WordPuzzle : ScriptableObject
+[System.Serializable]
+public class WordPuzzle
 {
     [Tooltip("This is the word that the player should have at the end of the puzzle")]
     [SerializeField]
     private string endingCode;
 
-    public bool isPuzzleCompleted; 
-
+    public bool isPuzzleCompleted;
 
     /// <summary>
     /// Checking to see if the code the player input matches the intended unscrambled word
@@ -35,7 +34,7 @@ public class WordPuzzle : ScriptableObject
     /// <returns>String created by scrambling the WordPuzzle's ending code</returns>
     public string GetScrambledWord()
     {
-        List<char> word = endingCode.ToCharArray().ToList(); // splitting our word / desired endingCode into characters
+        List<char> word = endingCode.ToLower().ToCharArray().ToList(); // splitting our word / desired endingCode into characters
         string scrambledWord = ""; // starting our scrambledWord so that it's empty
 
         while (word.Count > 0) // As long as we have letters left to grab from the word...
