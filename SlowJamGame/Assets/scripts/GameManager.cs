@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public Day CurrentDay => days[currentDay];
 
+    public string currentNode = "1_customer";
+    public string nextNode; // should be set when going to a minigame
+
 
     void Awake()
     {
@@ -28,10 +31,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StoreNextNode(string node)
     {
-        
+        nextNode = node;
+    }
+
+    public void GoToNextDay()
+    {
+        currentDay++;
+        currentNode = nextNode;
+        ChangeScene.Instance.LoadScene("MAIN");
+    }
+    public void GoBackToNarrative()
+    {
+        currentNode = nextNode;
+        ChangeScene.Instance.LoadScene("MAIN");
     }
 }
 

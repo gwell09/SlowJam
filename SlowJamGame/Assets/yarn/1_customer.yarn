@@ -111,6 +111,7 @@ Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
 
 //Rusty purchases a bottle of ACME ALL PURPOSE PERSONAL LUBRICANT
 //MINI GAME
+<<checkout CashierCanvas oil>>
 
 <<PlayAudio bell 0.5>>
 
@@ -197,7 +198,7 @@ Clyde: ...
 
 B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Clyde, and I will see you tomorrow! Goodnight!
 
-<<set $day to 2>>
+<<StartMiniGame HACKING Garbo1>>
 // END OF DAY 1
 ===
 
@@ -331,6 +332,7 @@ Tinker: Next time I visit I will be interested to learn a little more about the 
 Clyde: Pff...reproductive experience my ass...robo-freak.
 <<set $day to 5>>
 //END OF DAY 4
+<<StartMiniGame HACKING Day5_Start>>
 ===
 
 title: Tinker2
@@ -446,11 +448,13 @@ position: 3915,968
 Tinker: Ah, by the way, I was reading that book on Anthropology again and was wondering how your relationship with your fa-
 Clyde: You're done.
 Tinker: Okay...
-
-//CHIME. Tinker leaves
-//DAY 5 END
-
 <<PlayAudio bell 0.5>>
+
+//CHIME. Tinker leaves 
+//DAY 5 END 
+<<set $day to 6>>
+<<StartMiniGame HACKING EngineerInteraction1>>
+
 ===
 
 
@@ -503,11 +507,20 @@ Clyde: Whenever he comes in here, my day just gets so much brighter.
 <<jump cybInteraction1>>
 ===
 
-title: Fed2
+title: Day5_Start
 position: 3883,-377
 ---
 //START DAY 5
-//RESTOCK MINI GAME
+<<Fade black>>
+
+Day {$day}
+<<FadeIn>>
+<<StartMiniGame RESTOCK Fed2>>
+===
+
+title: Fed2
+position: 3883,-377
+---
 
 //Door chimes
 <<PlayAudio bell 0.5>>
@@ -685,7 +698,16 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 <<jump Garbo3>>
 ===
 
+title: Day9_Start
+position: 7376,-124
+---
+<<Fade black>>
 
+Day {$day}
+<<FadeIn>>
+//DAY 9 START 
+<<StartMiniGame RESTOCKFed4>>
+===
 
 title: Fed4
 position: 7376,-124
@@ -787,10 +809,14 @@ Golem: Tell your little friend that her days are limited. And keep that in mind 
 
 
 title: Garbo1
-position: 1036,-1042
+position: 1040,-1038
 ---
 //START DAY 2
-//CHIME
+<<Fade black>>
+<<set $day to 2>>
+Day {$day}
+<<FadeIn>>
+//CHIME 
 <<PlayAudio bell 0.5>>
 A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products.
 As he approaches the counter Clyde is greeted by a stench that makes him wrinkle his nose slightly, something that does not escape the mech’s notice.
@@ -856,10 +882,6 @@ Garbo: Until next time, friend!
 //Chime sound & fade out
 <<PlayAudio bell 0.5>>
 <<jump CybIntro>>
-
-
-//END OF DAY 2
-<<set $day to 3>>
 ===
 
 
@@ -978,6 +1000,8 @@ Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 <<PlayAudio bell 0.5>>
 //END OF DAY 7
 <<set $day to 8>>
+<<StartMiniGame HACKING friendlyBye>>
+
 ===
 title: EngineerIntro
 position: 2906,227
@@ -1105,6 +1129,10 @@ title: EngineerInteraction1
 position: 4789,-447
 ---
 //DAY 6 START
+<<Fade black>>
+
+Day {$day}
+<<FadeIn>>
 //CHIME
 <<PlayAudio bell 0.5>>
 Twobit walks in and grabs a low voltage battery, this time taking care to take a gander at a few human oddities on the shelves on the way up to the register.
@@ -1297,12 +1325,18 @@ position: 2043,1772
 <<PlayAudio bell 0.5>>
 //END OF DAY 3
 <<set $day to 4>>
+<<StartMiniGame HACKING Garbo2>>
+
 ===
 title: 010010Interaction1
 position: 5651,-430
 ---
 //DAY 7 START
-//RESTOCK MINI GAME
+<<Fade black>>
+
+Day {$day}
+<<FadeIn>>
+//RESTOCK MINI GAME 
 
 The door rings, signaling 010010’s entrance. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
 
@@ -1398,7 +1432,11 @@ title: friendlyBye
 position: 6615,-132
 ---
 
-//DAY 8 START
+//DAY 8 START 
+<<Fade black>>
+
+Day {$day}
+<<FadeIn>>
 010010’s wanders into the gas station. She’s noticeably more quiet than usual as she brings up her purchases to the counter.
 
 010010: Hello, human.
@@ -1467,7 +1505,7 @@ position: 6612,194
 <<jump cybGoodbye>>
 ===
 title: CybIntro
-position: 1003,-106
+position: 1033,-170
 ---
 
 A tall, dark figure sweeps past the counter. Grabbing something off the shelf they bring it to the counter.
@@ -1480,19 +1518,19 @@ Unknown: A human cashier? How interesting.
 <<jump toYou>>
 ===
 title: elusive
-position: 910,44
+position: 932,84
 ---
 Unknown: Don’t think elusive is quite the right word. More like endangered.
-
+<<jump alwaysGlad>>
 ===
 title: toYou
-position: 1124,50
+position: 1139,76
 ---
 Unknown: Whoa there, that was not meant to be hostile, quite the opposite.
-
+<<jump alwaysGlad>>
 ===
 title: alwaysGlad
-position: 1035,184
+position: 1011,254
 ---
 Unknown: I’m always glad to see more humans around, especially when they seem to be doing alright for themselves.
 Unknown: After the Great Overtaking y'all just got left at the fringes, an afterthought within a society that deplores your very existence.
@@ -1503,11 +1541,11 @@ Unknown: It’s rough out there for a human.
 
 Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
-//CHIME
+//CHIME 
+<<PlayAudio bell 0.5>>
 
 //END OF DAY 2
-<<PlayAudio bell 0.5>>
-<<jump Garbo1>>
+<<StartMiniGame HACKING Day3_Start>>
 ===
 
 title: cybInteraction1
@@ -1714,6 +1752,8 @@ Clyde opens his mouth to question this random string of sentences when-
 <<jump EngineerInteraction1>>
 <<set $day to 7>>
 //END OF DAY 6
+// need to rename the next node 010010Interaction1 << yarn doesn't like this and won't jump
+// to it - Geneva
 ===
 
 
@@ -1764,5 +1804,19 @@ With that, Cyb rushes out of the store.
 //CHIME
 <<PlayAudio bell 0.5>>
 //END OF DAY 8
+<<set $day to 9>>
+<<jump Day9_Start>>
+===
+
+title: Day3_Start
+position: 1931,-586
+---
+//START DAY 3
+<<Fade black>>
+<<set $day to 3>>
+
+Day {$day}
+<<FadeIn>>
+<<StartMiniGame RESTOCK Fed>>
 ===
 

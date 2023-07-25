@@ -36,13 +36,25 @@ public class WordPuzzleManager : MonoBehaviour
         if (puzzle != null && puzzle.isPuzzleCompleted)
         {
             puzzles.Remove(puzzle);
-            ChooseRandomWordPuzzle(); // keep looking for a puzzle that hasn't already been completed!
+            ChooseRandomWordPuzzle(puzzles); // keep looking for a puzzle that hasn't already been completed!
         }
         else
         {
             currentWordPuzzle = puzzle;
             viewer.SetScrambledText(currentWordPuzzle.GetScrambledWord()); // show our scrambled word!
         }
+    }
+
+    public bool isDayComplete() // hacking happens at the end of the day
+    {
+        foreach(WordPuzzle w in GameManager.Instance.CurrentDay.wordPuzzles)
+        {
+            if(!w.isPuzzleCompleted) // all wordpuzzles must be complete
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
 
@@ -83,6 +95,15 @@ public class WordPuzzleManager : MonoBehaviour
         {
             Debug.Log("<color=green>Correct!</color>");
             currentWordPuzzle.isPuzzleCompleted = true;
+
+            if(isDayComplete())
+            {
+                GameManager.Instance.GoToNextDay();
+            }
+            else
+            {
+                ChooseRandomWordPuzzle(GameManager.Instance.CurrentDay.wordPuzzles);
+            }
         }
         else
         {

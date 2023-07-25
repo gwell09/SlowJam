@@ -66,6 +66,8 @@ namespace Yarn.Unity.Example {
 			runner.AddCommandHandler<float>("FadeIn", SetFadeIn );
 			runner.AddCommandHandler<string,string,float>("CamOffset", SetCameraOffset );
 
+			runner.AddCommandHandler<string, string>("StartMiniGame", StartMiniGame);
+
 			// adds all Resources to internal lists / one big pile... it
 			// will scan inside all subfolders too! note: but when
 			// referencing sprites in the Yarn script, just use the file
@@ -367,6 +369,12 @@ namespace Yarn.Unity.Example {
 			var parent = genericSprite.transform.parent.GetComponent<RectTransform>();
 			var newPos = Vector2.Scale( new Vector2(0.5f, 0.5f) - newOffset, screenSize );
 			StartCoroutine( MoveCoroutine( parent, newPos, moveTime ) );
+		}
+
+		public void StartMiniGame(string sceneName, string nextNode)
+		{
+            GameManager.Instance.StoreNextNode(nextNode);
+            ChangeScene.Instance.LoadScene( sceneName );
 		}
 
         #endregion
