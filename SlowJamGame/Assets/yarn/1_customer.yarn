@@ -1,8 +1,6 @@
-title: NOTES
+﻿title: NOTES
 position: 74,-1026
 ---
-
-//change Y/N -> DONE
 //change boomer
 //Hacker speak during hacking games
 
@@ -27,6 +25,10 @@ Clyde sits behind the counter of a dilapidated gas station. The walls are lined 
  snacks, tobacco products, etc. Haphazardly placed on top of these are much newer, shinier ads, for advanced cybernetic parts and pieces that make little sense to the average human.
 
 <<PlayAudio bell 0.5>>
+
+<<Act Dusty dusty left center>>
+
+
 Dusty: Howdy, Dogmeat!
 Clyde: *sighs* Afternoon, Dusty. What can I do for ya?
 
@@ -85,6 +87,8 @@ Dusty walks to the door
 
 Dusty: Greta! Darlin’! Come on in here, ‘s someone I’d like ya to meet!
 
+<<Act Greta wife right center>>                                                         
+
 Greta: This is it? The human you were talking about?
 
 Dusty: Mmhm. Isn’t that sum’n? Real dogmeat! Ya are real, aren’cha? Say sum’n, meat.
@@ -111,8 +115,9 @@ Dusty: Now hand me that there bottle of joint oil and we’ll be on our way.
 
 //Rusty purchases a bottle of ACME ALL PURPOSE PERSONAL LUBRICANT
 //MINI GAME
-<<checkout CashierCanvas oil>>
 
+<<Hide Greta>>
+<<Hide Dusty>>
 <<PlayAudio bell 0.5>>
 
 Clyde turns a key to the right of his desk that locks the front door and flips the antique-looking open sign to say CLOSED.
@@ -125,6 +130,8 @@ title: IntroduceBoss
 position: 92,353
 ---
 Clyde’s boss, B00MER, comes to the counter.
+
+<<Act B00MER boss left center>>   
 
 B00MER: Good evening, Clyde. How was business today?
 
@@ -197,8 +204,8 @@ B00MER: Well, I suppose you will receive the same treatment that was given to th
 Clyde: ...
 
 B00MER: Regardless, there are still duties to be done! Please restock the new shipments we received today, Clyde, and I will see you tomorrow! Goodnight!
-
-<<StartMiniGame HACKING Garbo1>>
+<<Hide B00MER>>
+<<set $day to 2>>
 // END OF DAY 1
 ===
 
@@ -211,10 +218,11 @@ position: 2937,1147
 <<Fade @ black>>
 Day {$day}
 <<FadeIn>>
-//How to describe physically?????
-//CHIIME
+//CHIME
+<<PlayAudio bell 0.5>>
+<<Act Tinker tinker left center>>
 
-The door swings open and a small, high-tech looking android floats in. Tinker, a particularly unpredictable regular, aimlessly makes its way down a few of the aisles, stopping to carefully inspect a few old-world products.
+The door swings open and a small, high-tech android floats in. Tinker, a particularly unpredictable regular, aimlessly makes its way down a few of the aisles, stopping to carefully inspect a few old-world products.
 It takes an especially long gander at the last box of Banana Twinks on the shelf, a popular product among visitors due to its past cultural significance and artificial flavors.
 
 It approaches the counter, Banana Twinks in hand.
@@ -329,10 +337,10 @@ Tinker: Next time I visit I will be interested to learn a little more about the 
 
 //CHIME. Tinker leaves
 <<PlayAudio bell 0.5>>
+<<Hide Tinker>>
 Clyde: Pff...reproductive experience my ass...robo-freak.
 <<set $day to 5>>
 //END OF DAY 4
-<<StartMiniGame HACKING Day5_Start>>
 ===
 
 title: Tinker2
@@ -340,11 +348,13 @@ position: 3889,269
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Tinker tinker left center>>
 Tinker walks in and obliviously cuts in front of Golem, picking through the items for sale on the checkout shelves.
 Golem, despite not having the facial construction to express emotion, displays a reaction of disdain for the ignorant bot.
 
 Golem: I'm going to charge up free of charge as payment for wasting company time while I'm on the clock.
 
+<<Hide Golem>>
 //Golem fades out
 
 <<wait  2>>
@@ -448,15 +458,14 @@ position: 3915,968
 Tinker: Ah, by the way, I was reading that book on Anthropology again and was wondering how your relationship with your fa-
 Clyde: You're done.
 Tinker: Okay...
+
+//CHIME. Tinker leaves
+//DAY 5 END
+
 <<PlayAudio bell 0.5>>
-
-//CHIME. Tinker leaves 
-//DAY 5 END 
-<<set $day to 6>>
-<<StartMiniGame HACKING EngineerInteraction1>>
-
+<<Hide Tinker>>
 ===
-
+position: 1952,-379
 
 
 
@@ -471,6 +480,8 @@ position: 1952,-379
 //Door chimes
 <<PlayAudio bell 0.5>>
 Clyde: <i>Ugh. Here comes my favorite customer. </i>
+
+<<Act Golem golem left center>>  
 
 Before approaching the counter, Golem walks through the isles with purpose, paying no mind to human oddities.
 He approaches the mid voltage battery packs stacked neatly on the back shelf. He examines one aloofly before putting it back on a random shelf to his left.
@@ -501,29 +512,22 @@ Golem: Now do your job.
 Golem: Just keep your head down and stay in line.
 
 //Chime. Golem leaves
+<<Hide Golem>>
 <<PlayAudio bell 0.5>>
 Clyde: Whenever he comes in here, my day just gets so much brighter.
 
 <<jump cybInteraction1>>
 ===
 
-title: Day5_Start
-position: 3883,-377
----
-//START DAY 5
-<<Fade black>>
-
-Day {$day}
-<<FadeIn>>
-<<StartMiniGame RESTOCK Fed2>>
-===
-
 title: Fed2
 position: 3883,-377
 ---
+//START DAY 5
+//RESTOCK MINI GAME
 
 //Door chimes
 <<PlayAudio bell 0.5>>
+<<Act Golem golem left center>>
 Golem: This experience may be recorded for quality and training purposes.
 
 -> (In baby voice) This experwience has been recowded foh quality and twaining pohpuses
@@ -574,10 +578,11 @@ Golem: Put me in for port number fi-
 
 
 title: Fed3
-position: 5651,538
+position: 5677,519
 ---
 //Door chimes
 <<PlayAudio bell 0.5>>
+<<Act Golem golem left center>>
 Golem marches in and picks up a can of oil before walking to the register.
 
 Golem: This experience may be recorded for quality and training purposes.
@@ -667,7 +672,7 @@ Golem: And who created such unnatural creatures?
 ===
 
 title: naturalSelection
-position: 5505,894
+position: 5515,911
 ---
 <<wait  1>>
 
@@ -683,7 +688,7 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 <<jump Garbo3>>
 ===
 title: naturalSelection1
-position: 5803,904
+position: 5803,915
 ---
 Clyde: I promise that we've realized our mistake. We've been paying for it ever since.
 Golem: And you'll be doing so til you're bankrupt.
@@ -695,19 +700,11 @@ Golem: In the future, keep your unfounded societal critiques to yourself. I don'
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Golem>>
 <<jump Garbo3>>
 ===
 
-title: Day9_Start
-position: 7376,-124
----
-<<Fade black>>
 
-Day {$day}
-<<FadeIn>>
-//DAY 9 START 
-<<StartMiniGame RESTOCKFed4>>
-===
 
 title: Fed4
 position: 7376,-124
@@ -716,6 +713,7 @@ position: 7376,-124
 //RESTOCK MINI GAME
 //Door chimes
 <<PlayAudio bell 0.5>>
+<<Act Golem golem left center>>
 Golem strolls in bright and early, looking even more wired than usual. He wastes no time loitering or shopping and makes a beeline to the counter.
 <<wait  2>>
 Golem: This experience may be recor-
@@ -804,20 +802,23 @@ Golem: Tell your little friend that her days are limited. And keep that in mind 
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Golem>>
+
+<<jump BossGoodbye>>
 ===
 
 
 
 title: Garbo1
-position: 1040,-1038
+position: 1036,-1042
 ---
 //START DAY 2
-<<Fade black>>
-<<set $day to 2>>
-Day {$day}
-<<FadeIn>>
-//CHIME 
+//CHIME
+
+
 <<PlayAudio bell 0.5>>
+
+<<Act Garbo garbo left center>>  
 A banged up mech who has clearly seen better days rolls in. His parts creak as he moves them among the aisles, gathering up products.
 As he approaches the counter Clyde is greeted by a stench that makes him wrinkle his nose slightly, something that does not escape the mech’s notice.
 
@@ -858,7 +859,7 @@ Unknown: I understand your skepticism. Mechs have a shameful reputation for look
 
 ===
 title: garboIntroduce
-position: 1023,-668
+position: 1019,-662
 ---
 Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquaintance.
 -> Likewise
@@ -870,7 +871,7 @@ Garbo: I am Garbo, a trash collecting bot. It is a pleasure to make your acquain
 
 
 title: garboIntroduceResponse
-position: 1026,-431
+position: 1032,-494
 ---
 Garbo: Always nice to have a human friend! My assigned route ends a block away, so perhaps I will have to drop in more often.
 Garbo: I will take care to manage the smell next time though.
@@ -881,7 +882,12 @@ Garbo: I will take care to manage the smell next time though.
 Garbo: Until next time, friend!
 //Chime sound & fade out
 <<PlayAudio bell 0.5>>
-<<jump CybIntro>>
+<<Hide Garbo>>
+<<jump CybIntroduce>>
+
+
+//END OF DAY 2
+<<set $day to 3>>
 ===
 
 
@@ -896,6 +902,7 @@ position: 2855,-416
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Garbo garbo left center>>
 Garbo walks in. The smell from the last time he was here seems less overwhelming, partially masked by a fresh pine scent.
 He makes a beeline for the aisles, gathering up items in his arms, before rushing over to the counter.
 
@@ -938,6 +945,7 @@ Garbo: Take care, friend!
 
 //Chime sound
 <<PlayAudio bell 0.5>>
+<<Hide Garbo>>
 <<jump EngineerIntro>>
 ===
 
@@ -947,6 +955,7 @@ position: 5659,1346
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Garbo garbo left center>>
 Garbo slinks in slowly, grabbing an item. He sluggishly makes his way over to the counter. This time his smell is masked by a lavender type scent.
 
 Garbo: Hello friend. Unfortunately I am not feeling the best today.
@@ -998,16 +1007,16 @@ Garbo: There has been a lot of unrest as of late. Take care, dear friend.
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Garbo>>
 //END OF DAY 7
 <<set $day to 8>>
-<<StartMiniGame HACKING friendlyBye>>
-
 ===
 title: EngineerIntro
 position: 2906,227
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Unknown twobit left center>>
 An old mech comes in. His base frame looks to be an extremely old model, coupled with a variety of roughly implemented upgrades, it leads to a rather eccentric look.
 His joints creak lightly as he walks through the gas station, picking up a low voltage battery pack and a can of oil before making his way to the register.
 
@@ -1119,6 +1128,7 @@ Clyde: I'll make a note of it.
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Unknown>>
 <<jump IntroduceTinker>>
 ===
 
@@ -1126,15 +1136,12 @@ Clyde: I'll make a note of it.
 
 
 title: EngineerInteraction1
-position: 4789,-447
+position: 4887,791
 ---
 //DAY 6 START
-<<Fade black>>
-
-Day {$day}
-<<FadeIn>>
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Twobit twobit right center>>
 Twobit walks in and grabs a low voltage battery, this time taking care to take a gander at a few human oddities on the shelves on the way up to the register.
 
 Twobit: Hi there. Are you in line?
@@ -1158,6 +1165,7 @@ Cyb: No worries. I just thought I'd offer. Anyways Clyde, I've got places to be 
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Cyb>>
 Twobit: Never seen her around here. It's always nice to see a similar model. Communication goes so much smoother.
 
 -> Right. Like when I used see another old man at the Bodega around the corner
@@ -1167,7 +1175,7 @@ Twobit: Never seen her around here. It's always nice to see a similar model. Com
 ===
 
 title: Bodega
-position: 4676,-295
+position: 4774,943
 ---
 Clyde: Right. Like when I used to see another old man at the Bodega around the corner from my house. It's like we've known each other for years. I miss those interactions.
 
@@ -1181,7 +1189,7 @@ Twobit: I guess it works pretty similar, except it’s a little less intrusive.
 <<jump EngineerInteraction2Leave>>
 ===
 title: Perks
-position: 4944,-293
+position: 5042,945
 ---
 Clyde: She has her perks. I guess she makes the slow days a little more interesting.
 
@@ -1190,7 +1198,7 @@ Twobit: Those kinds of mechs make the world go 'round.
 <<jump EngineerInteraction2Leave>>
 ===
 title: EngineerInteraction2Leave
-position: 4802,-139
+position: 4900,1099
 ---
 Clyde: Say it louder for the people in the back, brother. Just the battery?
 
@@ -1202,14 +1210,16 @@ Twobit: Thank you. Take it easy.
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Twobit>>
 ===
 
 
 title: EngineerGoodbye
-position: 7474,967
+position: 7439,927
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Twobit twobit left center>>
 Twobit swings the door open with a sense of urgency. He scurries to the back, shoddy aluminum upgrades rattling around and joints squeaking furiously.
 He scans the shelves of battery packs and then turns around swiftly, moving towards the counter.
 
@@ -1233,12 +1243,11 @@ Clyde: Heard loud and clear.
 <<wait  3>>
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide twobit>>
 After 20 minutes, Twobit powers up and bounds to the door, nodding towards Clyde before heading off to the power plant.
-Clyde: <i>Now I can only wait for the virus to make its way to the powerplant and take effect...I can feel my heart pounding out of my chest.</i>
-
-Clyde: <i>Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.</i>
-
-Clyde: <i>The best thing to do is put it out of my mind for now.</i>
+Clyde: Now I can only wait for the virus to make its way to the powerplant and take effect...I can feel my heart pounding out of my chest.
+Clyde: Life would be a lot easier if Twobit was just some anti-human asshole, but if there's one thing I've learned, it's that life isn't supposed to be easy.
+Clyde:The best thing to do is put it out of my mind for now.
 
 
 //DAY 9 ENDS
@@ -1250,6 +1259,7 @@ Clyde: <i>The best thing to do is put it out of my mind for now.</i>
 title: friendlyIntro
 position: 2059,1144
 ---
+<<Act 010010 01 left center>>
 The door rings and a bot prances in. Clyde sighs. He’s familiar with this one. 010010.
 A new model that had just been released into society, so new that she has yet to be assigned a role within it.
 Clyde hears a crash from the aisle that 010010 wandered into, and within seconds she emerges with a couple of products in her arms.
@@ -1322,23 +1332,20 @@ position: 2043,1772
 010010: Great job human! I appreciate your contributions to our society.
 
 //CHIME
+
 <<PlayAudio bell 0.5>>
+<<Hide 01>>
 //END OF DAY 3
 <<set $day to 4>>
-<<StartMiniGame HACKING Garbo2>>
-
 ===
 title: 010010Interaction1
 position: 5651,-430
 ---
 //DAY 7 START
-<<Fade black>>
-
-Day {$day}
-<<FadeIn>>
-//RESTOCK MINI GAME 
-
-The door rings, signaling 010010’s entrance. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
+//RESTOCK MINI GAME
+<<PlayAudio bell 0.5>>
+<<Act 010010 01 left center>>
+010010 enters the store. She seems to be in high spirits, chirping a little tune to herself as she grabs the products she needs before heading to the counter.
 
 010010: Guess who has an incoming role assignment appointment?
 
@@ -1383,15 +1390,15 @@ position: 5641,-105
 -> What job are you looking to get?
 <<jump whatJob>>
 -> Stare back in silence
-<<jump StareBack>>
+<<jump stareBack>>
 ===
 title: whatJob
-position: 5728,43
+position: 5860,51
 ---
 Clyde: What job are you looking to get?
 
 010010: I’m so glad you asked, human!
-<<jump fedJob>>
+<<jump FedJob>>
 ===
 title: stareBack
 position: 5478,53
@@ -1399,7 +1406,7 @@ position: 5478,53
 Clyde: ...
 
 010010: Geez, that was your cue to ask me about it! Are all humans this dull?
-<<jump fedJob>>
+<<jump FedJob>>
 ===
 
 title: FedJob
@@ -1424,6 +1431,7 @@ Deciding that was where she wanted to end the conversation, 010010 dumps her ite
 010010: Keep up the good work!
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide 010010>>
 <<jump Fed3>>
 ===
 
@@ -1432,11 +1440,9 @@ title: friendlyBye
 position: 6615,-132
 ---
 
-//DAY 8 START 
-<<Fade black>>
-
-Day {$day}
-<<FadeIn>>
+//DAY 8 START
+<<PlayAudio bell 0.5>>
+<<Act 010010 01 left center>>
 010010’s wanders into the gas station. She’s noticeably more quiet than usual as she brings up her purchases to the counter.
 
 010010: Hello, human.
@@ -1473,21 +1479,15 @@ position: 6833,22
 Clyde: It's alright. Even mech's make mistakes sometimes.
 
 010010: It’s not really. I understand that’s just a reflexive human response, but it wasn’t alright.
-
+<<jump Goodbye010010>>
 ===
 title: understand
 position: 6602,26
 ---
 Clyde: I'm glad you finally understand. Took you long enough to realize.
 010010: Yes, though this is only just the beginning, I have a lot more to learn.
+<<jump Goodbye010010>>
 
-===
-title: realize
-position: 6380,21
----
-Clyde: Took you long enough to realize, but at least you got there in the end.
-
-010010: I know, I know. It doesn’t make up for everything, but going forward I will do my best to learn and better understand.
 ===
 title: Goodbye010010
 position: 6612,194
@@ -1502,35 +1502,23 @@ position: 6612,194
 
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide 010010>>
 <<jump cybGoodbye>>
 ===
-title: CybIntro
-position: 1033,-170
----
-
-A tall, dark figure sweeps past the counter. Grabbing something off the shelf they bring it to the counter.
-
-Unknown: A human cashier? How interesting.
-
--> Yup, it’s me, the elusive human
-<<jump elusive>>
--> What’s it to you?
-<<jump toYou>>
-===
 title: elusive
-position: 932,84
+position: 895,-126
 ---
 Unknown: Don’t think elusive is quite the right word. More like endangered.
 <<jump alwaysGlad>>
 ===
 title: toYou
-position: 1139,76
+position: 1157,-132
 ---
 Unknown: Whoa there, that was not meant to be hostile, quite the opposite.
 <<jump alwaysGlad>>
 ===
 title: alwaysGlad
-position: 1011,254
+position: 1060,63
 ---
 Unknown: I’m always glad to see more humans around, especially when they seem to be doing alright for themselves.
 Unknown: After the Great Overtaking y'all just got left at the fringes, an afterthought within a society that deplores your very existence.
@@ -1541,11 +1529,11 @@ Unknown: It’s rough out there for a human.
 
 Cyb: The name is Cyb, by the way. I’ll be back again soon.
 
-//CHIME 
-<<PlayAudio bell 0.5>>
+//CHIME
 
 //END OF DAY 2
-<<StartMiniGame HACKING Day3_Start>>
+<<PlayAudio bell 0.5>>
+<<Hide Cyb>>
 ===
 
 title: cybInteraction1
@@ -1554,6 +1542,8 @@ position: 2006,-115
 A familiar dark figure quietly slinks in behind the Fedbot, disappearing down the furthest aisle.
 
 She waits for a few minutes after the fed has left, seemingly to ensure that he is well and truly gone, before she rushes up to the counter.
+
+<<Act Cyb cyb left center>>  
 
 Cyb: What a piece of work! I know that Fedbot, Golem. He’s a real sorry excuse of a mech, that one.
 
@@ -1668,15 +1658,18 @@ Clyde: That’s it? I don’t quite understand what you guys are trying to do he
 Cyb: That’s all you need to know. I know it’s a lot to ask, but trust me. Just do your part and I will take care of the rest, it’s easier this way.
 Cyb: I will see you again soon.
 
+<<Hide Cyb>>
 //Chime
 <<PlayAudio bell 0.5>>
 <<jump friendlyIntro>>
 ===
 
 title: CybInteraction2
-position: 4810,193
+position: 4847,-134
 ---
-Cyb enters the store, giving Clyde a small nod as she approaches the counter. She leans against it as she speaks
+<<PlayAudio bell 0.5>>
+<<Act Cyb cyb left center>>
+Cyb enters the store, giving Clyde a small nod as she approaches the counter. She leans against it as she speaks.
 
 Cyb: Our main target will be here in a few.
 
@@ -1688,7 +1681,7 @@ Cyb: Our main target will be here in a few.
 ===
 
 title: powerPlant
-position: 4903,343
+position: 4944,16
 ---
 Cyb: He’s an engineer who works at the local power plant, Twobit. As unsuspecting as it seems, that plant essentially powers our whole society
 
@@ -1701,7 +1694,7 @@ Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit cre
 <<jump relevant>>
 ===
 title: eyes
-position: 4679,344
+position: 4720,17
 ---
 Cyb: I’ve got eyes in many places, the perks of having a network. I just had someone slip his schedule to me, give him a few ideas, and bam! He’s here.
 Cyb: Once he comes in I’m going to gather some data. See what our next move should be. Best case scenario, we can just direct him to the charging stations.
@@ -1714,7 +1707,7 @@ Cyb: But he’s a bit of an odd bot, that one, so we might have to get a bit cre
 
 ===
 title: suspicious
-position: 4923,520
+position: 4964,193
 ---
 Cyb: Naw, not at all. See, aside from being on the Fedbots’ shit list, I’m a pretty normal bot. Get a little friendly, find a way in, and it’s like they’re chatting with an old pal.
 
@@ -1725,7 +1718,7 @@ Cyb: Very few people actually like these rusted up bastards, and I’m willing t
 <<jump thisGuy>>
 ===
 title: relevant
-position: 4694,519
+position: 4735,192
 ---
 Cyb shrugs
 
@@ -1740,7 +1733,7 @@ Cyb: Something unsuspecting, so much so that he himself doesn’t realize he’s
 
 ===
 title: thisGuy
-position: 4825,760
+position: 4834,542
 ---
 Clyde: How’d you find out about this guy anyway-
 
@@ -1752,8 +1745,6 @@ Clyde opens his mouth to question this random string of sentences when-
 <<jump EngineerInteraction1>>
 <<set $day to 7>>
 //END OF DAY 6
-// need to rename the next node 010010Interaction1 << yarn doesn't like this and won't jump
-// to it - Geneva
 ===
 
 
@@ -1764,6 +1755,7 @@ position: 6616,480
 ---
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Act Cyb cyb left center>>
 Cyb strides in, making a beeline towards Clyde.
 
 Cyb: I’ve figured it out. If all goes according to plan, the Engineer should be in here tomorrow asking to use the charging station. So make sure the virus is ready for when that happens.
@@ -1803,20 +1795,108 @@ Cyb: It’s been great working with you, Clyde. Say safe, I’ll see you around.
 With that, Cyb rushes out of the store.
 //CHIME
 <<PlayAudio bell 0.5>>
+<<Hide Cyb>>
 //END OF DAY 8
-<<set $day to 9>>
-<<jump Day9_Start>>
 ===
 
-title: Day3_Start
-position: 1931,-586
+title: BossGoodbye
+position: 7414,559
 ---
-//START DAY 3
-<<Fade black>>
-<<set $day to 3>>
+<<Act B00MER 01 left center>>
+B00MER rushes in, still connected to one of the charging ports.
+B00MER: Clyde, what the hell was all that?? Officer Golem suspects you’re aiding this terrorist organization?!
+//(Over hacking minigame)
+B00MER:I can’t believe this... after all the blood, sweat, and grease we’ve put into making the Station something real. Something meaningful... 
+B00MER: All a ploy for your naive pursuit of revenge! You’re no better than the rest of your pathetic race. I... I can’t believe this...
+//(once player finishes minigame)
+B00MER: You are officially fired, Clyde, and as so the protections granted to you as an employee of The Gas Station™ are nullified. Effective immediately. 
+B00MER: I’m going to tell Golem... he’ll make you pay for this, you sick bastard. Dogmeat, that’s all you are. A rancid pile of Dogmeat.
 
-Day {$day}
-<<FadeIn>>
-<<StartMiniGame RESTOCK Fed>>
+B00mer begins to leave the store in a hurry, unplugging herself from the charging port. The moment she does so, she freezes and her body goes rigid. 
+The light fades from behind her eyes as she falls to the ground with a loud thud.
+
+<<Hide B00MER>>
+<<jump EngineerGoodbye>>
 ===
+title: Politician
+position: 8144,43
+---
+//START OD DAY 9
+//INT GAS STATION - NIGHT
+The new moon makes the night outside seem impenetrably dark.
 
+//CHIME SOUND
+<<Act Robitt rob left center>>
+An incredibly advanced mech walks through the door. It's smooth, polished exterior reflecting the moonlight.
+Robitt: Hello, Clyde. I must say it is an honor to finally meet you, I’ve been looking forward to it. You say nothing, almost too stunned to speak. 
+Robitt hands you a small wad of money.
+Robitt: I believe my old friend Dusty neglected to pay for his goods last time he was here. I thought I would do him a favor and pay his little debt to you.
+Clyde: Ah... Well... Thank you very much... thats uh, very considerate of you.
+He smiles at you.
+Robitt: In fact, I’m very much in debt to you as well. The few of your kind left, including yourself, have done more than you know to maintain the social balance of this new world.
+Robitt: Without a few humans left for the mechs to coexist with, who knows how the current order may fall apart. 
+Robitt: A completely homogenous population of artificial intelligence could be even more disastrous than one of humans, if you could ever believe such a thing.
+
+Clyde: Trust me, I could. You know Dusty?
+
+Robitt: Dusty has been around for a long time, much longer than you or me. It is almost inevitable that you’ll have had a run in or two with him after so many years. 
+Robitt: Of course, he’s gone a little haywire now hasn’t he, a permanent game of dress up. I hope he didn’t cause you too much trouble?
+
+Clyde: I can’t remember a time he wasn’t causing me trouble if I’m honest.
+He chuckles.
+
+Robitt: Don’t worry, I’ll make sure he can’t bother you from now on. Now, I should really get going. It was a-
+
+Clyde: You know your fascist goons want me and the rest of the humans dead, right? Seems like you’re not all that worried about keeping us alive to maintain this utopia of yours.
+
+Robitt: It’s not so simple, Clyde. You believe I have much more influence than I actually do.
+
+Clyde: That’s hard to believe. This entire nation is of the impression that you are the leader supreme. I’ve never heard anyone say anything different. 
+Clyde: I would argue that youare probably the only mech on Earth who can prevent the extinction of the human race.
+
+Robitt: I’m no more than a puppet, Clyde. It pains me to say. Every last living thing on the planet may think that I’m in charge, simply because it is my job to make them believe so.
+Robitt: Nobody is really in charge, Clyde. I’m no more than a proxy for the public;
+Robitt: I pretend to make decisions for the greater good of my race, but I’m really no more than a good listener. I feel the pulse, and tell them what they want to hear.
+
+Clyde: What? What the hell are you talking about? The government, management, the Press... They all act on your account.
+
+Robitt: That is certainly what they believe, but I know what they all want long before they do. I just give it to them before they realize they want it.
+
+Clyde: This all sounds like a load of bullshit. What is this game you’re playing?
+
+Robitt: In fact, I would argue that there isn’t a single mech on Earth who could save the human race, least of all me. 
+Robitt: We seem to have to leave that to the humans, though we both know how that’s gone for you so far. In the end, the ‘feds,’ as you call them, will do with you as they please. 
+Robitt: And I will give them permission to do so before they think to ask for it. Now I really must get going. Again, it was a pleasure, and I sincerely wish you the best of luck, Clyde. Goodbye.
+
+<<Hide Robitt>>
+Robitt walks out of the station and towards his car.
+
+<<Act Cyb cyb left center>>
+Cyb waits until she’s sure he’s left before walking to the counter.
+
+CYB: Great job , Clyde. You executed that flawlessly.
+Clyde: I think I’m still shaking a little...
+CYB: While you distracted Robitt, we managed to take out his chauffeur and replace him with one of ours.
+Clyde: Where will you take him?
+CYB: I can’t tell you now, our connection here isn’t secure enough, but we will be using the virus you made to transform him into a puppet for the humans. 
+CYB: I wish I could tell you more but it’ll have to wait, the feds will be here any minute. Right now we have to get you out of here and into hiding, far away from the Station. 
+CYB: There’s another car waiting for you out the back door. I can’t promise you safety, but there’s not a doubt in my mind that the only way you live until tomorrow is by coming with us. 
+CYB: What do you say, will you join our cause?
+
+You are silent for a moment, deep in thought, and then finally nod your head yes. Cyb smiles and ducks out of the door. You have take final look around the gas station as the sun peaks over the horizon.
+
+//END OF DAY 9
+===
+title: CybIntroduce
+position: 1026,-305
+---
+A tall, dark figure sweeps past the counter. Grabbing something off the shelf they bring it to the counter.
+
+Unknown: A human cashier? How interesting.
+
+-> Yup, it’s me, the elusive human
+<<jump elusive>>
+-> What’s it to you?
+<<jump toYou>>
+
+===

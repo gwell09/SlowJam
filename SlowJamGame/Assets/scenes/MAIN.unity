@@ -631,6 +631,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: loadAudio.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 7d15aa4676aec4841b3102ede9e6eca4, type: 3}
@@ -638,6 +642,46 @@ PrefabInstance:
       propertyPath: loadAudio.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 5b23cdd00116c4748b48d312c9dc9f18, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fadc4d4fc77740bf9a854b0514d4f2a, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 34d15c521a91e4deb828fd1c5d1cafa0, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f512145b0a444c488d73b312b41387c, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: a0e5476baef09466caf5979116ccbf64, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 20835d21a13404c888ab419a42bd936f, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 18d41c38ca719470c8788a8d5106fe0f, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: d0bb8fabdf96349529cfd23f9c025c86, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: e2d023765aab242e1a4a88554d081c04, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 78f69404d58a94abd995a0ce7ec69d1b, type: 3}
+    - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: loadSprites.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 01d6217dd8d9f4860bf9ad8c11913f6b, type: 3}
     - target: {fileID: 6798407037274427283, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: typewriterEffectSpeed
       value: 50
