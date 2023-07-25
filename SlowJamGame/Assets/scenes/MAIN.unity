@@ -498,6 +498,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82675393856402862, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82675393856402862, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: m_Volume
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 82675393856402862, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 66e4c09bc68784bb38167641b75110f0, type: 3}
+    - target: {fileID: 82675393856402862, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114099955469796580, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -657,7 +673,7 @@ PrefabInstance:
     - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: loadSprites.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: a0e5476baef09466caf5979116ccbf64, type: 3}
+      objectReference: {fileID: 21300000, guid: 31747222806ee4dcf937e6b5926ca998, type: 3}
     - target: {fileID: 6167349947878513351, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: loadSprites.Array.data[7]
       value: 
